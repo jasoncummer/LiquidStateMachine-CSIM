@@ -1,0 +1,14 @@
+\newcommand{\csim}{\textsf{CSIM} }
+
+%
+% common packages
+%
+\usepackage{graphics}
+\usepackage{amsmath}
+  \usepackage{ifthen}
+
+\input{_STUFF_}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1ex plus 0.1ex minus 0.1ex}
+\newcommand{\objfield}[6]{\item[{\bfseries \textbf{\texttt{#2}}}] \ifthenelse{\equal{#5}{}}{}{[\ensuremath{\mathrm{#5}}]} #6}

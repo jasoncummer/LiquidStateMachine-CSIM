@@ -1,0 +1,32 @@
+function install
+
+if exist('csim') ~= 3
+  cd src
+  fprintf('Compiling CSIM (this may take several minutes) ...');
+  if  str2num(version('-release')) < 13
+    if isunix
+      mex -O -f cxxopts.sh csim.cpp _OBJECTS_
+    elseif ispc
+      mex -O -f mexopts.bat csim.cpp _OBJECTS_
+    else
+      disp('Unknown operating system! Terminated.'); return;
+    end
+  else
+    if isunix
+      mex -O csim.cpp _OBJECTS_
+    elseif ispc
+      mex -O csim.cpp _OBJECTS_
+    else
+      disp('Unknown operating system! Terminated.'); return;
+    end
+  end
+  copyfile(['csim.' mexext],'..');
+  delete(['csim.' mexext]);
+  cd ..
+  v=csim('version');
+  fprintf('\b\b\b\b. Done.\nCSIM %s successfully compiled.\n',v);
+else
+  fprintf('csim.%s exists. No compilation necessary.\n',mexext);  
+end
+
+fprintf('CSIM *succesfully* installed.\n\n');

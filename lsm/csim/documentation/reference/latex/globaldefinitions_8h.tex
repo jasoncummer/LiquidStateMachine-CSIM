@@ -1,0 +1,87 @@
+\hypertarget{globaldefinitions_8h}{
+\section{globaldefinitions.h File Reference}
+\label{globaldefinitions_8h}\index{globaldefinitions.h@{globaldefinitions.h}}
+}
+
+
+\subsection{Detailed Description}
+
+
+{\tt \#include $<$stdio.h$>$}\par
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\hypertarget{globaldefinitions_8h_a1}{
+\#define \hyperlink{globaldefinitions_8h_a1}{Simulation\-Time}~(sim\-Time())}
+\label{globaldefinitions_8h_a1}
+
+\begin{CompactList}\small\item\em An alias for the current simulation time. \item\end{CompactList}\item 
+\hypertarget{globaldefinitions_8h_a2}{
+\#define \hyperlink{globaldefinitions_8h_a2}{DT}~(sim\-DT())}
+\label{globaldefinitions_8h_a2}
+
+\begin{CompactList}\small\item\em An alias for the integration time step. \item\end{CompactList}\item 
+\hypertarget{globaldefinitions_8h_a3}{
+\#define \hyperlink{globaldefinitions_8h_a3}{PSR\_\-MULTIPLE\_\-TAU}~5}
+\label{globaldefinitions_8h_a3}
+
+\begin{CompactList}\small\item\em Constant for spike driven simulation: after PSR\_\-MULTIPLE\_\-TAU$\ast$tau the psr is cut off. \item\end{CompactList}\item 
+\hypertarget{globaldefinitions_8h_a4}{
+\#define \hyperlink{globaldefinitions_8h_a4}{n\-Max\-Ext\-IO}~1000}
+\label{globaldefinitions_8h_a4}
+
+\begin{CompactList}\small\item\em maximum external inputs and outputs \item\end{CompactList}\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+\hypertarget{globaldefinitions_8h_a6}{
+typedef unsigned long \hyperlink{globaldefinitions_8h_a6}{uint32}}
+\label{globaldefinitions_8h_a6}
+
+\begin{CompactList}\small\item\em 32 bit unsigned integers \mbox{[}on Pentium Linux PC\mbox{]} \item\end{CompactList}\item 
+\hypertarget{globaldefinitions_8h_a7}{
+typedef unsigned short \hyperlink{globaldefinitions_8h_a7}{uint16}}
+\label{globaldefinitions_8h_a7}
+
+\begin{CompactList}\small\item\em 16 bit unsigned integers \mbox{[}on Pentium Linux PC\mbox{]} \item\end{CompactList}\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{globaldefinitions_8h_a13}{
+double \hyperlink{globaldefinitions_8h_a13}{sim\-Time} (void)}
+\label{globaldefinitions_8h_a13}
+
+\begin{CompactList}\small\item\em This function just returns The\-Network-$>$t; i.e. the Simulation time. \item\end{CompactList}\item 
+\hypertarget{globaldefinitions_8h_a14}{
+double \hyperlink{globaldefinitions_8h_a14}{sim\-DT} (void)}
+\label{globaldefinitions_8h_a14}
+
+\begin{CompactList}\small\item\em This function just returns The\-Network-$>$dt; i.e. the Simulation step size. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{globaldefinitions_8h_a8}{
+int \hyperlink{globaldefinitions_8h_a8}{MAXINTEGER}}
+\label{globaldefinitions_8h_a8}
+
+\begin{CompactList}\small\item\em This should assume a very large positive integer number. \item\end{CompactList}\item 
+\hypertarget{globaldefinitions_8h_a9}{
+int \hyperlink{globaldefinitions_8h_a9}{n\-Shared\-Mem\-Use}}
+\label{globaldefinitions_8h_a9}
+
+\begin{CompactList}\small\item\em sort of a semaphore showing the use of shared mem \item\end{CompactList}\item 
+\hypertarget{globaldefinitions_8h_a10}{
+double $\ast$ \hyperlink{globaldefinitions_8h_a10}{shared\-Data}}
+\label{globaldefinitions_8h_a10}
+
+\begin{CompactList}\small\item\em pointer to shared mem \item\end{CompactList}\item 
+\hypertarget{globaldefinitions_8h_a11}{
+int \hyperlink{globaldefinitions_8h_a11}{mem\-ID}}
+\label{globaldefinitions_8h_a11}
+
+\begin{CompactList}\small\item\em file ID of shared mem file \item\end{CompactList}\item 
+\hypertarget{globaldefinitions_8h_a12}{
+const char $\ast$ \hyperlink{globaldefinitions_8h_a12}{rt\-Mem\-File}}
+\label{globaldefinitions_8h_a12}
+
+\begin{CompactList}\small\item\em name of the shared mem file \item\end{CompactList}\end{CompactItemize}

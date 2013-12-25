@@ -1,0 +1,58 @@
+{
+\begin{center}
+  \thispagestyle{empty}
+  \Huge
+  
+  \rule{0cm}{0cm}\\ \vfill
+  
+  \textbf{\csim: A Neural \textit{C}ircuit \textit{SIM}ulator}\\
+  {\Large Version 1.0} \\
+  \textbf{User Manual}
+  
+  \Large
+  \vspace{3cm}
+  \copyright 2002 The IGI LSM Group\\
+  \url{www.lsm.tugraz.at}\\
+  
+  \vspace{1cm}
+  
+  \large
+  \today
+  
+  \vspace{5cm}
+
+  \vfill
+  
+\end{center}
+
+% GPL
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1ex plus 0.1ex minus 0.1ex}
+\renewcommand{\baselinestretch}{0.95}
+\scriptsize
+
+This document is part of \csim Release 1.0
+
+Copyright ©2002 The IGI LSM group
+
+\csim is free software; you can redistribute it and/or modify it
+under the terms of the \href{http://www.gnu.org/copyleft/gpl.html}{GNU
+  General Public License} as published by the Free Software
+Foundation; either version 2, or (at your option) any later version.
+
+\csim is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
+for more details.
+
+To get a copy of the GNU General Public License point your browser to
+\url{http://www.gnu.org/copyleft/gpl.html}.
+
+The IGI LSM group\\
+Institute for Theoretical Computer Science\\
+Graz University of Technology\\
+Inffeldgasse 16/b, A-8010 Graz, AUSTRIA\\
+\url{lsm@igi.tu-graz.ac.at}, \url{www.lsm.tugraz.at}
+
+}
+\clearpage

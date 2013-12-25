@@ -1,0 +1,23 @@
+#!/bin/csh
+#
+# This file uses cpp to determine the actual file dependencies
+# and the result is written directly to the Makefile
+#
+# It is called via 'make depend'
+#
+#
+rm -f *.i
+echo "# the following dependencies are generated automatically by $0" > /tmp/deps.$$
+echo "" >> /tmp/deps.$$
+foreach c ( *.cpp )
+    cpp -MM -MG -I/usr/local/matlab/extern/include $c >> /tmp/deps.$$
+    echo "" >> /tmp/deps.$$
+end
+
+set lnmbr=`grep -n '# DO NOT DELETE THIS LINE' Makefile | cut -d':' -f1`
+
+head -${lnmbr} Makefile > /tmp/mkf.$$
+
+cat /tmp/mkf.$$ /tmp/deps.$$ > Makefile
+
+rm -f /tmp/mkf.$$ /tmp/deps.$$

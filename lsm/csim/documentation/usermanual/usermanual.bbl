@@ -1,0 +1,16 @@
+\begin{thebibliography}{}
+
+\bibitem[Dayan and Abbott, 2001]{DayanAbbott:01}
+Dayan, P. and Abbott, L. (2001).
+\newblock {\em Theoretical Neuroscience: Computational and Mathematical
+  Modeling of Neural Systems}.
+\newblock MIT Press.
+\newblock See also \url{http://people.brandeis.edu/~abbott/book/}.
+
+\bibitem[Gerstner and Kistler, 2002]{GerstnerKistler:02}
+Gerstner, W. and Kistler, W. (2002).
+\newblock {\em Spiking Neuron Models}.
+\newblock Cambridge University Press.
+\newblock See also \url{http://diwww.epfl.ch/~gerstner/BUCH.html}.
+
+\end{thebibliography}

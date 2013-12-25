@@ -1,0 +1,217 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Output</TITLE>
+<META NAME="description" CONTENT="Output">
+<META NAME="keywords" CONTENT="usermanual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="usermanual.css">
+
+<LINK REL="previous" HREF="node18.html">
+<LINK REL="up" HREF="node17.html">
+<LINK REL="next" HREF="node20.html">
+</HEAD>
+
+<BODY  bgcolor="#ffffff">
+
+<DIV CLASS="navigation"><table border=0 cellspacing=0 callpadding=0 width=100% class="csim_top_navigation">
+<tr valign=middle class="csim_top_navigation">
+<td valign=middle align=left  class="csim_top_navigation"><i><b>&nbsp;CSIM User Manual</b></i></td><td valign=middle align=right class="csim_top_navigation">&nbsp;
+<A NAME="tex2html443"
+  HREF="node18.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="previous" SRC="prev.gif"></A>&nbsp;
+<A NAME="tex2html449"
+  HREF="node1.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="contents" SRC="contents.gif"></A>&nbsp;
+<A NAME="tex2html451"
+  HREF="node20.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="next" SRC="next.gif"></A></dt></tr></table>
+</DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links--><br>
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html453"
+  HREF="node19.html#SECTION00042100000000000000">Getting results of the last simulation</A>
+<LI><A NAME="tex2html454"
+  HREF="node19.html#SECTION00042200000000000000">Getting the results of a multi-stimulus simulation</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H2><A NAME="SECTION00042000000000000000"></A><A NAME="sec:output"></A>
+
+Output
+</H2>
+
+<P>
+If one simulates a network then one also wants to record the
+quantities of interest. In our <A HREF="node8.html#sec:start">introductory
+  example</A> we were interested in the membrane potential of the
+leaky-integrate and fire neuron. <SPAN  CLASS="textsf">CSIM</SPAN> can record any field of any
+object by means of <A HREF="node93.html#classRecorder">Recorder</A> objects. The
+following code fragment shows how to set up a Recorder to record the
+membrane potential (<TT>Vm</TT>) of a
+<A HREF="node81.html#classLifNeuron">LifNeuron</A> object with handle <TT>n</TT>.
+<PRE><TT>
+&nbsp;&nbsp;&nbsp;&nbsp;<TT>&#187; rec = csim(<A HREF="node31.html#cmd:create">'create'</A>,'<A HREF="node93.html#classRecorder">Recorder</A>');</TT> 
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;<TT>&#187; csim(<A HREF="node31.html#cmd:connect">'connect'</A>,rec,n,'Vm');</TT>
+</TT></PRE>
+Note that one Recorder object can record an arbitrary number of
+fields from arbitrary objects.
+
+<P>
+
+<H3><A NAME="SECTION00042100000000000000"></A><A NAME="sec:lastout"></A>
+
+Getting results of the last simulation
+</H3>
+
+<P>
+After a network simulation via a command like
+<PRE><TT>
+&nbsp;&nbsp;&nbsp;&nbsp;<TT>&#187; csim(<A HREF="node32.html#cmd:simulate">'simulate'</A>,Tsim,<A HREF="#sec:input">InputSignal</A>);</TT>
+</TT></PRE>
+the recorded data of the <SPAN  CLASS="textit">the last simulation</SPAN> Recorder
+<TT>rec</TT> can be obtained by the command
+<PRE><TT>
+&nbsp;&nbsp;&nbsp;&nbsp;<TT>&#187; R=csim(<A HREF="node34.html#cmd:get">'get'</A>,rec,'traces');</TT>
+</TT></PRE>
+The exact structure of <TT>R</TT> for the recorder <TT>rec</TT>
+depends on the value of the <A HREF="node93.html#classRecorder">field
+<TT>commonChannels</TT> of the <TT>Recorder</TT></A> object.
+
+<P>
+
+<H4><A NAME="SECTION00042110000000000000">
+<TT>commonChannels = 0</TT></A>
+</H4> In this case  (default) <TT>R</TT>
+is a struct array with the only field <TT>channel</TT> which is in
+turn a struct array with a similar structure as an
+<A HREF="node18.html#sec:inputs">input signal</A>. That is
+
+<P>
+
+<UL>
+<LI><TT>R.channel(j).idx</TT> : handle of the object from which
+  field the data was recorded
+
+<P>
+</LI>
+<LI><TT>R.channel(j).spiking</TT> : binary flag (0/1) which
+  determines if <TT>data</TT> should be interpreted as spike times or
+  as an analog signal
+
+<P>
+</LI>
+<LI><TT>R.channel(j).dt</TT> : time discretization; for analog
+  signals   only
+
+<P>
+</LI>
+<LI><TT>R.channel(j).data</TT> : signal data : vector of the
+  analog values or spike times. Note that the data always starts at
+  time <SPAN CLASS="MATH"><I>t</I>=0</SPAN>.
+
+<P>
+</LI>
+<LI><TT>R.channel(j).fieldName</TT> : name of the recorded
+    field
+
+<P>
+</LI>
+</UL>
+
+<P>
+
+<H4><A NAME="SECTION00042120000000000000">
+<TT>commonChannels = 1</TT></A>
+</H4> In this case
+<TT>R</TT> has two fields:
+
+<UL>
+<LI><TT>R.data</TT> : A double array where
+  <TT>R.data(j,s)</TT> is the <SPAN CLASS="MATH"><I>s</I></SPAN>-th recorded value of the <SPAN CLASS="MATH"><I>j</I></SPAN>-th
+  field recorded.  Note that the data always
+  starts at time <SPAN CLASS="MATH"><I>t</I>=0</SPAN>.  <SMALL CLASS="SMALL">Remark: The number of values which
+    are recorded depends on the <A HREF="node93.html#classRecorder">field
+      <TT>dt</TT> of the <TT>Recorder</TT> object</A>.</SMALL>
+
+<P>
+</LI>
+<LI><TT>R.info</TT> : A struct array where
+  <TT>R.info(j).idx</TT> is the handle of the object from which
+  the field <TT>R.info(j).fieldName</TT> is recorded.
+</LI>
+</UL>
+
+<P>
+
+<H3><A NAME="SECTION00042200000000000000"></A><A NAME="sec:multiout"></A>
+
+Getting the results of a multi-stimulus simulation
+</H3>
+
+<P>
+<B>Reminder</B>: The command
+<PRE><TT>
+&nbsp;&nbsp;&nbsp;&nbsp;<TT>&#187; R=csim(<A HREF="node34.html#cmd:get">'get'</A>,rec,'traces');</TT>
+</TT></PRE>
+returns only the results of the last simulation. In the case of a
+multi-stimulus simulation with stimulus array <TT>S</TT> of length <SPAN CLASS="MATH"><I>n</I></SPAN>
+this command returns only the result of the simulation with stimulus
+<TT>S(n)</TT>.
+
+<P>
+To get the results of all <SPAN CLASS="MATH"><I>n</I></SPAN> simulations one has to use
+<PRE><TT>
+&nbsp;&nbsp;&nbsp;&nbsp;<TT>&#187; R=csim(<A HREF="node32.html#cmd:simulate">'simulate'</A>,Tsim,S);</TT>
+</TT></PRE>
+
+<P>
+In that case <TT>R</TT> contains the results of all <SPAN CLASS="MATH"><I>n</I></SPAN> stimulations.
+<TT>R{r}(s).channel</TT> contains the recorded data of the <SPAN CLASS="MATH"><I>r</I></SPAN>-th
+recorder during the <SPAN CLASS="MATH"><I>s</I></SPAN>-th simulation (<!-- MATH
+ $1 \leq s \leq n$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="69" HEIGHT="27" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.gif"
+ ALT="$1 \leq s \leq n$"></SPAN>).
+<TT>R{r}(s).channel</TT> is of the format as described in
+<A HREF="#sec:lastout">Section</A>&nbsp;<A HREF="#sec:lastout">3.2.1</A>.
+
+<P>
+
+<P>
+
+<DIV CLASS="navigation"><table border=0 cellspacing=0 callpadding=0 width=100% class="csim_bot_navigation">
+<tr valign=middle class="csim_bot_navigation">
+<td valign=middle align=left width=1% class="csim_bot_navigation">
+<A NAME="tex2html443"
+  HREF="node18.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="previous" SRC="prev.gif"></A></td><td valign=middle align=left class="csim_bot_navigation">&nbsp;<A NAME="tex2html444"
+  HREF="node18.html">Input Signals</A></td>
+<td align=right valign=middle class="csim_bot_navigation"><A NAME="tex2html452"
+  HREF="node20.html">Additional Topics</A>&nbsp;
+<A NAME="tex2html451"
+  HREF="node20.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="next" SRC="next.gif"></A></td>
+</tr></table>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

@@ -1,0 +1,121 @@
+\hypertarget{fields}{}\section{Setting and getting field values of objects}\label{fields}
+At the Matlab level CSIM allows you to set and get values of fields of objects by means of the commands
+
+
+
+\footnotesize\begin{verbatim}  v=csim('get',o,fieldname)
+  csim('set',o,fieldname,value)
+\end{verbatim}
+\normalsize
+
+
+where {\tt o} is the handle of the object returned by
+
+
+
+\footnotesize\begin{verbatim}  o=csim('create',classname)
+\end{verbatim}
+\normalsize
+
+
+and {\tt fieldname} is a string identifying the field (i.e. the name of the field).\hypertarget{fields_fields_implementation}{}\subsection{Implementaion}\label{fields_fields_implementation}
+We implemented this mechanism using four classes:
+
+\begin{itemize}
+\item \hyperlink{classcsimClass}{csim\-Class} : the base classes of all classes in CSIM which implements the basic set and get methodes for accessable fields\end{itemize}
+
+
+\begin{itemize}
+\item \hyperlink{classcsimClassInfoDB}{csim\-Class\-Info\-DB} : a container (of \hyperlink{classcsimClassInfo}{csim\-Class\-Info} objects) where information about all the (at the matlab level) available classes is stored\end{itemize}
+
+
+\begin{itemize}
+\item \hyperlink{classcsimClassInfo}{csim\-Class\-Info} : which stores information (accessible fields, description) about a certain class\end{itemize}
+
+
+\begin{itemize}
+\item \hyperlink{classcsimFieldInfo}{csim\-Field\-Info} : stores information about a certain field of a given class\end{itemize}
+\hypertarget{fields_fields_reg}{}\subsubsection{Registering classes and fields}\label{fields_fields_reg}
+To make the set and get methodes of a class derived from \hyperlink{classcsimClass}{csim\-Class} work one has to register this class via \hyperlink{classcsimClassInfoDB_a2}{csim\-Class\-Info\-DB::register\-Csim\-Class()} and then to register each member variable which we want to be an accessable field via \hyperlink{classcsimClassInfo_z1_0}{csim\-Class\-Info::register\-Field()} .
+
+Class member variable of the types
+
+\begin{itemize}
+\item {\tt double} and {\tt double} $\ast$\item {\tt float} and {\tt float} $\ast$\item {\tt int} and {\tt int} $\ast$\end{itemize}
+
+
+can be made accessible fields.
+
+Each field has the following associated information (see \hyperlink{classcsimFieldInfo}{csim\-Field\-Info} )\begin{itemize}
+\item access : \hyperlink{csimclass_8h_a7}{READWRITE} or \hyperlink{csimclass_8h_a6}{READONLY}\item units\item lower and upper bound\item size : the number of elements if the field is of type {\tt float} $\ast$, {\tt double} $\ast$, or {\tt int} $\ast$\end{itemize}
+\hypertarget{fields_reggen}{}\subsubsection{reggen}\label{fields_reggen}
+It woul be a tedious work to code all the \hyperlink{classcsimClassInfoDB_a2}{csim\-Class\-Info\-DB::register\-Csim\-Class()} and \hyperlink{classcsimClassInfo_z1_0}{csim\-Class\-Info::register\-Field()} function calls by hand. So we decided to generate it automatically from the source code. We use a tool named {\tt reggen} (a quick and dirty hack based on doxygen) to gather the infomation from the source code and its doxygen style documentation. {\tt reggen} writes all relevant function calls to register fields an classes to {\tt registerclass.i} \hypertarget{fields_def}{}\paragraph{Default behaviour of $\backslash$c reggen}\label{fields_def}
+\begin{itemize}
+\item {\tt public} class member variables are registered as \hyperlink{csimclass_8h_a7}{READWRITE} fields\end{itemize}
+
+
+\begin{itemize}
+\item {\tt protected} class member variables are registered as \hyperlink{csimclass_8h_a6}{READONLY}\end{itemize}
+
+
+\begin{itemize}
+\item {\tt private} class member variables are not registered.\end{itemize}
+
+
+\begin{itemize}
+\item no units are assumed (i.e. a dimensionless field)\end{itemize}
+
+
+\begin{itemize}
+\item lower and upper bound are set to -Inf and +Inf respectively\end{itemize}
+
+
+\begin{itemize}
+\item an warning is issued if no size information is given for arrays\end{itemize}
+
+
+\begin{itemize}
+\item the brief {\tt doxygen} comment is used as descriptio of the field\end{itemize}
+
+
+\begin{itemize}
+\item the brief {\tt doxygen} comment of a class is used as its description\end{itemize}
+\hypertarget{fields_spec}{}\paragraph{Specifying information for use by reggen}\label{fields_spec}
+If you want to register a class you just put the macro {\tt \hyperlink{csimclass_8h_a8}{DO\_\-REGISTERING}} somewhere in the class definition.
+
+For each of the member variables where you want to change the default behaviour of {\tt reggen} you have to put a {\tt doxygen} brief comment where you specify the relevant information.\hypertarget{fields_e1}{}\subparagraph{Example 1}\label{fields_e1}
+Make the float variable {\tt S} a read-writable field with units Volt and a lower and upper bound of -1 and +1 respectively: 
+
+\footnotesize\begin{verbatim}  //! A voltage scale factor [readwrite; units=Volt; range=(-1,1);]
+  float S;
+\end{verbatim}
+\normalsize
+\hypertarget{fields_e2}{}\subparagraph{Example 2}\label{fields_e2}
+Make the double variable {\tt $\ast$A} a read-only field with 20 elements, units Ohm, and a lower and upper bound of -100 and +100 respectively: 
+
+\footnotesize\begin{verbatim}  //! A voltage scale factor [readonly; size=20; units=Ohm; range=(-100,100);]
+  double *A;
+\end{verbatim}
+\normalsize
+\hypertarget{fields_src}{}\paragraph{Source code of reggen}\label{fields_src}
+\begin{itemize}
+\item Currently reggen is maintained in {\tt lsm/develop/reggen} .\item The relevant source file is {\tt lsm/develop/reggen/src/defgen}.cpp .\item The binaries are {\tt lsm/develop/reggen/bin/reggen} for Linux and {\tt lsm/develop/reggen/bin/reggen}.exe for windows.\item To compile reggen under Linux type\end{itemize}
+
+
+
+
+\footnotesize\begin{verbatim}  cd lsm/develop/reggen; ./configure; make
+\end{verbatim}
+\normalsize
+
+
+\begin{itemize}
+\item To compile reggen under Windows XP with MS Visual C++ type\end{itemize}
+
+
+
+
+\footnotesize\begin{verbatim}  cd lsm/develop/reggen; make.bat msvc
+\end{verbatim}
+\normalsize
+ 

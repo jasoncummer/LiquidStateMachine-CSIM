@@ -1,0 +1,58 @@
+#!/usr/bin/perl -w
+eval 'exec /local/bin/perl -S $0 ${1+"$@"}'
+	if 0;
+
+require 'getopts.pl';
+
+sub usage {
+    $program = $0;
+    $program =~ s+^.*/++;
+    print STDERR <<_EOF_;
+
+usage: $program [-sp bibstylepath] class<CLASS>.tex
+         -p path to file
+_EOF_
+    exit(1);
+}
+
+# $command_line = join(' ', $0, @ARGV);
+
+&Getopts("p:") || &usage;
+
+&usage if (($#ARGV < 0) || ($#ARGV > 1));
+
+if ($ARGV[0] =~ m/class[\S]+\.tex$/) {
+    $texfile = $ARGV[0];
+    $texfile =~ s/\.tex$//;
+    $descfile = $ARGV[0];
+    $descfile =~ s/class/desc-/  ;
+} else {
+    print STDERR "\nInappropriate file name $ARGV[0]\n\n";
+    &usage;
+}
+
+open(TEXFILE, "<$texfile.tex") || die "error opening $texfile.tex: $!\n";
+open(DESCFILE, ">$descfile") || die "error opening $descfile: $!\n";
+$dooutput = 0;
+loop0: while (<TEXFILE>) {
+    s/ Class Reference// ;
+    s/\\section/\\subsection/ ;
+    print DESCFILE;
+    if ( m/^}$/ ) { last; }
+}
+
+loop1: while (<TEXFILE>) {
+    if ( m/Detailed Description/ ) {
+        $dooutput = 1;
+	next loop1;
+    }
+    if ( m/\\subsection/ ) {
+        last;
+    }
+    if ( $dooutput == 1 ) {
+	print DESCFILE;
+    }
+}
+close(TEXFILE);
+close(DESCFILE);
+

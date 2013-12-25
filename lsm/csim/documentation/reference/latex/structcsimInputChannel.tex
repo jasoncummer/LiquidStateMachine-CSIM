@@ -1,0 +1,39 @@
+\hypertarget{structcsimInputChannel}{
+\section{csim\-Input\-Channel Struct Reference}
+\label{structcsimInputChannel}\index{csimInputChannel@{csimInputChannel}}
+}
+{\tt \#include $<$csiminputclass.h$>$}
+
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{structcsimInputChannel_o0}{
+int \hyperlink{structcsimInputChannel_o0}{length}}
+\label{structcsimInputChannel_o0}
+
+\begin{CompactList}\small\item\em Length of data array. \item\end{CompactList}\item 
+\hypertarget{structcsimInputChannel_o1}{
+int \hyperlink{structcsimInputChannel_o1}{next}}
+\label{structcsimInputChannel_o1}
+
+\begin{CompactList}\small\item\em Index to the next data point (relevant only for spiking channels). \item\end{CompactList}\item 
+\hypertarget{structcsimInputChannel_o2}{
+double \hyperlink{structcsimInputChannel_o2}{dt}}
+\label{structcsimInputChannel_o2}
+
+\begin{CompactList}\small\item\em Discretization of the signal. dt=-1 for spiking channels. \item\end{CompactList}\item 
+\hypertarget{structcsimInputChannel_o3}{
+double \hyperlink{structcsimInputChannel_o3}{last\-Spike\-Time}}
+\label{structcsimInputChannel_o3}
+
+\begin{CompactList}\small\item\em Needed only for spiking input channels. \item\end{CompactList}\item 
+\hypertarget{structcsimInputChannel_o4}{
+double $\ast$ \hyperlink{structcsimInputChannel_o4}{data}}
+\label{structcsimInputChannel_o4}
+
+\begin{CompactList}\small\item\em Pointer to the data. \item\end{CompactList}\item 
+\hypertarget{structcsimInputChannel_o5}{
+\hyperlink{globaldefinitions_8h_a6}{uint32} $\ast$ \hyperlink{structcsimInputChannel_o5}{idx}}
+\label{structcsimInputChannel_o5}
+
+\begin{CompactList}\small\item\em Arry of idx to connect channel to. \item\end{CompactList}\end{CompactItemize}

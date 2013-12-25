@@ -1,0 +1,132 @@
+\form#0:$g(t,V_m)$
+\form#1:\[ g(t,V_m) = \bar{g} \prod_{i} P_i(t,V_m) \]
+\form#2:$\bar{g}$
+\form#3:$P_i(t,V_m) \in [0,1]$
+\form#4:$i$
+\form#5:$t=0$
+\form#6:$\Delta t$
+\form#7:$tau_1 = 0.03$
+\form#8:$alpha(-DT/\tau_1)$
+\form#9:$tau_1 = 0.003$
+\form#10:$alpha(-DT/\tau_2)$
+\form#11:$V_m$
+\form#12:$V_{init}$
+\form#13:$E_m$
+\form#14:$V_{resting}$
+\form#15:$E_m = R_m \cdot \left( V_{resting} G_{tot} - I_{ch} \right) $
+\form#16:$G_{tot} = \frac{1}{R_m} + \sum_{c=1}^{N_c} g_\infty(V_{resting})$
+\form#17:$I_{ch} = \sum_{c=1}^{N_c} g_\infty(V_{resting}) E_{rev}^c $
+\form#18:\[ C_m \frac{V_m}{dt} = -\frac{V_m-E_m}{R_m} - \sum_{c=1}^{N_c} g_c(t) ( V_m - E_{rev}^c ) + \sum_{s=1}^{N_s} I_s(t) + \sum_{s=1}^{G_s} g_s(t)(V_m-E_{rev}^{(s)}) + I_{inject} \]
+\form#19:$C_m$
+\form#20:$R_m$
+\form#21:$N_c$
+\form#22:$g_c(t)$
+\form#23:$c$
+\form#24:$E_{rev}^c$
+\form#25:$N_s$
+\form#26:$I_s(t)$
+\form#27:$s$
+\form#28:$G_s$
+\form#29:$g_s(t)$
+\form#30:$E_{rev}^{(s)}$
+\form#31:$I_{inject}$
+\form#32:$V_\mathit{resting}$
+\form#33:$V_{tresh}$
+\form#34:$T_{refract}$
+\form#35:$V_{reset}$
+\form#36:$V_{thresh}$
+\form#37:$Vm$
+\form#38:\[ C_m \frac{V_m}{dt} = -\frac{V_m-E_m}{R_m} - \sum_{c=1}^{N_c} g_c(t) ( V_m - E_{rev}^c ) + \sum_{s=1}^{N_s} I_s(t) + \sum_{s=1}^{G_s} g_s(t)(V_m-E_{rev}^{(s)}) + g_{noise}^{exz}(t)(V_m -E_{noise}^{exc}) + g_{noise}^{inh}(t)(V_m -E_{noise}^{inh}) + I_{inject} \]
+\form#39:$g_{noise}^{exz}(t)$
+\form#40:$E_{noise}^{exc}$
+\form#41:$g_{noise}^{inh}(t)$
+\form#42:$E_{noise}^{inh}$
+\form#43:$V$
+\form#44:$C_1(V), C_2(V)$
+\form#45:$p(0,Conc)=p_\infty(Conc)$
+\form#46:$\tau(Conc)$
+\form#47:$p_\infty(Conc)$
+\form#48:$C_1(V)=\exp(-\Delta t / \tau(V))$
+\form#49:$C_2(V)=(1-C_1(V))\cdot p_\infty(V)$
+\form#50:$round(x_i / eps_i)$
+\form#51:$x_i' = round (x_i / \epsilon_i)$
+\form#52:$g(t)$
+\form#53:$W\cdot r \cdot u$
+\form#54:$\tau$
+\form#55:$u$
+\form#56:$r$
+\form#57:$x(t)$
+\form#58:$exp(-DT/\tau_1)$
+\form#59:$p(0,V)=p_\infty(V)$
+\form#60:$p(V)$
+\form#61:$\tau(V)$
+\form#62:\[ \tau_m \frac{d V_m}{dt} = -(V_m-V_{resting}) + R_m \cdot (I_{syn}(t)+I_{inject}+I_{noise}) \]
+\form#63:$\tau_m=C_m\cdot R_m$
+\form#64:$I_{syn}(t)$
+\form#65:$I_{noise}$
+\form#66:$E_{rev}$
+\form#67:$t \rightarrow \infty$
+\form#68:$P(t,V) = p(t,V)^k$
+\form#69:$C_1(V_m)\infty$
+\form#70:$C_2(V_m)$
+\form#71:$w_0 + sum_i x_i \cdot w_i >= 0$
+\form#72:$w_i0 + sum_j x_j \cdot w_ij$
+\form#73:$w_0 + x_i \cdot w_i$
+\form#74:$w_0 + \sum_0^n x_i \cdot w_i$
+\form#75:$x_i \cdot a_i + b_i$
+\form#76:$(x_i - m_i) / s_i$
+\form#77:$x_i' = (x_i - m_i) / std_i$
+\form#78:\[ C_m \frac{V_m}{dt} = -\frac{V_m-E_m}{R_m} - \sum_{c=1}^{N_c} g_c(t) ( V_m - E_{rev}^c ) + \sum_{s=1}^{N_s} I_s(t) + I_{inject} \]
+\form#79:$E_{rev}^c(t)$
+\form#80:$[Ca]$
+\form#81:$C_1([Ca]), C_2([Ca])$
+\form#82:$\tau(Ca)$
+\form#83:$\alpha(V) \in [0,1]$
+\form#84:$\beta(V) \in [0,1]$
+\form#85:$p$
+\form#86:$p_i$
+\form#87:$p_{failure} = \prod_i (1-p_i)$
+\form#88:$p=1-p_{failure}$
+\form#89:$\exp(-t/\tau)$
+\form#90:$5 \tau$
+\form#91:$g(t)=W\cdot\exp(-t/\tau)$
+\form#92:$t$
+\form#93:$W$
+\form#94:$x(t)=W\cdot\exp(-t/\tau)$
+\form#95:$Delta = t_{post}-t_{pre}$
+\form#96:$t_{pre}$
+\form#97:$t_{post}$
+\form#98:$dw = Apos * exp(-Delta/taupos)$
+\form#99:$Delta > 0$
+\form#100:$dw = Aneg * exp(-Delta/tauneg)$
+\form#101:$Delta < 0$
+\form#102:$useFroemkeDanSTDP=0$
+\form#103:$mupos=muneg=0$
+\form#104:$dw = (Wex-W)^{mupos} * Apos * exp(-Delta/taupos)$
+\form#105:$dw = W^{mupos} * Aneg * exp(Delta/tauneg)$
+\form#106:$useFroemkeDanSTDP=1$
+\form#107:$tauspost$
+\form#108:$tauspre$
+\form#109:$|Delta| = |t_{post}-t_{pre}| < STDPgap$
+\form#110:$k$
+\form#111:$p(t,V)$
+\form#112:\[ \frac{\delta p(t,V)}{\delta t} = \alpha(V)(1-p(t,V)) - \beta(V)p(t,V) \]
+\form#113:$\alpha(V)$
+\form#114:$\beta(V)$
+\form#115:\[ \tau(V)\frac{\delta p(t,V)}{\delta t} = -p(t,V) + p_\infty(V) \]
+\form#116:$p_\infty(V)$
+\form#117:$beta(V)$
+\form#118:\[ \tau(V) = \frac{1}{\alpha(V)+\beta(V)} \text{ and } p_\infty(V) = \frac{\alpha(V)}{(\alpha(V)+\beta(V))} \]
+\form#119:\[ \alpha(V) = \frac{p_\infty(V)}{\tau(V)} \text{ and } \beta(v) = \frac{1-p_\infty(V)}{\tau(V)} \]
+\form#120:$C_1(V)$
+\form#121:$C_2(V)$
+\form#122:$P(t,V)$
+\form#123:$\tau_{nmda}$
+\form#124:$\exp(-t/\tau_{nmda})$
+\form#125:$I_syn$
+\form#126:$tau_{channel}$
+\form#127:$g_{channel} \cdot (E_{channel}-V_m)$
+\form#128:\[C_1(V)=\exp(-\Delta t / \tau(V))\]
+\form#129:\[C_2(V)=(1-C_1(V))\cdot p_\infty(V)\]
+\form#130:\[C_1(V)= \frac{1 - \Delta t/2*(\alpha(v) + \beta(v))}{1 + \Delta t/2*(\alpha(v) + \beta(v))}\]
+\form#131:\[C_2(V)= \frac{\Delta t*\alpha(v)}{1+\Delta t/2*(\alpha(v) + \beta(v))}\]

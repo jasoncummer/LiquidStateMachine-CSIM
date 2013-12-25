@@ -1,0 +1,303 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>CbStOuNeuron</TITLE>
+<META NAME="description" CONTENT="CbStOuNeuron">
+<META NAME="keywords" CONTENT="usermanual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="usermanual.css">
+
+<LINK REL="next" HREF="node56.html">
+<LINK REL="previous" HREF="node54.html">
+<LINK REL="up" HREF="node35.html">
+<LINK REL="next" HREF="node56.html">
+</HEAD>
+
+<BODY  bgcolor="#ffffff">
+
+<DIV CLASS="navigation"><table border=0 cellspacing=0 callpadding=0 width=100% class="csim_top_navigation">
+<tr valign=middle class="csim_top_navigation">
+<td valign=middle align=left  class="csim_top_navigation"><i><b>&nbsp;CSIM User Manual</b></i></td><td valign=middle align=right class="csim_top_navigation">&nbsp;
+<A NAME="tex2html1011"
+  HREF="node54.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="previous" SRC="prev.gif"></A>&nbsp;
+<A NAME="tex2html1019"
+  HREF="node1.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="contents" SRC="contents.gif"></A>&nbsp;
+<A NAME="tex2html1021"
+  HREF="node56.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="next" SRC="next.gif"></A></dt></tr></table>
+</DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links--><br>
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html1023"
+  HREF="node55.html#SECTION000820100000000000000">The Model</A>
+<LI><A NAME="tex2html1024"
+  HREF="node55.html#SECTION000820200000000000000">Spiking and reseting the membrane voltage</A>
+<LI><A NAME="tex2html1025"
+  HREF="node55.html#SECTION000820300000000000000">Implementation</A>
+<LI><A NAME="tex2html1026"
+  HREF="node55.html#SECTION000820400000000000000">Read/writable Fields</A>
+<LI><A NAME="tex2html1027"
+  HREF="node55.html#SECTION000820500000000000000">Readonly Fields</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H2><A NAME="SECTION000820000000000000000"></A>
+<A NAME="classCbStOuNeuron"></A>
+
+CbStOuNeuron
+</H2><A NAME="8847"></A>
+
+<H3><A NAME="SECTION000820100000000000000">
+The Model</A>
+</H3>  
+
+<P>
+The membrane voltage <SPAN CLASS="MATH"><I>V</I><SUB><I>m</I></SUB></SPAN> is governed by <BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<!-- MATH
+ \begin{displaymath}
+C_m \frac{V_m}{dt} = -\frac{V_m-E_m}{R_m} - \sum_{c=1}^{N_c} g_c(t) ( V_m - E_{rev}^c ) + \sum_{s=1}^{N_s} I_s(t) + \sum_{s=1}^{G_s} g_s(t)(V_m-E_{rev}^{(s)}) + g_{noise}^{exz}(t)(V_m -E_{noise}^{exc}) + g_{noise}^{inh}(t)(V_m -E_{noise}^{inh}) + I_{inject}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="833" HEIGHT="51" BORDER="0"
+ SRC="img17.gif"
+ ALT="\begin{displaymath}C_m \frac{V_m}{dt} = -\frac{V_m-E_m}{R_m} - \sum_{c=1}^{N_c} ...
+...{exc}) + g_{noise}^{inh}(t)(V_m -E_{noise}^{inh}) + I_{inject} \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+with the following meanings of symbols
+<UL>
+<LI><SPAN CLASS="MATH"><I>C</I><SUB><I>m</I></SUB></SPAN> membrane capacity (Farad)
+</LI>
+<LI><SPAN CLASS="MATH"><I>E</I><SUB><I>m</I></SUB></SPAN> reversal potential of the leak current (Volts)
+</LI>
+<LI><SPAN CLASS="MATH"><I>R</I><SUB><I>m</I></SUB></SPAN> membrane resistance (Ohm)
+</LI>
+<LI><SPAN CLASS="MATH"><I>N</I><SUB><I>c</I></SUB></SPAN> total number of channels (active + synaptic)
+</LI>
+<LI><SPAN CLASS="MATH"><I>g</I><SUB><I>c</I></SUB>(<I>t</I>)</SPAN> current conductance of channel <SPAN CLASS="MATH"><I>c</I></SPAN> (Siemens)
+</LI>
+<LI><SPAN CLASS="MATH"><I>E</I><SUB><I>rev</I></SUB><SUP><I>c</I></SUP></SPAN> reversal potential of channel <SPAN CLASS="MATH"><I>c</I></SPAN> (Volts)
+</LI>
+<LI><SPAN CLASS="MATH"><I>N</I><SUB><I>s</I></SUB></SPAN> total number of current supplying synapses
+</LI>
+<LI><SPAN CLASS="MATH"><I>I</I><SUB><I>s</I></SUB>(<I>t</I>)</SPAN> current supplied by synapse <SPAN CLASS="MATH"><I>s</I></SPAN> (Ampere)
+</LI>
+<LI><SPAN CLASS="MATH"><I>G</I><SUB><I>s</I></SUB></SPAN> total number of coductance based synapses
+</LI>
+<LI><SPAN CLASS="MATH"><I>g</I><SUB><I>s</I></SUB>(<I>t</I>)</SPAN> coductance supplied by synapse <SPAN CLASS="MATH"><I>s</I></SPAN> (Siemens)
+</LI>
+<LI><SPAN CLASS="MATH"><I>E</I><SUB><I>rev</I></SUB><SUP>(<I>s</I>)</SUP></SPAN> reversal potential of synapse <SPAN CLASS="MATH"><I>s</I></SPAN> (Volts)
+</LI>
+<LI><!-- MATH
+ $g_{noise}^{exz}(t)$
+ -->
+<SPAN CLASS="MATH"><I>g</I><SUB><I>noise</I></SUB><SUP><I>exz</I></SUP>(<I>t</I>)</SPAN> excitatory coductance given Ornstein Uhlenbeck process noise
+</LI>
+<LI><!-- MATH
+ $E_{noise}^{exc}$
+ -->
+<SPAN CLASS="MATH"><I>E</I><SUB><I>noise</I></SUB><SUP><I>exc</I></SUP></SPAN> reversal potential for excitatory Ornstein Uhlenbeck process noise
+</LI>
+<LI><!-- MATH
+ $g_{noise}^{inh}(t)$
+ -->
+<SPAN CLASS="MATH"><I>g</I><SUB><I>noise</I></SUB><SUP><I>inh</I></SUP>(<I>t</I>)</SPAN> inhibitory coductance given Ornstein Uhlenbeck process noise
+</LI>
+<LI><!-- MATH
+ $E_{noise}^{inh}$
+ -->
+<SPAN CLASS="MATH"><I>E</I><SUB><I>noise</I></SUB><SUP><I>inh</I></SUP></SPAN> reversal potential for inhibitory Ornstein Uhlenbeck process noise
+</LI>
+<LI><SPAN CLASS="MATH"><I>I</I><SUB><I>inject</I></SUB></SPAN> injected current (Ampere)
+</LI>
+</UL>
+
+<P>
+At time <SPAN CLASS="MATH"><I>t</I>=0</SPAN> <SPAN CLASS="MATH"><I>V</I><SUB><I>m</I></SUB></SPAN> ist set to <SPAN CLASS="MATH"><I>V</I><SUB><I>init</I></SUB></SPAN> .
+
+<P>
+The value of <SPAN CLASS="MATH"><I>E</I><SUB><I>m</I></SUB></SPAN> is calculated to compensate for ionic currents such that <SPAN CLASS="MATH"><I>V</I><SUB><I>m</I></SUB></SPAN> actually has a resting value of <!-- MATH
+ $V_\mathit{resting}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="49" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img16.gif"
+ ALT="$V_\mathit{resting}$"></SPAN> .
+
+<P>
+
+<H3><A NAME="SECTION000820200000000000000">
+Spiking and reseting the membrane voltage</A>
+</H3>  
+
+<P>
+If the membrane voltage <SPAN CLASS="MATH"><I>V</I><SUB><I>m</I></SUB></SPAN> exceeds the threshold <SPAN CLASS="MATH"><I>V</I><SUB><I>tresh</I></SUB></SPAN> the <A HREF="node53.html#classCbNeuronSt">CbNeuronSt</A> sends a spike to all its outgoing synapses and the <B>membrane</B> <B>voltage</B> <B>follows</B> a <B>predefined</B> <B>spike</B> <B>templage</B> during the absolute refractory period of length <SPAN CLASS="MATH"><I>T</I><SUB><I>refract</I></SUB></SPAN> <B>if</B> <B>doReset</B> <B>=</B> <B>1</B>.
+
+<P>
+If the flag <TT>doReset=0</TT> the spike template is not applied and the above equation is also applied during the absolute refractory period but the event of threshold crossing is transmitted as a spike to outgoing synapses. This is usfull if one includes channels which produce a <EM>real</EM> action potential (see <A HREF="node72.html#classHH__K__Channel">HH_K_Channel</A> and <A HREF="node73.html#classHH__Na__Channel">HH_Na_Channel</A>) but one still just wants to communicate the spikes as events in time.
+
+<P>
+
+<H3><A NAME="SECTION000820300000000000000">
+Implementation</A>
+</H3>  
+
+<P>
+The exponential Euler method is used for numerical integration.
+
+<P>
+
+<H3><A NAME="SECTION000820400000000000000">
+Read/writable Fields</A>
+</H3>
+<DL>
+<DT><STRONG><TT>ge</TT> (<SPAN CLASS="MATH"><I>S</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">exc and inh conductances (noise)</SMALL>
+</DD>
+<DT><STRONG><TT>gi</TT> (<SPAN CLASS="MATH"><I>S</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">exc and inh conductances (noise)</SMALL>
+</DD>
+<DT><STRONG><TT>ge0</TT> (<SPAN CLASS="MATH"><I>S</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">exc and inh mean conductances (noise)</SMALL>
+</DD>
+<DT><STRONG><TT>gi0</TT> (<SPAN CLASS="MATH"><I>S</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">exc and inh mean conductances (noise)</SMALL>
+</DD>
+<DT><STRONG><TT>tau_e</TT> (<SPAN CLASS="MATH"><I>S</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">time constants and std for exc and inh conductances (noise)</SMALL>
+</DD>
+<DT><STRONG><TT>tau_i</TT> (<SPAN CLASS="MATH"><I>S</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">time constants and std for exc and inh conductances (noise)</SMALL>
+</DD>
+<DT><STRONG><TT>sig_e</TT> (<SPAN CLASS="MATH"><I>S</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">time constants and std for exc and inh conductances (noise)</SMALL>
+</DD>
+<DT><STRONG><TT>sig_i</TT> (<SPAN CLASS="MATH"><I>S</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">time constants and std for exc and inh conductances (noise)</SMALL>
+</DD>
+<DT><STRONG><TT>Ee</TT> (<SPAN CLASS="MATH"><I>V</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">Reversal potential for exc and inh currents (noise)</SMALL>
+</DD>
+<DT><STRONG><TT>Ei</TT> (<SPAN CLASS="MATH"><I>V</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">Reversal potential for exc and inh currents (noise)</SMALL>
+</DD>
+<DT><STRONG><TT>STempHeight</TT> (<SPAN CLASS="MATH"><I>Volt</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">Height</SMALL>
+</DD>
+<DT><STRONG><TT>Vthresh</TT> (<SPAN CLASS="MATH"><I>V</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">If <SPAN CLASS="MATH"><I>V</I><SUB><I>m</I></SUB></SPAN> exceeds <SPAN CLASS="MATH"><I>V</I><SUB><I>thresh</I></SUB></SPAN> a spike is emmited.</SMALL>
+</DD>
+<DT><STRONG><TT>Vreset</TT> (<SPAN CLASS="MATH"><I>V</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">The voltage to reset <SPAN CLASS="MATH"><I>V</I><SUB><I>m</I></SUB></SPAN> to after a spike.</SMALL>
+</DD>
+<DT><STRONG><TT>doReset</TT> (<SPAN CLASS="MATH"><I>flag</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">Flag which determines wheter <SPAN CLASS="MATH"><I>V</I><SUB><I>m</I></SUB></SPAN> should be reseted after a spike</SMALL>
+</DD>
+<DT><STRONG><TT>Trefract</TT> (<SPAN CLASS="MATH"><I>sec</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">Length of the absolute refractory period.</SMALL>
+</DD>
+<DT><STRONG><TT>nummethod</TT> (<SPAN CLASS="MATH"><I>flag</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">Numerical method for the solution of the differential equation: Exp. Euler = 0, Crank-Nicolson = 1</SMALL>
+</DD>
+<DT><STRONG><TT>type</TT> :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">Type (e.g. inhibitory or excitatory) of the neuron</SMALL>
+</DD>
+<DT><STRONG><TT>Cm</TT> (<SPAN CLASS="MATH"><I>F</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">The membrane capacity <SPAN CLASS="MATH"><I>C</I><SUB><I>m</I></SUB></SPAN></SMALL>
+</DD>
+<DT><STRONG><TT>Rm</TT> (<SPAN CLASS="MATH"><I>Ohm</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">The membrane resistance <SPAN CLASS="MATH"><I>R</I><SUB><I>m</I></SUB></SPAN></SMALL>
+</DD>
+<DT><STRONG><TT>Vresting</TT> (<SPAN CLASS="MATH"><I>V</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">The resting membrane voltage.</SMALL>
+</DD>
+<DT><STRONG><TT>Vinit</TT> (<SPAN CLASS="MATH"><I>V</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">Initial condition for<SPAN CLASS="MATH"><I>V</I><SUB><I>m</I></SUB></SPAN> at time <SPAN CLASS="MATH"><I>t</I>=0</SPAN>.</SMALL>
+</DD>
+<DT><STRONG><TT>VmScale</TT> (<SPAN CLASS="MATH"><I>V</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">Defines the difference between Vresting and the Vthresh for the calculation of the iongate tables and the ionbuffer Erev.</SMALL>
+</DD>
+<DT><STRONG><TT>Inoise</TT> (<SPAN CLASS="MATH"><I>W</I><SUP>2</SUP></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">Variance of the noise to be added each integration time constant.</SMALL>
+</DD>
+<DT><STRONG><TT>Iinject</TT> (<SPAN CLASS="MATH"><I>A</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">Constant current to be injected into the CB neuron.</SMALL>
+</DD>
+</DL>
+<H3><A NAME="SECTION000820500000000000000">
+Readonly Fields</A>
+</H3>
+<DL>
+<DT><STRONG><TT>Em</TT> (<SPAN CLASS="MATH"><I>V</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">The reversal potential of the leakage channel</SMALL>
+</DD>
+<DT><STRONG><TT>Vm</TT> (<SPAN CLASS="MATH"><I>V</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">The membrane voltage</SMALL>
+</DD>
+<DT><STRONG><TT>OuInoise</TT> :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">noise input current</SMALL>
+</DD>
+<DT><STRONG><TT>OuGnoise</TT> :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">noise input conductance</SMALL>
+</DD>
+<DT><STRONG><TT>Isyn</TT> :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">synaptic input current</SMALL>
+</DD>
+<DT><STRONG><TT>Gsyn</TT> :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">synaptic input conductance</SMALL>
+</DD>
+<DT><STRONG><TT>nIncoming</TT> :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">Number of incoming synapses</SMALL>
+</DD>
+<DT><STRONG><TT>nOutgoing</TT> :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">Number of outgoing synapses</SMALL>
+</DD>
+<DT><STRONG><TT>nBuffers</TT> :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">Number of ion buffers</SMALL>
+</DD>
+<DT><STRONG><TT>nChannels</TT> :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">Number of channels</SMALL>
+</DD>
+</DL>
+
+<P>
+
+<DIV CLASS="navigation"><table border=0 cellspacing=0 callpadding=0 width=100% class="csim_bot_navigation">
+<tr valign=middle class="csim_bot_navigation">
+<td valign=middle align=left width=1% class="csim_bot_navigation">
+<A NAME="tex2html1011"
+  HREF="node54.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="previous" SRC="prev.gif"></A></td><td valign=middle align=left class="csim_bot_navigation">&nbsp;<A NAME="tex2html1012"
+  HREF="node54.html">CbNeuron</A></td>
+<td align=right valign=middle class="csim_bot_navigation"><A NAME="tex2html1022"
+  HREF="node56.html">CountSpikeFilter</A>&nbsp;
+<A NAME="tex2html1021"
+  HREF="node56.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="next" SRC="next.gif"></A></td>
+</tr></table>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

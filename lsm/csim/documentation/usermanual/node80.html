@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>LifBurstNeuron</TITLE>
+<META NAME="description" CONTENT="LifBurstNeuron">
+<META NAME="keywords" CONTENT="usermanual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="usermanual.css">
+
+<LINK REL="next" HREF="node81.html">
+<LINK REL="previous" HREF="node79.html">
+<LINK REL="up" HREF="node35.html">
+<LINK REL="next" HREF="node81.html">
+</HEAD>
+
+<BODY  bgcolor="#ffffff">
+
+<DIV CLASS="navigation"><table border=0 cellspacing=0 callpadding=0 width=100% class="csim_top_navigation">
+<tr valign=middle class="csim_top_navigation">
+<td valign=middle align=left  class="csim_top_navigation"><i><b>&nbsp;CSIM User Manual</b></i></td><td valign=middle align=right class="csim_top_navigation">&nbsp;
+<A NAME="tex2html1367"
+  HREF="node79.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="previous" SRC="prev.gif"></A>&nbsp;
+<A NAME="tex2html1375"
+  HREF="node1.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="contents" SRC="contents.gif"></A>&nbsp;
+<A NAME="tex2html1377"
+  HREF="node81.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="next" SRC="next.gif"></A></dt></tr></table>
+</DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links--><br>
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html1379"
+  HREF="node80.html#SECTION000845100000000000000">Model</A>
+<LI><A NAME="tex2html1380"
+  HREF="node80.html#SECTION000845200000000000000">Implementation</A>
+<LI><A NAME="tex2html1381"
+  HREF="node80.html#SECTION000845300000000000000">Read/writable Fields</A>
+<LI><A NAME="tex2html1382"
+  HREF="node80.html#SECTION000845400000000000000">Readonly Fields</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H2><A NAME="SECTION000845000000000000000"></A>
+<A NAME="classLifBurstNeuron"></A>
+
+LifBurstNeuron
+</H2><A NAME="9952"></A>
+
+that produces bursts dependent on two additional variables analog to the implementation of dynamical synapses: see Kaske&amp;Bertschinger &#34;Traveling wave patterns...&#34;  
+<H3><A NAME="SECTION000845100000000000000">
+Model</A>
+</H3>  
+
+<P>
+A nonstandard leaky-integrate-and-fire neuron model is implemented where the membrane potential <SPAN CLASS="MATH"><I>V</I><SUB><I>m</I></SUB></SPAN> of a neuron is given by <BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<!-- MATH
+ \begin{displaymath}
+\tau_m \frac{d V_m}{dt} = -(V_m-V_{resting}) + R_m \cdot (I_{syn}(t)+I_{inject}+I_{noise})
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="398" HEIGHT="37" BORDER="0"
+ SRC="img20.gif"
+ ALT="\begin{displaymath}\tau_m \frac{d V_m}{dt} = -(V_m-V_{resting}) + R_m \cdot (I_{syn}(t)+I_{inject}+I_{noise}) \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+where <!-- MATH
+ $\tau_m=C_m\cdot R_m$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="98" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.gif"
+ ALT="$\tau_m=C_m\cdot R_m$"></SPAN> is the membrane time constant, <SPAN CLASS="MATH"><I>R</I><SUB><I>m</I></SUB></SPAN> is the membrane resistance, <SPAN CLASS="MATH"><I>I</I><SUB><I>syn</I></SUB>(<I>t</I>)</SPAN> is the current supplied by the synapses, <SPAN CLASS="MATH"><I>I</I><SUB><I>inject</I></SUB></SPAN> is a non-specific background current and <SPAN CLASS="MATH"><I>I</I><SUB><I>noise</I></SUB></SPAN> is a Gaussion random variable with zero mean and a given variance noise. Vreset is modulated by u and r to produce spiking dependent on the previous spike pattern At time <SPAN CLASS="MATH"><I>t</I>=0</SPAN> <SPAN CLASS="MATH"><I>V</I><SUB><I>m</I></SUB></SPAN> ist set to<SPAN CLASS="MATH"><I>V</I><SUB><I>init</I></SUB></SPAN> . If <SPAN CLASS="MATH"><I>V</I><SUB><I>m</I></SUB></SPAN> exceeds the threshold voltage<SPAN CLASS="MATH"><I>V</I><SUB><I>thresh</I></SUB></SPAN> it is reset to <SPAN CLASS="MATH"><I>V</I><SUB><I>reset</I></SUB></SPAN> and hold there for the length <SPAN CLASS="MATH"><I>T</I><SUB><I>refract</I></SUB></SPAN> of the absolute refractory period.
+
+<P>
+
+<H3><A NAME="SECTION000845200000000000000">
+Implementation</A>
+</H3>  
+
+<P>
+The exponential Euler method is used for numerical integration.
+
+<P>
+
+<H3><A NAME="SECTION000845300000000000000">
+Read/writable Fields</A>
+</H3>
+<DL>
+<DT><STRONG><TT>Cm</TT> (<SPAN CLASS="MATH"><I>F</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">The membrane capacity <SPAN CLASS="MATH"><I>C</I><SUB><I>m</I></SUB></SPAN></SMALL>
+</DD>
+<DT><STRONG><TT>Rm</TT> (<SPAN CLASS="MATH"><I>Ohm</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">The membrane resistance <SPAN CLASS="MATH"><I>R</I><SUB><I>m</I></SUB></SPAN></SMALL>
+</DD>
+<DT><STRONG><TT>Vthresh</TT> (<SPAN CLASS="MATH"><I>V</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">If <SPAN CLASS="MATH"><I>V</I><SUB><I>m</I></SUB></SPAN> exceeds <SPAN CLASS="MATH"><I>V</I><SUB><I>thresh</I></SUB></SPAN> a spike is emmited.</SMALL>
+</DD>
+<DT><STRONG><TT>Vresting</TT> (<SPAN CLASS="MATH"><I>V</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">The resting membrane voltage.</SMALL>
+</DD>
+<DT><STRONG><TT>Vreset</TT> (<SPAN CLASS="MATH"><I>V</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">The default voltage to reset <SPAN CLASS="MATH"><I>V</I><SUB><I>m</I></SUB></SPAN> to after a spike.</SMALL>
+</DD>
+<DT><STRONG><TT>VBthresh</TT> (<SPAN CLASS="MATH"><I>V</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">spike pattern dependent treshold <SPAN CLASS="MATH"><I>V</I><SUB><I>m</I></SUB></SPAN> to after a spike.</SMALL>
+</DD>
+<DT><STRONG><TT>Vinit</TT> (<SPAN CLASS="MATH"><I>V</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">The initial condition for <SPAN CLASS="MATH"><I>V</I><SUB><I>m</I></SUB></SPAN> at time <SPAN CLASS="MATH"><I>t</I>=0</SPAN>.</SMALL>
+</DD>
+<DT><STRONG><TT>Trefract</TT> (<SPAN CLASS="MATH"><I>sec</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">The length of the absolute refractory period.</SMALL>
+</DD>
+<DT><STRONG><TT>Inoise</TT> (<SPAN CLASS="MATH"><I>A</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">The standard deviation of the noise to be added each integration time constant.</SMALL>
+</DD>
+<DT><STRONG><TT>Iinject</TT> (<SPAN CLASS="MATH"><I>A</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">A constant current to be injected into the LIF neuron.</SMALL>
+</DD>
+<DT><STRONG><TT>uB</TT> :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">internal parameter uB - recovery from spike facilitation with time constant FB</SMALL>
+</DD>
+<DT><STRONG><TT>rB</TT> :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">internal parameter rB - recovery from spike depression with time constant DB</SMALL>
+</DD>
+<DT><STRONG><TT>FB</TT> :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">FB time constant for recovery from facilitation of spike generation.</SMALL>
+</DD>
+<DT><STRONG><TT>DB</TT> :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">DB time constant for recovery from depression of spike generation.</SMALL>
+</DD>
+<DT><STRONG><TT>UB</TT> :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">UB constant for onset of facilitation of spike generation.</SMALL>
+</DD>
+<DT><STRONG><TT>type</TT> :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">Type (e.g. inhibitory or excitatory) of the neuron</SMALL>
+</DD>
+</DL>
+<H3><A NAME="SECTION000845400000000000000">
+Readonly Fields</A>
+</H3>
+<DL>
+<DT><STRONG><TT>Vm</TT> (<SPAN CLASS="MATH"><I>V</I></SPAN>) :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">The membrane voltage <SPAN CLASS="MATH"><I>V</I><SUB><I>m</I></SUB></SPAN></SMALL>
+</DD>
+<DT><STRONG><TT>Isyn</TT> :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">synaptic input current</SMALL>
+</DD>
+<DT><STRONG><TT>nIncoming</TT> :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">Number of incoming synapses</SMALL>
+</DD>
+<DT><STRONG><TT>nOutgoing</TT> :</STRONG></DT>
+<DD><SMALL CLASS="SMALL">Number of outgoing synapses</SMALL>
+</DD>
+</DL>
+
+<P>
+
+<DIV CLASS="navigation"><table border=0 cellspacing=0 callpadding=0 width=100% class="csim_bot_navigation">
+<tr valign=middle class="csim_bot_navigation">
+<td valign=middle align=left width=1% class="csim_bot_navigation">
+<A NAME="tex2html1367"
+  HREF="node79.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="previous" SRC="prev.gif"></A></td><td valign=middle align=left class="csim_bot_navigation">&nbsp;<A NAME="tex2html1368"
+  HREF="node79.html">KChannel_Korngreen02</A></td>
+<td align=right valign=middle class="csim_bot_navigation"><A NAME="tex2html1378"
+  HREF="node81.html">LifNeuron</A>&nbsp;
+<A NAME="tex2html1377"
+  HREF="node81.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="next" SRC="next.gif"></A></td>
+</tr></table>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

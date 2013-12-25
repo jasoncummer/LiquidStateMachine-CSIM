@@ -1,0 +1,92 @@
+\subsection{How the network is simulated}
+
+\csim employs a fixed time step simulation scheme for the
+integration of the differential equations involved (represented by
+objects). Currently all objects use the exponential Euler method with
+the same integration time step (see \sect{sec:gf}).
+
+During each time step a certain method (\texttt{advance}) is called
+for each object part of the simulation. There is a fixed schedule
+which depends a) on the class of the object and b) on the time of
+creation. Here is the order of the classes.
+%
+\begin{enumerate}
+\item Neuron
+\item Synapse
+\item Recorder
+\end{enumerate}
+%
+This means that all objects of classes derived from a generic Neuron
+are advanced first followed by objects of classes derived from a generic
+Synapse and so on.
+
+Note that for example a more detailed neuron model (like the
+\secref{classCbNeuron}{CbNeuron}) has to advance all its child objects
+like ion channels.
+
+After a \texttt{csim('simulate',...)} command returns the network is
+kept in its current state at this time $t$. A further
+\texttt{csim('simulate',...)}  command continues the simulation at
+this time $t$. Use \texttt{csim('reset');} to reset the simulation to
+time $t=0$.
+
+Note that recorded traces you get by the appropriate
+\secref{cmd:get}{get command} always start at time $t=0$.
+
+
+\Subsection{Global fields}{sec:gf}
+
+There are a few fields which determine the global (i.e. not object
+specific) behavior of \csim which can be modified via the
+\secref{cmd:set}{set command}:
+%
+\begin{tabbing}
+\quad\tt>> csim('\hyperlink{cmd:set}{set}',<fieldname>,<value>); \\
+\end{tabbing}
+%
+
+\subsubsection*{Read/writeable fields}
+
+
+\begin{description}
+
+\item[dt] The integration time step used by all objects
+
+\item[randSeed] The seed value for the random number generator
+
+\item[verboseLevel] How much stuff should be written to the
+  console window (no effect yet!).
+  
+\item[nThreads] Number of threads to use for simulation (no
+  effect yet!). The multi-threaded version of \csim is currently under
+  development.
+
+\item[spikeOutput] Flag: 1 ... always output spikes as last cell element, 0 do not
+  output spikes (obsolete).
+
+\end{description}
+
+\subsubsection*{The following fields are read-only:}
+
+\begin{description}
+
+\item[t] The current virtual (simulation) time
+  
+\item[step] The current time step; i.e.  \texttt{step=t/dt};
+
+\end{description}
+
+\subsection{Event driven simulation}
+
+Since in a typical simulation the firing rate of the neurons is about
+30\,Hz and the time constant of a synaptic current is typically about
+3\,ms most of the time a synapse is ``idle''. This observation
+encouraged us to implement some ideas of event driven simulators like
+\href{http://www.cnl.salk.edu/~arno/spikenet/}{SpikeNet}\latex{\footnote{\url{http://www.cnl.salk.edu/~arno/spikenet/}}}:
+We decided to cut off the very far tail of the exponential decaying
+synaptic responses (after 5 time constants) and remove those synapses
+from the list of active synapses (which are advanced every time step).
+A synapse is re-activated if it receives a further spike. For large
+networks with lots of synapses these idea results in an average
+speed-up of 2 to 3.
+

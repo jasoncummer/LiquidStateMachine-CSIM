@@ -1,0 +1,27 @@
+\documentclass[12pt]{article}
+
+\input{commonstuff}
+
+\begin{document}
+\pdfgraphics
+
+%
+% titlepage 
+%
+\latex{\input{pm-tp-paper}}
+\html{\input{pm-tp-html}}
+
+%
+% table of contents
+%
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+\section{Introduction}
+
+\cite{DayanAbbott:01}
+
+\bibliographystyle{apalike}
+\bibliography{references}
+                             
+\end{document}

@@ -1,0 +1,176 @@
+
+\subsection{What is \csim?}
+
+\csim is a tool for simulating heterogeneous networks composed of
+different model neurons and synapses. This simulator is written in C++
+with an MEX interface to Matlab. It is intended to simulate networks
+containing up to 10.000 neurons and up to the order of a few millions
+of synapses (the actual size depends of course on the amount of RAM
+available on your machine).
+
+\subsection{About this Manual}
+
+\input{about}
+
+\subsection{Features of the current version}
+
+\begin{description}
+  
+\item[Different levels of modeling] Different neuron models:
+  leaky-integrate-and-fire neurons, compartmental based neurons,
+  sigmoidal neurons. Different synapse models: static synapses and a
+  certain model of dynamic synapses are available for spiking as well
+  as for sigmoidal neurons. Spike time dependent synaptic plasticity
+  is also implemented.
+
+  
+\item[Easy to use Matlab interface] Since \csim is incorporated into
+  Matlab it is not necessary to learn any other script laguage to set
+  up the simulation. This is all done with Matlab scripts. Furthermore
+  the results of a simulation are directly returned as Matlab arrays
+  and hence any plotting and analysis tools available in Matlab can
+  easily be applied.
+  
+\item[Object oriented design] We adopted an object oriented design for
+  \csim which is similar to the approaches taken in
+  \href{http://www.bbb.caltech.edu/GENESIS/genesis.html}{GENESIS} and
+  \href{http://www.neuron.yale.edu}{NEURON}. That is there are objects
+  (e.g. a \texttt{LifNeuron} object implements the standard
+  leaky-integrate-and-fire model) which are interconnected by means of
+  some signal channels. The creation of objects, the connection of
+  objects and the setting of parameters of the objects is controlled
+  at the level of Matlab scipts whereas the actual simulation is done
+  in the fast C++ core.
+
+  
+\item[Fast C++ core] Since \csim is implemented in C++ and is not as
+  general as GENESIS or NEURON simulations are performed quite fast.
+  We also implemented some ideas from event driven simulators like
+  \href{http://www.cnl.salk.edu/~arno/spikenet/}{SpikeNet} which
+  result on an average speedup of 3 (assuming an average firing rate
+  of the neurons of 20\,Hz and short synaptic time constants) compared
+  to a standard fixed time step simulation scheme.
+  
+\item[Runs on Windows and Unix (Linux)] \csim is developed on Linux but also
+  runs under Windows XP (we have no more experience with Windows 98 yet, but
+  it should also run there) and should in principle run on any platform for
+  which Matlab is available.
+  
+\item[External Interface] There is an external interface which allows \csim to
+  communicate with external programs. In this way one can for example control
+  the miniature robot
+  \href{http://www.k-team.com/robots/khepera/index.html}{Khepera} with \csim.
+  This feature is not available in the Windows version.
+
+\end{description}
+
+\subsection{Getting and Installing \csim}
+
+\csim is distributed under the
+\href{http://www.gnu.org/copyleft/gpl.html}{GNU General Public
+  License} and can be downloaded from
+\url{http://www.igi.tugraz.at/csim}.
+
+
+To install \csim perform the following steps:
+
+\begin{enumerate}
+\item Donwload \csim from \url{www.igi.tugraz.at/csim}
+\item Unzip the file \texttt{csim-VER.zip} where \texttt{VER} stands
+    for the version you have downloaded. 
+    
+    This will create a subdirectory \texttt{lsm} and \texttt{lsm/csim}
+
+\item Start Matlab and change into the directory \texttt{lsm}
+  
+\item Run the Matlab script \texttt{install.m}.
+  
+\item Add the path \texttt{lsm} to the Matlab search path; e. g.
+\begin{itemize}
+\item  \verb#addpath('/home/jack/lsm')}# or
+\item  \verb#addpath('C:\Work\Neuroscience\lsm')#.
+\end{itemize}
+
+\item Change into the directory \texttt{lsm/csim/demos} and play
+  around with them.
+
+\item Have fun using \csim !
+
+\end{enumerate}
+
+
+\subsection{Compiling \csim from the sources}
+\label{sec:compile}
+
+The instruction in this section are relevant in two cases
+
+\begin{enumerate}
+
+\item[a)] You do not have Linux (x86 architecture) or Windows as an operating
+  system.\footnote{The compiled MEX-files (\texttt{csim.mexglx} and
+\texttt{csim.dll}) which already come with \csim should run on any
+Linux or Windows operationg system respectively.}
+
+\item[b)] You are planning to add your own models written in C++ to CSIM; see
+  section~\ref{sec:usermodels} for more information on this topic.
+
+\end{enumerate}
+
+ 
+%If you do not use Windows or Linux as an operating system \texttt{install.m}
+%will try to compile \csim by using Matlabs \texttt{mex} utility.
+
+Currently we support compilation using (GNU) \texttt{make} for Linux/Unix
+(which most likly also works for Mac OS X) and \texttt{nmake} (Microsoft
+Visual C++) for Windows (tested only with Windows XP). The corresponding
+Makefiles are \verb+lsm/csim/src/Makefile+ and
+\verb+lsm\csim\src\Makefile.win+.
+
+\subsubsection*{Step by step instructions}
+
+\begin{enumerate}
+
+\item To compile \csim from the sources you must first setup Matlab's mex utility
+properly. This can be achieved by issuing the command \verb+mex -setup+ at the
+Matlab prompt. For more information on compiling MEX-files see the
+\href{http://www.mathworks.com/support/tech-notes/1600/1605.html}{MEX-files
+  Guide}.
+
+\item \emph{Optional steps}: \small If you are planning to add your own models
+  written in C++ to CSIM and are not using Linux or Windows you have to build
+  the \texttt{reggen} tool which comes with \csim (\verb+lsm/develop/reggen+)
+  for your platform.\footnote{For Linux and Windows the precompiled
+    \texttt{reggen} tool is located in \texttt{lsm/develop/reggen/bin}.}
+
+  \begin{enumerate}
+      \item Go to \verb+lsm/develop/reggen+
+      \item Run 
+      \begin{itemize}
+        \item \verb+configure; make;+ for Linux/Unix(/Mac OS)
+        \item \verb+make.bat msvc+ for Windows XP with MS Visual C++ 
+      \end{itemize}
+    \item If this fails read \verb+lsm/develop/reggen/INSTALL+ and try to fix
+      the build. In this case you will notice that \verb+reggen+ is a modified
+      version of the well known tool doxygen.
+  \end{enumerate}
+
+\normalsize 
+
+\item Edit the corresponding Makefile to meet your system configuration.
+
+\item Goto \verb+csim/src+ and run
+      \begin{itemize}
+        \item \verb+make+ for Linux/Unix(/Mac OS)
+        \item \verb+nmake -f Makefile.win+ for Windows (XP)
+      \end{itemize}
+
+\end{enumerate}
+
+We do not know whether this instructions work on systems other than Windows XP
+with MS Visual C++ and Linux with gcc (3.4 or higher). The
+\href{http://www.mathworks.com/access/helpdesk/help/techdoc/matlab_external/matlab_external.shtml}{External
+  Interfaces/API} section of the Mathworks web site and the
+\href{http://www.mathworks.com/support/tech-notes/1600/1601.shtml}{Tech-Note
+  1601} contain valuable information about compiler requirements for compiling
+C++ MEX files.
+

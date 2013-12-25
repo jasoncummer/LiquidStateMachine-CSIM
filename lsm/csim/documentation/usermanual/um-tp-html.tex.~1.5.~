@@ -1,0 +1,10 @@
+\begin{flushleft}
+{  \Huge  
+  \textbf{\csim: User Manual}\\
+  {\Large CSIM Version 1.0} \\
+}
+
+\input{about}
+
+\end{flushleft}
+

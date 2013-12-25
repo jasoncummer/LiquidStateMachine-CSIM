@@ -1,0 +1,158 @@
+\Subsection{Input Signals}{sec:inputs}
+
+% \Subsubsection{Single-stimulus input}{sec:singlein}
+
+When runing a network simulation via \texttt{csim('simulate',...);}
+one can specify \emph{input signals} like in the command
+%
+\begin{tabbing}
+\quad\texttt{>> csim(\hyperlink{cmd:simulate}{'simulate'},Tsim,S);}
+\end{tabbing}
+%
+where \texttt{S} is a struct array with the following fields:
+%
+\begin{itemize}
+  
+\item \texttt{S(i).idx} : array of handles of objects which should
+  receives this signal
+
+\item \texttt{S(i).spiking} : binary flag (0/1) which determines if
+  \texttt{S(i).data} should be interpreted as spike times or as an
+  analog signal
+  
+\item \texttt{S(i).dt} : time discretization; for analog signals
+  (\texttt{S(i).spiking}=0) only
+  
+\item \texttt{S(i).data} : signal data: vector of the analog values
+  (\texttt{S(i).spiking}=0) or spike times (\texttt{S(i).spiking}=1)
+
+\end{itemize}
+%
+Note that \texttt{csim('simulate',...);} accepts an arbirary number of
+such struct arrays. See \secref{cmd:simulate}{documentation of the
+  simulate command}.
+
+
+%\Subsubsection{Multi-stimulus input}{sec:multiin}
+%
+%When runing a network simulation via \texttt{csim('simulate',...);}
+%one can specify a \emph{multi-stimulus} input \texttt{S} like in the command
+%
+%\begin{tabbing}
+%\quad\texttt{>> R = csim(\hyperlink{cmd:simulate}{'simulate'},Tsim,S);}
+%\end{tabbing}
+%
+%where \texttt{S} is a $n \times 1$ struct array of the form
+%\texttt{S(i).channel} which describes the $i$-th stimulus.
+%\texttt{S(i).channel} has the structure as described above.
+%
+%If such multi-stimulus input is specified \csim will simulate the
+%current network with each of the $n$ stimuli where at the beginning of
+%each stimuli the network is reset to $t=0$. The return argument
+%\texttt{R} contains the recorded information of all $n$ simulations
+%(see \sect{sec:multiout}).
+
+
+\Subsection{Output}{sec:output}
+
+If one simulates a network then one also wants to record the
+quantities of interest. In our \secref{sec:start}{introductory
+  example} we were interested in the membrane potential of the
+leaky-integrate and fire neuron. \csim can record any field of any
+object by means of \secref{classRecorder}{Recorder} objects. The
+following code fragment shows how to set up a Recorder to record the
+membrane potential (\texttt{Vm}) of a
+\secref{classLifNeuron}{LifNeuron} object with handle \texttt{n}.
+%
+\begin{tabbing}
+\quad\texttt{>> rec = csim(\hyperlink{cmd:create}{'create'},'\hyperlink{classRecorder}{Recorder}');} \\
+\quad\texttt{>> csim(\hyperlink{cmd:connect}{'connect'},rec,n,'Vm');}
+\end{tabbing}
+%
+Note that one Recorder object can record an arbitrary number of
+fields from arbitrary objects.
+
+\Subsubsection{Getting results of the last simulation}{sec:lastout}
+
+After a network simulation via a command like
+%
+\begin{tabbing}
+\quad\texttt{>> csim(\hyperlink{cmd:simulate}{'simulate'},Tsim,\hyperlink{sec:input}{InputSignal});}
+\end{tabbing}
+%
+the recorded data of the \emph{the last simulation} Recorder
+\texttt{rec} can be obtained by the command
+\begin{tabbing}
+\quad\texttt{>> R=csim(\hyperlink{cmd:get}{'get'},rec,'traces');}
+\end{tabbing}
+The exact structure of \texttt{R} for the recorder \texttt{rec}
+depends on the value of the \secref{classRecorder}{field
+\texttt{commonChannels} of the \texttt{Recorder}} object.
+
+
+\paragraph{\texttt{commonChannels = 0}} In this case  (default) \texttt{R}
+is a struct array with the only field \texttt{channel} which is in
+turn a struct array with a similar structure as an
+\secref{sec:inputs}{input signal}. That is
+
+\begin{itemize}
+  
+\item \texttt{R.channel(j).idx} : handle of the object from which
+  field the data was recorded
+  
+\item \texttt{R.channel(j).spiking} : binary flag (0/1) which
+  determines if \texttt{data} should be interpreted as spike times or
+  as an analog signal
+  
+\item \texttt{R.channel(j).dt} : time discretization; for analog
+  signals   only
+  
+\item \texttt{R.channel(j).data} : signal data : vector of the
+  analog values or spike times. Note that the data always starts at
+  time $t=0$.
+ 
+\item \texttt{R.channel(j).fieldName} : name of the recorded
+    field
+
+\end{itemize}
+
+\paragraph{\texttt{commonChannels = 1}} In this case
+\texttt{R} has two fields:
+\begin{itemize}
+\item \texttt{R.data} : A double array where
+  \texttt{R.data(j,s)} is the $s$-th recorded value of the $j$-th
+  field recorded.  Note that the data always
+  starts at time $t=0$.  {\small Remark: The number of values which
+    are recorded depends on the \secref{classRecorder}{field
+      \texttt{dt} of the \texttt{Recorder} object}.}
+  
+\item \texttt{R.info} : A struct array where
+  \texttt{R.info(j).idx} is the handle of the object from which
+  the field \texttt{R.info(j).fieldName} is recorded.
+\end{itemize}
+
+\Subsubsection{Getting the results of a multi-stimulus simulation}{sec:multiout}
+
+{\bf Reminder}: The command
+\begin{tabbing}
+\quad\texttt{>> R=csim(\hyperlink{cmd:get}{'get'},rec,'traces');}
+\end{tabbing}
+returns only the results of the last simulation. In the case of a
+multi-stimulus simulation with stimulus array \texttt{S} of length $n$
+this command returns only the result of the simulation with stimulus
+\texttt{S(n)}.
+
+To get the results of all $n$ simulations one has to use
+\begin{tabbing}
+\quad\texttt{>> R=csim(\hyperlink{cmd:simulate}{'simulate'},Tsim,S);}
+\end{tabbing}
+
+In that case \texttt{R} contains the results of all $n$ stimulations.
+\texttt{R\{r\}(s).channel} contains the recorded data of the $r$-th
+recorder during the $s$-th simulation ($1 \leq s \leq n$).
+\texttt{R\{r\}(s).channel} is of the format as described in
+\sect{sec:lastout}.
+
+
+
+
