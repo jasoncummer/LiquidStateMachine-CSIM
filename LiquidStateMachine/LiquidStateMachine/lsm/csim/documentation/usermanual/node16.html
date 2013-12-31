@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Plotting the recorded traces</TITLE>
+<META NAME="description" CONTENT="Plotting the recorded traces">
+<META NAME="keywords" CONTENT="usermanual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="usermanual.css">
+
+<LINK REL="previous" HREF="node15.html">
+<LINK REL="up" HREF="node8.html">
+<LINK REL="next" HREF="node17.html">
+</HEAD>
+
+<BODY  bgcolor="#ffffff">
+
+<DIV CLASS="navigation"><table border=0 cellspacing=0 callpadding=0 width=100% class="csim_top_navigation">
+<tr valign=middle class="csim_top_navigation">
+<td valign=middle align=left  class="csim_top_navigation"><i><b>&nbsp;CSIM User Manual</b></i></td><td valign=middle align=right class="csim_top_navigation">&nbsp;
+<A NAME="tex2html407"
+  HREF="node15.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="previous" SRC="prev.gif"></A>&nbsp;
+<A NAME="tex2html413"
+  HREF="node1.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="contents" SRC="contents.gif"></A>&nbsp;
+<A NAME="tex2html415"
+  HREF="node17.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="next" SRC="next.gif"></A></dt></tr></table>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00038000000000000000">
+Plotting the recorded traces</A>
+</H2> The traces recorded by the
+recorder can be obtained by the command
+<PRE><TT>
+&nbsp;&nbsp;&nbsp;&nbsp;<TT>&#187; t=csim('<A HREF="node34.html#cmd:get">get</A>',r,'traces')
+</TT></PRE></TT>
+which yields the output
+<PRE>
+t = 
+    channel: [1x3 struct]
+</PRE>
+A closer look at e.g. the first channel reveals that
+<TT>t.channel</TT> is a struct array with a similar structure as we
+have seen above for the input signal:
+<PRE>
+&gt;&gt; t.channel(1)           
+
+ans = 
+
+          idx: 1
+    fieldName: 'psr'
+         data: [1x2000 double]
+      spiking: 0
+           dt: 5.0000e-04
+</PRE>
+
+<P>
+The output indicates that <TT>t.channel(1).data</TT> holds the
+<TT>psr</TT> trace (<TT>t.channel(1).fieldName</TT>) with a resolution
+of 0.5ms (<TT>t.channel(1).dt</TT>). See the
+<A HREF="node93.html#classRecorder">Recorder class documentation</A> for details abput
+the structure of the trace output. Similarly <TT>t.channel(2)</TT>
+holds the the <TT>Vm</TT> trace and <TT>t.channel(3)</TT> holds the
+output spike times. Hence the following command will plot
+the <TT>psr</TT> trace
+<PRE><TT>
+&nbsp;&nbsp;&nbsp;&nbsp;<TT>&#187; plot(t.channel(1).dt:t.channel(1).dt:Tsim,t.channel(1).data);
+</TT></PRE></TT>
+and the command
+<PRE><TT>
+&nbsp;&nbsp;&nbsp;&nbsp;<TT>&#187; stem(t.channel(3).data,ones(size(t.channel(3).data)));
+</TT></PRE></TT>
+will draw the output spike train.
+
+<P>
+Using another set of plot commands one can easily create the following
+figure which shows the input, the postsynaptic response and the output
+of the neuron (the voltage and the spikes)
+
+<P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="468" HEIGHT="378" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.gif"
+ ALT="\includegraphics[width=12cm]{first-model-output}">
+
+</DIV>
+
+<P>
+The full code of this example is contained as the file
+<TT>first_model.m</TT> in the demo directory of the
+<A NAME="tex2html20"
+  HREF="http://www.lsm.tugraz.at/csim"><SPAN  CLASS="textsf">CSIM</SPAN> package</A>.
+
+<P>
+
+<P>
+
+<DIV CLASS="navigation"><table border=0 cellspacing=0 callpadding=0 width=100% class="csim_bot_navigation">
+<tr valign=middle class="csim_bot_navigation">
+<td valign=middle align=left width=1% class="csim_bot_navigation">
+<A NAME="tex2html407"
+  HREF="node15.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="previous" SRC="prev.gif"></A></td><td valign=middle align=left class="csim_bot_navigation">&nbsp;<A NAME="tex2html408"
+  HREF="node15.html">Running the simulation</A></td>
+<td align=right valign=middle class="csim_bot_navigation"><A NAME="tex2html416"
+  HREF="node17.html">Input and Output</A>&nbsp;
+<A NAME="tex2html415"
+  HREF="node17.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="next" SRC="next.gif"></A></td>
+</tr></table>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

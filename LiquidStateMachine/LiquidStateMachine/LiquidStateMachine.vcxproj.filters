@@ -19,6 +19,47 @@
     <None Include="app.ico">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="lsm\csim\src\.#Makefile.1.36" />
+    <None Include="lsm\lsm_startup.m" />
+    <None Include="lsm\csim\src\.cvsignore" />
+    <None Include="lsm\csim\src\classlist.i" />
+    <None Include="lsm\csim\src\csim.dll" />
+    <None Include="lsm\csim\src\csim.mexglx" />
+    <None Include="lsm\csim\src\csim_mex72_opts.sh" />
+    <None Include="lsm\csim\src\csim_mexopts.sh" />
+    <None Include="lsm\csim\src\csimclass.h.~1.11.~" />
+    <None Include="lsm\csim\src\cxxopts.sh" />
+    <None Include="lsm\csim\src\install.m" />
+    <None Include="lsm\csim\src\install.tmpl" />
+    <None Include="lsm\csim\src\makedependencies" />
+    <None Include="lsm\csim\src\Makefile" />
+    <None Include="lsm\csim\src\Makefile.win" />
+    <None Include="lsm\csim\src\Makefile~" />
+    <None Include="lsm\csim\src\mexopts.bat">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="lsm\csim\src\mexopts65.bat">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="lsm\csim\src\mexopts71.bat">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="lsm\csim\src\objectlist.txt" />
+    <None Include="lsm\csim\src\RegGenFile" />
+    <None Include="lsm\csim\src\RegGenFile~" />
+    <None Include="lsm\csim\src\registerclasses.i" />
+    <None Include="lsm\csim\src\switch.i" />
+    <None Include="lsm\csim\src\version.i" />
+    <None Include="lsm\csim\csim.dll" />
+    <None Include="lsm\csim\csim.mexglx" />
+    <None Include="lsm\csim\INSTALL" />
+    <None Include="lsm\csim\install.m" />
+    <None Include="lsm\csim\Makefile" />
+    <None Include="lsm\csim\Makefile.win" />
+    <None Include="lsm\csim\README" />
+    <None Include="lsm\condmex.m" />
+    <None Include="lsm\install.m" />
+    <None Include="lsm\lsm_path.m" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LiquidStateMachine.cpp">
@@ -28,6 +69,297 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\activecachannel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\activechannel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\advanceable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\ahp_channel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\algorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\alphaspikefilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\analogfeedbackneuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\analogfilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\analoginputneuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\analogneuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\analogsynapse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\analogteacher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\armmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\cbhhouineuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\cbhhouneuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\cbneuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\cbneuronst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\cbstouneuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\conciongate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\countspikefilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\csim.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\csimclass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\csimerror.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\csiminputclass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\csimlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\csimmex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\discretizationpreprocessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\dynamicanalogsynapse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\dynamicglutamatesynapse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\dynamicglutamatesynapsesynchan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\dynamicspikingcbsynapse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\dynamicspikingsynapse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\dynamicstdpsynapse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\expspikefilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\extinputneuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\extoutlifneuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\extoutlinearneuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\extoutsigmoidalneuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\filterfunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\forceable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\gaussiananalogfilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\generic_ion_gates.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\glutamatesynapse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\glutamatesynapsesynchan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\hh_neuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\hh_squid_channels.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\ifbneuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\ionbuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\ionchannel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\iongate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\izhi_neuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\lifburstneuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\lifneuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\lifneuronsynchan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\linear_classification.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\linear_regression.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\linearneuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\linearpreprocessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\mean_std_preprocessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\membranepatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\membranepatchsimple.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\mexnetwork.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\mexrecorder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\network.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\neuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\pcapreprocessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\physicalmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\preprocessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\randgen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\readout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\recorder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\sigmoidalneuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\specific_ion_channels.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\specific_neurons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\specificouneurons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\spikefilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\spikinginputneuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\spikingneuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\spikingsynapse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\spikingteacher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\staticanalogcbsynapse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\staticanalogsynapse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\staticglutamatesynapse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\staticglutamatesynapsesynchan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\staticspikingcbsynapse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\staticspikingsynapse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\staticstdpsynapse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\stdpsynapse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\synapse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\synapticchannel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\teacher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\TraubsHHNeuron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\triangularanalogfilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\useranalogfilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\csim\src\viongate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\utilities\mutual_information\mi_and_bayes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lsm\utilities\mutual_information\mibayes.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,10 +373,318 @@
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="lsm\csim\src\activecachannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\activechannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\advanceable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\ahp_channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\algorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\alphaspikefilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\analogfeedbackneuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\analogfilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\analoginputneuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\analogneuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\analogsynapse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\analogteacher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\armmodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\cbhhouineuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\cbhhouneuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\cbneuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\cbneuronst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\cbstouneuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\conciongate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\countspikefilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\csimclass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\csimerror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\csiminputclass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\csimlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\csimmex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\discretizationpreprocessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\dynamicanalogsynapse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\dynamicglutamatesynapse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\dynamicglutamatesynapsesynchan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\dynamicspikingcbsynapse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\dynamicspikingsynapse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\dynamicstdpsynapse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\dynamicsynapse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\expspikefilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\extinputneuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\extoutlifneuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\extoutlinearneuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\extoutsigmoidalneuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\filterfunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\forceable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\gaussiananalogfilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\generic_ion_gates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\globaldefinitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\glutamatesynapse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\glutamatesynapsesynchan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\hh_neuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\hh_squid_channels.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\ifbneuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\internalvoltageneuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\ionbuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\ionchannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\iongate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\izhi_neuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\lifburstneuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\lifneuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\lifneuronsynchan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\linear_classification.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\linear_regression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\linearneuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\linearpreprocessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\mean_std_preprocessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\membranepatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\membranepatchsimple.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\mexnetwork.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\mexrecorder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\modelinput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\needspostspikesynapse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\network.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\neuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\pcapreprocessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\physicalmodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\preprocessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\randgen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\readout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\recorder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\sigmoidalneuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\specific_ion_channels.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\specific_neurons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\specificouneurons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\spikefilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\spikinginputneuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\spikingneuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\spikingsynapse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\spikingteacher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\staticanalogcbsynapse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\staticanalogsynapse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\staticglutamatesynapse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\staticglutamatesynapsesynchan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\staticspikingcbsynapse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\staticspikingsynapse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\staticstdpsynapse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\stdpsynapse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\synapse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\synapsetarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\synapticchannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\teacher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\TraubsHHNeuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\triangularanalogfilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\useranalogfilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\csim\src\viongate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lsm\utilities\mutual_information\mi_and_bayes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resX">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

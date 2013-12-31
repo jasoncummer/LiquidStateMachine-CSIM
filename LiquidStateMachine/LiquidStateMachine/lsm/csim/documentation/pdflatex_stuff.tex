@@ -1,0 +1,12 @@
+\usepackage{a4wide}
+\usepackage{url}
+
+\newif\ifpdf\ifx\pdfoutput\undefined\pdffalse\else\pdfoutput=1\pdftrue\fi
+\newcommand{\pdfgraphics}{\ifpdf\DeclareGraphicsExtensions{.pdf,.jpg}\else\fi}
+
+\usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+\newcommand{\html}[1]{}
+\newcommand{\latex}[1]{#1}
+\newcommand{\secref}[2]{#1 (Section~{sec:#2})}
+\newcommand{\hrefurl}[2]{\href{#1}{#2}}
+

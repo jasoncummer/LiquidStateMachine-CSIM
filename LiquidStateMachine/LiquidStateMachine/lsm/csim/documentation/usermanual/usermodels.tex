@@ -1,0 +1,71 @@
+This section describes how a user can add its own models to CSIM at the C++
+level.
+
+\subsection{Recipe}
+
+\begin{enumerate}
+  
+\item Create a copy of that existing model which is closest to that you wish
+  to implement in the directory \verb+lsm/csim/src+. In the following we
+  assume that the related files are called \verb+MyModel.h+ and
+  \verb+MyModel.cpp+.
+
+\item Implement your model.
+
+\item Add you model to CSIM:
+\begin{itemize}
+\item Linux/Unix/: Add \verb+MyModel.o+ to the list of objects in the \verb+Makefile+.
+\item Windows: Add  \verb+MyModel.obj+ to the list of objects in the \verb+Makefile.win+.
+\end{itemize}
+
+\item Compile CSIM:
+
+\begin{itemize}
+\item Linux/Unix/: Run the command \verb+make+
+\item Windows: Run the command \verb+nmake -f Makefile.win+
+\end{itemize}
+
+\item Use your model!
+
+\end{enumerate}
+
+\subsection{Details}
+
+During the compilation of CSIM a tool called \verb+reggen+ is used to generate
+wrapper code which allows you to access the parameters of your model from the
+Matlab level. This frees you from the tedious work of writing lots of code
+for getting and setting such fields. For more details about this issue see the
+subsection~\ref{sec:fields}.
+
+If you are not using Linux or Windows you have to build the \texttt{reggen}
+tool which comes with \csim (\verb+lsm/develop/reggen+) for your
+platform.\footnote{For Linux and Windows the precompiled \texttt{reggen} tool
+  is located in \texttt{lsm/develop/reggen/bin}.}
+
+\begin{enumerate}
+\item Go to \verb+lsm/develop/reggen+
+\item Run 
+  \begin{itemize}
+  \item \verb+configure; make;+ for Linux/Unix(/Mac OS)
+  \item \verb+make.bat msvc+ for Windows XP with MS Visual C++ 
+  \end{itemize}
+\item If this fails read \verb+lsm/develop/reggen/INSTALL+ and try to fix
+  the build. In this case you will notice that \verb+reggen+ is a modified
+  version of the well known tool doxygen.
+\end{enumerate}
+
+\subsection{Hints for adding user defined models}
+
+\begin{itemize}
+
+\item Don't forget the line \verb+DO_REGISTERING+ in the class declaration of
+  you model.
+
+\item Use doxygen comments to document your model.
+
+\end{itemize}
+
+\Subsection{Setting and getting field values of objects}{sec:fields}
+
+\input{fields.tex}
+

@@ -1,0 +1,184 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Compiling CSIM from the sources</TITLE>
+<META NAME="description" CONTENT="Compiling CSIM from the sources">
+<META NAME="keywords" CONTENT="usermanual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="usermanual.css">
+
+<LINK REL="previous" HREF="node6.html">
+<LINK REL="up" HREF="node2.html">
+<LINK REL="next" HREF="node8.html">
+</HEAD>
+
+<BODY  bgcolor="#ffffff">
+
+<DIV CLASS="navigation"><table border=0 cellspacing=0 callpadding=0 width=100% class="csim_top_navigation">
+<tr valign=middle class="csim_top_navigation">
+<td valign=middle align=left  class="csim_top_navigation"><i><b>&nbsp;CSIM User Manual</b></i></td><td valign=middle align=right class="csim_top_navigation">&nbsp;
+<A NAME="tex2html292"
+  HREF="node6.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="previous" SRC="prev.gif"></A>&nbsp;
+<A NAME="tex2html298"
+  HREF="node1.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="contents" SRC="contents.gif"></A>&nbsp;
+<A NAME="tex2html300"
+  HREF="node8.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="next" SRC="next.gif"></A></dt></tr></table>
+</DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links--><br>
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html302"
+  HREF="node7.html#SECTION00025100000000000000">Step by step instructions</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H2><A NAME="SECTION00025000000000000000"></A>
+<A NAME="sec:compile"></A>
+
+Compiling <SPAN  CLASS="textsf">CSIM</SPAN> from the sources
+</H2>
+
+<P>
+The instruction in this section are relevant in two cases
+
+<P>
+<DL COMPACT>
+<DT>a)</DT>
+<DD>You do not have Linux (x86 architecture) or Windows as an operating
+  system.<A NAME="tex2html14"
+  HREF="footnode.html#foot358"><SUP><SPAN CLASS="arabic">1</SPAN></SUP></A>
+<P>
+</DD>
+<DT>b)</DT>
+<DD>You are planning to add your own models written in C++ to CSIM; see
+  section&nbsp;<A HREF="node24.html#sec:usermodels">5</A> for more information on this topic.
+
+<P>
+</DD>
+</DL>
+
+<P>
+Currently we support compilation using (GNU) <TT>make</TT> for Linux/Unix
+(which most likly also works for Mac OS X) and <TT>nmake</TT> (Microsoft
+Visual C++) for Windows (tested only with Windows XP). The corresponding
+Makefiles are <code>lsm/csim/src/Makefile</code> and
+<code>lsm\csim\src\Makefile.win</code>.
+
+<P>
+
+<H3><A NAME="SECTION00025100000000000000">
+Step by step instructions</A>
+</H3>
+
+<P>
+
+<OL>
+<LI>To compile <SPAN  CLASS="textsf">CSIM</SPAN> from the sources you must first setup Matlab's mex utility
+properly. This can be achieved by issuing the command <code>mex -setup</code> at the
+Matlab prompt. For more information on compiling MEX-files see the
+<A NAME="tex2html16"
+  HREF="http://www.mathworks.com/support/tech-notes/1600/1605.html">MEX-files
+  Guide</A>.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textit">Optional steps</SPAN>: <SMALL CLASS="SMALL">If you are planning to add your own models
+  written in C++ to CSIM and are not using Linux or Windows you have to build
+  the <TT>reggen</TT> tool which comes with <SPAN  CLASS="textsf">CSIM</SPAN> (<code>lsm/develop/reggen</code>)
+  for your platform.<A NAME="tex2html15"
+  HREF="footnode.html#foot359"><SUP><SPAN CLASS="arabic">2</SPAN></SUP></A></SMALL>
+<P>
+
+<OL>
+<LI>Go to <code>lsm/develop/reggen</code>
+</LI>
+<LI>Run 
+      
+<UL>
+<LI><code>configure; make;</code> for Linux/Unix(/Mac OS)
+</LI>
+<LI><code>make.bat msvc</code> for Windows XP with MS Visual C++ 
+      
+</LI>
+</UL>
+</LI>
+<LI>If this fails read <code>lsm/develop/reggen/INSTALL</code> and try to fix
+      the build. In this case you will notice that <code>reggen</code> is a modified
+      version of the well known tool doxygen.
+  
+</LI>
+</OL>
+<P>
+
+<P>
+</LI>
+<LI>Edit the corresponding Makefile to meet your system configuration.
+
+<P>
+</LI>
+<LI>Goto <code>csim/src</code> and run
+      
+<UL>
+<LI><code>make</code> for Linux/Unix(/Mac OS)
+</LI>
+<LI><code>nmake -f Makefile.win</code> for Windows (XP)
+      
+</LI>
+</UL>
+
+<P>
+</LI>
+</OL>
+
+<P>
+We do not know whether this instructions work on systems other than Windows XP
+with MS Visual C++ and Linux with gcc (3.4 or higher). The
+<A NAME="tex2html17"
+  HREF="http://www.mathworks.com/access/helpdesk/help/techdoc/matlab_external/matlab_external.shtml">External
+  Interfaces/API</A>
+section of the Mathworks web site and the
+<A NAME="tex2html18"
+  HREF="http://www.mathworks.com/support/tech-notes/1600/1601.shtml">Tech-Note
+  1601</A>
+contain valuable information about compiler requirements for compiling
+C++ MEX files.
+
+<P>
+
+<P>
+
+<DIV CLASS="navigation"><table border=0 cellspacing=0 callpadding=0 width=100% class="csim_bot_navigation">
+<tr valign=middle class="csim_bot_navigation">
+<td valign=middle align=left width=1% class="csim_bot_navigation">
+<A NAME="tex2html292"
+  HREF="node6.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="previous" SRC="prev.gif"></A></td><td valign=middle align=left class="csim_bot_navigation">&nbsp;<A NAME="tex2html293"
+  HREF="node6.html">Getting and Installing CSIM</A></td>
+<td align=right valign=middle class="csim_bot_navigation"><A NAME="tex2html301"
+  HREF="node8.html">A short Tutorial</A>&nbsp;
+<A NAME="tex2html300"
+  HREF="node8.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="next" SRC="next.gif"></A></td>
+</tr></table>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

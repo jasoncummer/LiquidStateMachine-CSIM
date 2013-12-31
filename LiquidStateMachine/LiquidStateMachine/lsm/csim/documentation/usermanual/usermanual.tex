@@ -1,0 +1,142 @@
+\documentclass[11pt]{article}
+
+\newcommand{\csim}{\textsf{CSIM} }
+\newcommand{\nmc}{\textsf{Circuit-Tool} }
+\newcommand{\lsm}{\textsf{Learning-Tool} }
+
+%
+% common packages 
+%
+\usepackage{graphicx}
+\usepackage{color}
+
+\PassOptionsToPackage{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}{hyperref}
+
+\usepackage{html}
+
+%begin{latexonly}
+\usepackage{a4wide}
+%\newif\ifpdf\ifx\pdfoutput\undefined\pdffalse\else\pdfoutput=1\pdftrue\fi
+%\newcommand{\pdfgraphics}{\ifpdf\DeclareGraphicsExtensions{.pdf,.jpg}\else\DeclareGraphicsExtensions{.eps}\fi}
+%\newcommand{\pdfgraphics}{}
+%\ifpdf
+%\else
+% \usepackage[dvips]{hyperref}
+%\fi
+%end{latexonly}
+
+\html{
+  \pagecolor[gray]{1.0}
+%  \newcommand{\pdfgraphics}{}
+  \newcommand{\href}[2]{\htmladdnormallink{#2}{#1}}
+  % we assume that the name of the hypertarget also exists as label!
+  \newcommand{\hyperlink}[2]{\hyperref{#2}{}{}{#1}} 
+  \newcommand{\hypertarget}[2]{#2}
+}
+
+\newcommand{\Section}[2]{\hypertarget{#2}{\section{#1}\label{#2}}}
+\newcommand{\Subsection}[2]{\hypertarget{#2}{\subsection{#1}\label{#2}}}
+\newcommand{\Subsubsection}[2]{\hypertarget{#2}{\subsubsection{#1}\label{#2}}}
+
+\newcommand{\secref}[2]{\hyperlink{#1}{#2}\latex{ (Sec.~\ref{#1})}}
+\newcommand{\sect}[1]{\hyperlink{#1}{Section}~\ref{#1}}
+\newcommand{\figref}[1]{\hyperlink{#1}{Figure}~\ref{#1}}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1ex plus 0.1ex minus 0.1ex}
+\setlength{\itemsep}{-0.5ex plus 0.1ex minus 0.1ex}
+\setlength{\topmargin}{0cm}
+
+%
+% since we include the detailed description from doxygen we need some
+% of these definitions
+%
+\input{doxygen}
+
+%
+% define the \objfield which is output by reggen for each registered
+% field of an object.
+%
+\newcommand{\objfield}[6]{\item[{\normalsize \texttt{#2}} ($ #5 $) :]  {\small #6}}
+\newcommand{\objfieldnu}[6]{\item[{\normalsize \texttt{#2}} :] {\small #6}}
+\newcommand{\cmdref}[1]{\Subsubsection{#1}{cmd:#1}}
+  
+\begin{document}
+%\pdfgraphics
+\sloppy
+
+%
+% titlepage 
+%
+\latex{\input{um-tp-paper}}
+\html{\input{um-tp-html}}
+
+%
+% table of contents
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setcounter{tocdepth}{3}
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section{Preliminaries}{sec:pre}
+
+\input{prelim}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+
+\Section{A short Tutorial}{sec:start}
+
+\input{getstarted}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section{Input and Output}{sec:inout}
+
+\input{inout}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\Section{Distributed Simulation}{sec:distr}
+%
+%\input{distributed}
+% 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section{Additional Topics}{sec:additional}
+
+\input{additional}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section{Adding your own C++ model classes to \csim}{sec:usermodels}
+
+\input{usermodels}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+
+\Section{\csim command reference}{sec:cmdref}
+
+\input{cmd_ref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\Section{\csim model classe reference}{sec:clref}
+
+\input{um_class_ref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{apalike}
+
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,16 @@
+%
+% for Latex and latex2html
+%
+%\usepackage{times}
+\usepackage{a4wide}
+\usepackage{html}
+\usepackage{url}
+\newcommand{\href}[2]{\latex{\htmladdnormallinkfoot{#2}{\url{#1}}}\html{\htmladdnormallink{#2}{#1}}}
+\newcommand{\secref}[2]{\hyperref{#1}{#1 (see Section~}{)}{sec:#2}}
+\newcommand{\hrefurl}[2]{\latex{\url{#2}}\html{\htmladdnormallink{#2}{#1}}}
+\newcommand{\pdfgraphics}{}
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue
+           ]{hyperref}

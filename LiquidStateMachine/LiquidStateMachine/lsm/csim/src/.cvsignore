@@ -1,0 +1,8 @@
+classlist.i
+registerclasses.i
+switch.i
+*.tex
+*.obj
+*.o
+def
+html

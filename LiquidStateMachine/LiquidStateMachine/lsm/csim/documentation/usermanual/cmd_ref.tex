@@ -1,0 +1,344 @@
+
+The common form of all \csim commands is 
+\begin{verbatim}
+  csim(command,...);
+\end{verbatim}
+where \texttt{command} is one of the following strings:
+
+\begin{itemize}
+\setlength{\itemsep}{-0.8ex plus 0.1ex minus 0.1ex}
+\setlength{\parsep}{0.0ex plus 0.1ex minus 0.1ex}
+\item \texttt{\secref{cmd:create}{'create'}} : Create an object of a certain class
+\item \texttt{\secref{cmd:set}{'set'}} : Set fields of an object
+\item \texttt{\secref{cmd:connect}{'connect'}} : Connect objects
+\item \texttt{\secref{cmd:get}{'get'}} : Get field values of an object
+% \item \texttt{\secref{cmd:access}{'access'}} : Set default network
+\item \texttt{\secref{cmd:reset}{'reset'}} : Reset the simulation to $t=0.0$
+\item \texttt{\secref{cmd:simulate}{'simulate'}} : Simulate the network
+\item \texttt{\secref{cmd:export}{'export'}} : Export the network for saving it
+\item \texttt{\secref{cmd:import}{'import'}} : Import a loaded network
+\item \texttt{\secref{cmd:destroy}{'destroy'}} : Destroy/delete the current netork
+\item \texttt{\secref{cmd:list}{'list'}} or \texttt{\secref{cmd:list}{'ls'}} List various items
+\item \texttt{\secref{cmd:version}{'version'}} : Print out a version string
+% \item \texttt{\secref{cmd:pvm}{'pvm'}} : Initialize distributed simulation
+\end{itemize}
+
+A detailed description of each of the commands follows. 
+
+%\subsection{Multiple Networks}
+%
+%\csim is capable of holding more then one network at a time. There are
+%two ways of specifing on which network a command should operate.
+%
+%\begin{itemize}
+%\item For each command of the form \texttt{csim(command,...);} the
+%form \texttt{csim(netIdx,command,...);} exists which allows you to
+%explicitly specify the network to operate on.
+%
+%\item If \texttt{csim(command,...);} is used the \emph{default
+%    network} is used. The default network is set using the command
+%  \texttt{csim('access',netIdx);}.
+%\end{itemize}
+%
+%\cmdref{access}
+%
+%\begin{itemize}
+%  
+%\item \texttt{idx=csim('access',netIdx);} makes the network specified
+%  by \texttt{netIdx} the default network and returns that value.%
+%
+%\item \texttt{csim('access',netIdx);} makes the network specified
+%  by \texttt{netIdx} the default network and prints that value.
+%
+%\item \texttt{idx=csim('access');} returns the index of the default
+%  network.
+%
+%\item \texttt{csim('access');} prints the index of the default%
+%
+%\end{itemize}
+
+
+\subsection{Setting up a network simulation}
+
+\cmdref{create}
+
+\begin{itemize}
+  
+%\item \texttt{idx=csim('create','Network');} creates a new network and
+%  returns the \emph{index} or \emph{handle} for the created network.
+%  The new network is the new default network; see command
+%  \secref{cmd:access}{access}.
+
+\item \texttt{idx=csim('create',class);} creates an object of the class
+  specified by the string \texttt{class} and returns a \texttt{uint32}
+  \emph{index} or \emph{handle} for the created object. This
+  index/handle is the only means to access the created object.
+  
+\item \texttt{idx=csim('create',class,N);} creates \texttt{N} objects
+  of the class specified by the string \texttt{class} and returns a
+  \texttt{uint32} vector of indices/handles for the created objects.
+
+\end{itemize}
+
+The handles returned by \texttt{idx=csim('create',...);} are used to
+identify the objects later in \texttt{'set'}, \texttt{'get'} and
+\texttt{'connect'} calls.
+
+See the \secref{sec:clref}{Class Reference} for a full description of
+all available classes.
+
+\cmdref{set}
+
+\begin{itemize}
+  
+\item \texttt{csim('set',field,value);} sets the
+  \secref{sec:gf}{network field} specified by the string
+  \texttt{field} to \texttt{value}.
+  
+\item \texttt{csim('set',idx,field,value);} sets the field specified
+  by the string \texttt{field} of the object with index/handle
+  \texttt{idx} to \texttt{value}. \texttt{idx} can also be a vector
+  of indices/handles of objects of the same class.
+  
+If \texttt{idx} is a vector and \texttt{value} is a scalar then the
+fields of all objects are set to \texttt{value}.
+
+If \texttt{idx} and \texttt{value} are vectors of the same size then
+the field \texttt{field} of all objects \texttt{idx(i)} is set to
+\texttt{value(i)}.
+
+\item \texttt{csim('set',idx,f1,v1,f2,f2,...,fn,vn);} sets the fields
+  specified by the strings \texttt{f1}, \texttt{f2}, ..., \texttt{fn}
+  of the object with index/handle \texttt{idx} to the values
+  \texttt{v1}, \texttt{v2}, ... \texttt{vn}. \texttt{idx} and
+  \texttt{v1}, \texttt{v2}, ... \texttt{vn} can also be vectors.
+
+\end{itemize}
+
+
+\cmdref{connect}
+
+\begin{itemize}
+  
+\item\texttt{csim('connect',dstIdx,srcIdx);} sets up a signal flow
+  from the source \texttt{srcIdx} object (e.g. a synapse) to the
+  destination object \texttt{dstIdx} (e.g. the postsynaptic neuron)
+  where \texttt{dstIdx} and \texttt{srcIdx} are indices/handles to
+  objects.
+  
+  \texttt{dstIdx} and \texttt{srcIdx} can also be vectors. In that
+  case for each \texttt{i=1:length(srcIdx);} a signal flow
+  $\mathtt{dstIdx(i)} \leftarrow \mathtt{srcIdx(i)}$ is set up.
+  
+\item\texttt{csim('connect', dstIdx, srIdx, viaIdx);} for each
+  \texttt{i=1:length(srcIdx);} a signal flow of the form
+  $\mathtt{dstIdx(i)} \leftarrow \mathtt{viaIdx(i)} \leftarrow
+  \mathtt{srcIdx(i)}$ is set up where \texttt{dstIdx},
+  \texttt{srcIdx}, and \texttt{viaIdx} are vectors of the same length
+  of indices/handles to objects.
+  
+\item\texttt{csim('connect',recIdx,objIdx,fieldName);} connects the
+  object with handle \texttt{objIdx} to the recorder with handle
+  \texttt{recIdx}. The recorder \texttt{recIdx} will then record a
+  trace of the values of the field \texttt{fieldName} of the objects
+  specified by the vector of hadles \texttt{objIdx}.
+
+\end{itemize}
+
+\subsection{Running the network simulation}
+
+\cmdref{reset}
+
+\texttt{csim('reset');} resets the simulation time $t$ back to
+$t=0.0$.
+
+\Subsubsection{simulate}{cmd:singlesim}
+\label{cmd:simulate}
+
+\begin{itemize}
+  
+\item \texttt{csim('simulate',Tsim,InputSignals);} runs the network
+  simulation for \texttt{Tsim} seconds starting at the time where the
+  last simulate command stopped with \secref{sec:inputs}{input signals
+    \texttt{InputSignals}}.
+  
+\item \texttt{csim('simulate',Tsim,I1,I2,...,In);} same as above but
+  with input signals \texttt{I1} to \texttt{In}. There is no special
+  meaning in the ordering of the input signals. It is equvivalent to
+  concatenate \texttt{I1} to \texttt{In} into one struct array and
+  pass this array as the single input signal.
+  
+\item \texttt{R=csim('simulate',Tsim,InputSignals);}\\ same as
+  \texttt{csim('simulate',Tsim,InputSignals);} but in addition returns
+  the cell array \texttt{R} which holds the \secref{sec:output}{output
+    (traces) of all Recorder objects}.
+  
+\item \texttt{R=csim('simulate',Tsim,I1,I2,...,In);}\\ same as
+  \texttt{csim('simulate',Tsim,I1,I2,...,In);} but in addition returns
+  the cell array \texttt{R} which holds the \secref{sec:output}{output
+    (traces) of all Recorder objects}.
+
+\item \texttt{R=csim('simulate',Tsim,I1,I2,...,In);}\\ same as
+  \texttt{csim('simulate',Tsim,I1,I2,...,In);} but in addition returns
+  the cell array \texttt{R} which holds the \secref{sec:output}{output
+    (traces) of all Recorder objects}.
+
+
+\end{itemize}
+
+%\Subsubsection{Multi-stimulus simulate}{cmd:singlemulti}
+%
+%\texttt{R=csim('simulate',Tsim,S);} runs $n$ network simulations for
+%\texttt{Tsim} sec. The network is reset to $t=0$ before each
+%simulation.
+%
+%The $n$ simulations are determined by the $n \times 1$ strucht array
+%\texttt{S} where \texttt{S(i).channel} specifies the stimulus for the
+%$i$-th simulation (see \sect{sec:multiin}).
+%
+%\texttt{R} contains the reorded values of all $n$ simulations (see
+%\sect{sec:multiout}).
+%  
+%If the \secref{sec:distr}{distributed simulation} is on (see command
+%\secref{cmd:pvm}{pvm}), the $n$ simulations will be carried out in
+%parallel.
+%
+%\subsection{Initializing PVM}
+%
+%\cmdref{pvm}
+
+\subsection{Saving, loading and deleting networks }
+
+\cmdref{export}
+
+The command
+\begin{verbatim}
+  net = csim('export');
+\end{verbatim}
+produces a struct array \texttt{net} which contains all information
+about the current network simulation which is needed to set up the
+simulation. Using \texttt{save file.mat net} you can save the whole
+network simulation.
+
+NOTE: The struct array \texttt{net} returned by
+\texttt{net=csim('export');} is only intended to be saved to disk for
+later use by \texttt{csim('import',net);} and does not have a human
+readable form.
+
+\cmdref{import}
+
+The command
+\begin{verbatim}
+  csim('import',net);
+\end{verbatim}
+allows you to set up a network simulation from the struct array
+\texttt{net} which has previously been generated by \texttt{net =
+  csim('export');}. In combination with the matlab command
+\texttt{load} this \csim command serves the purpose of loading a
+simulation from disk.
+
+If the current network (either explicitly specified or default
+network) does not contain any objects the \texttt{net} will be
+imported into that network. If there are already objects a new network
+will be created and and \texttt{net} will be imported to that.
+
+NOTE: The struct array \texttt{net} returned by
+\texttt{net=csim('export');} \emph{does not} contain information about
+the current state of the simulation at time $t$.  \emph{Hence it is
+  only possible to start simulation based on such an arry at time
+  $t=0.0$.}
+
+\cmdref{destroy}
+
+\texttt{csim('destroy');} all the networks.
+
+\subsection{Displaying/Getting information}
+
+\cmdref{get}
+
+\begin{itemize}
+
+  \item \texttt{csim('get');} diplays the values of the \secref{sec:gf}{global fields}
+
+  \item \texttt{v=csim('get',field);} return the value of the
+    \secref{sec:gf}{global field} specified by the string \texttt{field}
+
+  \item \texttt{csim('get',idx);} displays the values of all fields of the
+    object specified by the array index/handle \texttt{idx}
+
+  \item \texttt{v=csim('get',idx,field);} returns a double array
+   \texttt{v} where \texttt{v(:,i)} contains the values of the field
+   \texttt{field} of the object with index/handle \texttt{idx(i)}.
+
+ \item \texttt{o=csim('get',idx,'struct');} return a struct array
+   describing the object specified by the index/handle
+   \texttt{idx(1)}:
+
+   \begin{itemize}
+   \item \texttt{o.className} : String containing the name of class of object
+   \item \texttt{o.spiking} : Double value which is 1 if the object is a
+     spike emitting object (0 otherwise)
+   \item \texttt{o.fields} : Cell array of strings containing the field
+     names of the object
+   \item and all fields with its values.
+   \end{itemize}
+   
+ \item \texttt{[incomming,outgoing]=csim('get',idx,'connections');}
+   returns the indices/handles of the incomming (i.e. input
+   delivering) and outgoing (i.e. output receiving) objects of the
+   object specified by the index/handle \texttt{idx}. This is
+   currently only implemented for Synapses and Neurons.
+   
+ \item \texttt{R=csim('get',recorder\_idx,'traces');} returns the
+   traces of the fields recorded by the
+   \secref{classRecorder}{Recorder} object with handle
+   \texttt{recorder\_idx} during the \emph{last simulation}. See the
+   \secref{classRecorder}{Recorder documentation} for details about
+   the format of \texttt{R}.
+
+\end{itemize}
+
+\cmdref{list}
+
+\begin{itemize}
+  
+\item \texttt{csim('list');} and \texttt{csim('list','classes');}
+  print a list of all available classes
+  
+\item \texttt{csim('list','classes','-fields');} prints a list of all
+  available classes with information about the fields of each class.
+  Read/writeable fields are marked by a '\texttt{=}' between the field
+  name and its description, wheres a '\texttt{:}' denotes a read-only
+  field.
+
+\item \texttt{csim('list','objects');}  prints a list of all created
+  objects
+
+\item \texttt{csim('list','objects','-fields');} prints a list of all
+  created objects and the values of its fields. Read/writeable fields
+  are marked by a '\texttt{=}' between the field name and its value,
+  wheres a '\texttt{:}' denotes a read-only field.
+
+\item \texttt{csim('list','networks');}  prints a list of all networks
+
+\item \texttt{csim('list','networks','-fields');} prints a list of all
+  networks and the values of its fields. Read/writeable fields
+  are marked by a '\texttt{=}' between the field name and its value,
+  wheres a '\texttt{:}' denotes a read-only field.
+
+\end{itemize}
+
+Not that instead of \texttt{'list'} one can use \texttt{'ls'} as a
+shortcut.
+
+\cmdref{version}
+
+\begin{itemize}
+\item \texttt{csim('version')} prints a version string
+\item \texttt{v=csim('version');} returns the version string
+\end{itemize}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

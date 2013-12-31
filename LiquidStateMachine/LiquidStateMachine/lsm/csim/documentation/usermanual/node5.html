@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Features of the current version</TITLE>
+<META NAME="description" CONTENT="Features of the current version">
+<META NAME="keywords" CONTENT="usermanual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="usermanual.css">
+
+<LINK REL="next" HREF="node6.html">
+<LINK REL="previous" HREF="node4.html">
+<LINK REL="up" HREF="node2.html">
+<LINK REL="next" HREF="node6.html">
+</HEAD>
+
+<BODY  bgcolor="#ffffff">
+
+<DIV CLASS="navigation"><table border=0 cellspacing=0 callpadding=0 width=100% class="csim_top_navigation">
+<tr valign=middle class="csim_top_navigation">
+<td valign=middle align=left  class="csim_top_navigation"><i><b>&nbsp;CSIM User Manual</b></i></td><td valign=middle align=right class="csim_top_navigation">&nbsp;
+<A NAME="tex2html268"
+  HREF="node4.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="previous" SRC="prev.gif"></A>&nbsp;
+<A NAME="tex2html276"
+  HREF="node1.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="contents" SRC="contents.gif"></A>&nbsp;
+<A NAME="tex2html278"
+  HREF="node6.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="next" SRC="next.gif"></A></dt></tr></table>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00023000000000000000">
+Features of the current version</A>
+</H2>
+
+<P>
+<DL>
+<DT><STRONG>Different levels of modeling</STRONG></DT>
+<DD>Different neuron models:
+  leaky-integrate-and-fire neurons, compartmental based neurons,
+  sigmoidal neurons. Different synapse models: static synapses and a
+  certain model of dynamic synapses are available for spiking as well
+  as for sigmoidal neurons. Spike time dependent synaptic plasticity
+  is also implemented.
+
+<P>
+</DD>
+<DT><STRONG>Easy to use Matlab interface</STRONG></DT>
+<DD>Since <SPAN  CLASS="textsf">CSIM</SPAN> is incorporated into
+  Matlab it is not necessary to learn any other script laguage to set
+  up the simulation. This is all done with Matlab scripts. Furthermore
+  the results of a simulation are directly returned as Matlab arrays
+  and hence any plotting and analysis tools available in Matlab can
+  easily be applied.
+
+<P>
+</DD>
+<DT><STRONG>Object oriented design</STRONG></DT>
+<DD>We adopted an object oriented design for
+  <SPAN  CLASS="textsf">CSIM</SPAN> which is similar to the approaches taken in
+  <A NAME="tex2html7"
+  HREF="http://www.bbb.caltech.edu/GENESIS/genesis.html">GENESIS</A>
+and
+  <A NAME="tex2html8"
+  HREF="http://www.neuron.yale.edu">NEURON</A>. That is there are objects
+
+(e.g. a <TT>LifNeuron</TT> object implements the standard
+  leaky-integrate-and-fire model) which are interconnected by means of
+  some signal channels. The creation of objects, the connection of
+  objects and the setting of parameters of the objects is controlled
+  at the level of Matlab scipts whereas the actual simulation is done
+  in the fast C++ core.
+
+<P>
+</DD>
+<DT><STRONG>Fast C++ core</STRONG></DT>
+<DD>Since <SPAN  CLASS="textsf">CSIM</SPAN> is implemented in C++ and is not as
+  general as GENESIS or NEURON simulations are performed quite fast.
+  We also implemented some ideas from event driven simulators like
+  <A NAME="tex2html9"
+  HREF="http://www.cnl.salk.edu/~arno/spikenet/">SpikeNet</A>
+which
+  result on an average speedup of 3 (assuming an average firing rate
+  of the neurons of 20Hz and short synaptic time constants) compared
+  to a standard fixed time step simulation scheme.
+
+<P>
+</DD>
+<DT><STRONG>Runs on Windows and Unix (Linux)</STRONG></DT>
+<DD><SPAN  CLASS="textsf">CSIM</SPAN> is developed on Linux but also
+  runs under Windows XP (we have no more experience with Windows 98 yet, but
+  it should also run there) and should in principle run on any platform for
+  which Matlab is available.
+
+<P>
+</DD>
+<DT><STRONG>External Interface</STRONG></DT>
+<DD>There is an external interface which allows <SPAN  CLASS="textsf">CSIM</SPAN> to
+  communicate with external programs. In this way one can for example control
+  the miniature robot
+  <A NAME="tex2html10"
+  HREF="http://www.k-team.com/robots/khepera/index.html">Khepera</A>
+with <SPAN  CLASS="textsf">CSIM</SPAN> .
+  This feature is not available in the Windows version.
+
+<P>
+</DD>
+</DL>
+
+<P>
+
+<DIV CLASS="navigation"><table border=0 cellspacing=0 callpadding=0 width=100% class="csim_bot_navigation">
+<tr valign=middle class="csim_bot_navigation">
+<td valign=middle align=left width=1% class="csim_bot_navigation">
+<A NAME="tex2html268"
+  HREF="node4.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="previous" SRC="prev.gif"></A></td><td valign=middle align=left class="csim_bot_navigation">&nbsp;<A NAME="tex2html269"
+  HREF="node4.html">About this Manual</A></td>
+<td align=right valign=middle class="csim_bot_navigation"><A NAME="tex2html279"
+  HREF="node6.html">Getting and Installing CSIM</A>&nbsp;
+<A NAME="tex2html278"
+  HREF="node6.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="next" SRC="next.gif"></A></td>
+</tr></table>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

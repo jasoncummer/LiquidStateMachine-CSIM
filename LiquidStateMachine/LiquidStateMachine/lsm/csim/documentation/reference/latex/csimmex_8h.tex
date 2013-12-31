@@ -1,0 +1,58 @@
+\hypertarget{csimmex_8h}{
+\section{csimmex.h File Reference}
+\label{csimmex_8h}\index{csimmex.h@{csimmex.h}}
+}
+
+
+\subsection{Detailed Description}
+
+
+{\tt \#include $<$mex.h$>$}\par
+{\tt \#include \char`\"{}globaldefinitions.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+int \hyperlink{csimmex_8h_a5}{csim\-Mex\-Get} (int nlhs, mx\-Array $\ast$plhs\mbox{[}$\,$\mbox{]}, int nrhs, const mx\-Array $\ast$prhs\mbox{[}$\,$\mbox{]})
+\item 
+int \hyperlink{csimmex_8h_a6}{csim\-Mex\-Connect} (int nlhs, mx\-Array $\ast$plhs\mbox{[}$\,$\mbox{]}, int nrhs, const mx\-Array $\ast$prhs\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{csimmex_8h_a13}{csim\-Mex\-Clean\-Up} (void)
+\begin{CompactList}\small\item\em When the CSIM MEX-file is cleared (e.g. at an exit from matlab) this function will be called. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{csimmex_8h_a0}{
+\hyperlink{classMexNetwork}{Mex\-Network} $\ast$ \hyperlink{csimmex_8h_a0}{The\-Network}}
+\label{csimmex_8h_a0}
+
+\begin{CompactList}\small\item\em Finally we need some pointer to the network we are using. \item\end{CompactList}\item 
+\hypertarget{csimmex_8h_a1}{
+int \hyperlink{csimmex_8h_a1}{MAXINTEGER}}
+\label{csimmex_8h_a1}
+
+\begin{CompactList}\small\item\em The largest integer number. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{csimmex_8h_a13}{
+\index{csimmex.h@{csimmex.h}!csimMexCleanUp@{csimMexCleanUp}}
+\index{csimMexCleanUp@{csimMexCleanUp}!csimmex.h@{csimmex.h}}
+\subsubsection[csimMexCleanUp]{\setlength{\rightskip}{0pt plus 5cm}void csim\-Mex\-Clean\-Up (void)}}
+\label{csimmex_8h_a13}
+
+
+This function is registered as MEX exit function via mex\-At\-Exit(). Within this function one has to make sure that we \char`\"{}clean up\char`\"{} properly. \hypertarget{csimmex_8h_a6}{
+\index{csimmex.h@{csimmex.h}!csimMexConnect@{csimMexConnect}}
+\index{csimMexConnect@{csimMexConnect}!csimmex.h@{csimmex.h}}
+\subsubsection[csimMexConnect]{\setlength{\rightskip}{0pt plus 5cm}int csim\-Mex\-Connect (int, mx\-Array $\ast$\mbox{[}$\,$\mbox{]}, int {\em nrhs}, const mx\-Array $\ast$ {\em prhs}\mbox{[}$\,$\mbox{]})}}
+\label{csimmex_8h_a6}
+
+
+Connect parts of the network. \hypertarget{csimmex_8h_a5}{
+\index{csimmex.h@{csimmex.h}!csimMexGet@{csimMexGet}}
+\index{csimMexGet@{csimMexGet}!csimmex.h@{csimmex.h}}
+\subsubsection[csimMexGet]{\setlength{\rightskip}{0pt plus 5cm}int csim\-Mex\-Get (int {\em nlhs}, mx\-Array $\ast$ {\em plhs}\mbox{[}$\,$\mbox{]}, int {\em nrhs}, const mx\-Array $\ast$ {\em prhs}\mbox{[}$\,$\mbox{]})}}
+\label{csimmex_8h_a5}
+
+
+Returns either all network parameters, the values of a global variable, values of an object, connections or parameter lists. 

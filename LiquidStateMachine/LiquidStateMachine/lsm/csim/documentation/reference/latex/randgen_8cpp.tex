@@ -1,0 +1,53 @@
+\hypertarget{randgen_8cpp}{
+\section{randgen.cpp File Reference}
+\label{randgen_8cpp}\index{randgen.cpp@{randgen.cpp}}
+}
+
+
+\subsection{Detailed Description}
+The core is the function \hyperlink{randgen_8cpp_a15}{uniform\_\-rand()} which is taken from Numerical Recipies in C. It is used to derive the normal distributed generator \hyperlink{randgen_8cpp_a18}{normrnd()}.
+
+{\tt \#include \char`\"{}randgen.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+double \hyperlink{randgen_8cpp_a15}{uniform\_\-rand} (long $\ast$idum)
+\item 
+void \hyperlink{randgen_8cpp_a16}{rseed} (long idum)
+\item 
+double \hyperlink{randgen_8cpp_a17}{unirnd} (void)
+\item 
+double \hyperlink{randgen_8cpp_a18}{normrnd} (void)
+\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{randgen_8cpp_a18}{
+\index{randgen.cpp@{randgen.cpp}!normrnd@{normrnd}}
+\index{normrnd@{normrnd}!randgen.cpp@{randgen.cpp}}
+\subsubsection[normrnd]{\setlength{\rightskip}{0pt plus 5cm}double normrnd (void)}}
+\label{randgen_8cpp_a18}
+
+
+Gaussion random variable with zero mean and variace 1.0. Taken from Numerical Cecipies in C.\hypertarget{randgen_8cpp_a16}{
+\index{randgen.cpp@{randgen.cpp}!rseed@{rseed}}
+\index{rseed@{rseed}!randgen.cpp@{randgen.cpp}}
+\subsubsection[rseed]{\setlength{\rightskip}{0pt plus 5cm}void rseed (long {\em idum})}}
+\label{randgen_8cpp_a16}
+
+
+Set the seed of the random number generator. \hypertarget{randgen_8cpp_a15}{
+\index{randgen.cpp@{randgen.cpp}!uniform_rand@{uniform\_\-rand}}
+\index{uniform_rand@{uniform\_\-rand}!randgen.cpp@{randgen.cpp}}
+\subsubsection[uniform\_\-rand]{\setlength{\rightskip}{0pt plus 5cm}double uniform\_\-rand (long $\ast$ {\em idum})}}
+\label{randgen_8cpp_a15}
+
+
+Long period ($>$ 2 10 18 ) random number generator of L'Ecuyer with Bays-Durham shuffle and added safeguards. Returns a uniform random deviate between 0.0 and 1.0 (exclusive of the endpoint values). Call with idum a negative integer to initialize; thereafter, do not alter idum between successive deviates in a sequence. RNMX should approximate the largest floating value that is less than 1. \hypertarget{randgen_8cpp_a17}{
+\index{randgen.cpp@{randgen.cpp}!unirnd@{unirnd}}
+\index{unirnd@{unirnd}!randgen.cpp@{randgen.cpp}}
+\subsubsection[unirnd]{\setlength{\rightskip}{0pt plus 5cm}double unirnd (void)}}
+\label{randgen_8cpp_a17}
+
+
+Returns a random number from the interval (0,1). 

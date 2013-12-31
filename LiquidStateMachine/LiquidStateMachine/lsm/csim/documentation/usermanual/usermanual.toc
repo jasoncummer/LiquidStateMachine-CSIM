@@ -1,0 +1,128 @@
+\contentsline {section}{\numberline {1}Preliminaries}{5}{section.1}
+\contentsline {subsection}{\numberline {1.1}What is \textsf {CSIM} ?}{5}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}About this Manual}{5}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Features of the current version}{6}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Getting and Installing \textsf {CSIM} }{6}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Compiling \textsf {CSIM} from the sources}{7}{subsection.1.5}
+\contentsline {section}{\numberline {2}A short Tutorial}{9}{section.2}
+\contentsline {subsection}{\numberline {2.1}Creating Objects}{9}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Object Handles}{9}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Setting Fields or Parameters}{9}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Making connections}{10}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Recording}{11}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Setting up the input}{11}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Running the simulation}{11}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}Plotting the recorded traces}{12}{subsection.2.8}
+\contentsline {section}{\numberline {3}Input and Output}{13}{section.3}
+\contentsline {subsection}{\numberline {3.1}Input Signals}{13}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Output}{14}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Getting results of the last simulation}{14}{subsubsection.3.2.1}
+\contentsline {paragraph}{\texttt {commonChannels = 0}}{14}{section*.3}
+\contentsline {paragraph}{\texttt {commonChannels = 1}}{14}{section*.4}
+\contentsline {subsubsection}{\numberline {3.2.2}Getting the results of a multi-stimulus simulation}{15}{subsubsection.3.2.2}
+\contentsline {section}{\numberline {4}Additional Topics}{15}{section.4}
+\contentsline {subsection}{\numberline {4.1}How the network is simulated}{15}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Global fields}{16}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Event driven simulation}{16}{subsection.4.3}
+\contentsline {section}{\numberline {5}Adding your own C++ model classes to \textsf {CSIM} }{16}{section.5}
+\contentsline {subsection}{\numberline {5.1}Recipe}{17}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Details}{17}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Hints for adding user defined models}{17}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Setting and getting field values of objects}{18}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Implementaion}{18}{subsection.5.5}
+\contentsline {subsubsection}{\numberline {5.5.1}Registering classes and fields}{18}{subsubsection.5.5.1}
+\contentsline {subsubsection}{\numberline {5.5.2}reggen}{19}{subsubsection.5.5.2}
+\contentsline {paragraph}{Default behaviour of $\delimiter "026E30F $c reggen}{19}{section*.7}
+\contentsline {paragraph}{Specifying information for use by reggen}{19}{section*.8}
+\contentsline {subparagraph}{Example 1}{19}{section*.9}
+\contentsline {subparagraph}{Example 2}{20}{section*.10}
+\contentsline {paragraph}{Source code of reggen}{20}{section*.11}
+\contentsline {section}{\numberline {6}\textsf {CSIM} command reference}{21}{section.6}
+\contentsline {subsection}{\numberline {6.1}Setting up a network simulation}{21}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}create}{21}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}set}{21}{subsubsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.3}connect}{22}{subsubsection.6.1.3}
+\contentsline {subsection}{\numberline {6.2}Running the network simulation}{22}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}reset}{22}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}simulate}{22}{subsubsection.6.2.2}
+\contentsline {subsection}{\numberline {6.3}Saving, loading and deleting networks }{23}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}export}{23}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}import}{23}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}destroy}{23}{subsubsection.6.3.3}
+\contentsline {subsection}{\numberline {6.4}Displaying/Getting information}{23}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.4.1}get}{23}{subsubsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.2}list}{24}{subsubsection.6.4.2}
+\contentsline {subsubsection}{\numberline {6.4.3}version}{25}{subsubsection.6.4.3}
+\contentsline {section}{\numberline {7}\textsf {CSIM} model classe reference}{25}{section.7}
+\contentsline {subsection}{\numberline {7.1}AChannel\_\discretionary {-}{}{}Hoffman97}{25}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}AChannel\_\discretionary {-}{}{}Korngreen02}{25}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Active\discretionary {-}{}{}Ca\discretionary {-}{}{}Channel}{26}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Active\discretionary {-}{}{}Channel}{26}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}AHP\_\discretionary {-}{}{}Channel}{26}{subsection.7.5}
+\contentsline {subsection}{\numberline {7.6}Alpha\discretionary {-}{}{}Spike\discretionary {-}{}{}Filter}{27}{subsection.7.6}
+\contentsline {subsection}{\numberline {7.7}Analog\discretionary {-}{}{}Feedback\discretionary {-}{}{}Neuron}{27}{subsection.7.7}
+\contentsline {subsection}{\numberline {7.8}Analog\discretionary {-}{}{}Input\discretionary {-}{}{}Neuron}{27}{subsection.7.8}
+\contentsline {subsection}{\numberline {7.9}Analog\discretionary {-}{}{}Teacher}{28}{subsection.7.9}
+\contentsline {subsection}{\numberline {7.10}Arm\discretionary {-}{}{}Model}{28}{subsection.7.10}
+\contentsline {subsection}{\numberline {7.11}b\discretionary {-}{}{}NACNeuron}{29}{subsection.7.11}
+\contentsline {subsection}{\numberline {7.12}b\discretionary {-}{}{}NACOUNeuron}{29}{subsection.7.12}
+\contentsline {subsection}{\numberline {7.13}Ca\discretionary {-}{}{}Channel\_\discretionary {-}{}{}Yamada98}{30}{subsection.7.13}
+\contentsline {subsection}{\numberline {7.14}c\discretionary {-}{}{}ACNeuron}{31}{subsection.7.14}
+\contentsline {subsection}{\numberline {7.15}c\discretionary {-}{}{}ACOUNeuron}{31}{subsection.7.15}
+\contentsline {subsection}{\numberline {7.16}Ca\discretionary {-}{}{}Gate\_\discretionary {-}{}{}Yamada98}{32}{subsection.7.16}
+\contentsline {subsection}{\numberline {7.17}CALChannel\_\discretionary {-}{}{}Destexhe98}{33}{subsection.7.17}
+\contentsline {subsection}{\numberline {7.18}Cb\discretionary {-}{}{}Neuron\discretionary {-}{}{}St}{33}{subsection.7.18}
+\contentsline {subsection}{\numberline {7.19}Cb\discretionary {-}{}{}Neuron}{35}{subsection.7.19}
+\contentsline {subsection}{\numberline {7.20}Cb\discretionary {-}{}{}St\discretionary {-}{}{}Ou\discretionary {-}{}{}Neuron}{37}{subsection.7.20}
+\contentsline {subsection}{\numberline {7.21}Count\discretionary {-}{}{}Spike\discretionary {-}{}{}Filter}{39}{subsection.7.21}
+\contentsline {subsection}{\numberline {7.22}Discretization\discretionary {-}{}{}Preprocessor}{39}{subsection.7.22}
+\contentsline {subsection}{\numberline {7.23}d\discretionary {-}{}{}NACNeuron}{39}{subsection.7.23}
+\contentsline {subsection}{\numberline {7.24}d\discretionary {-}{}{}NACOUNeuron}{40}{subsection.7.24}
+\contentsline {subsection}{\numberline {7.25}Dynamic\discretionary {-}{}{}Spiking\discretionary {-}{}{}Cb\discretionary {-}{}{}Synapse}{41}{subsection.7.25}
+\contentsline {subsection}{\numberline {7.26}Dynamic\discretionary {-}{}{}Spiking\discretionary {-}{}{}Synapse}{42}{subsection.7.26}
+\contentsline {subsection}{\numberline {7.27}Dynamic\discretionary {-}{}{}Stdp\discretionary {-}{}{}Synapse}{42}{subsection.7.27}
+\contentsline {subsection}{\numberline {7.28}Exp\discretionary {-}{}{}Spike\discretionary {-}{}{}Filter}{43}{subsection.7.28}
+\contentsline {subsection}{\numberline {7.29}Ext\discretionary {-}{}{}Input\discretionary {-}{}{}Neuron}{44}{subsection.7.29}
+\contentsline {subsection}{\numberline {7.30}Ext\discretionary {-}{}{}Out\discretionary {-}{}{}Lif\discretionary {-}{}{}Neuron}{44}{subsection.7.30}
+\contentsline {subsection}{\numberline {7.31}Ext\discretionary {-}{}{}Out\discretionary {-}{}{}Linear\discretionary {-}{}{}Neuron}{45}{subsection.7.31}
+\contentsline {subsection}{\numberline {7.32}Ext\discretionary {-}{}{}Out\discretionary {-}{}{}Sigmoidal\discretionary {-}{}{}Neuron}{45}{subsection.7.32}
+\contentsline {subsection}{\numberline {7.33}Gaussian\discretionary {-}{}{}Analog\discretionary {-}{}{}Filter}{45}{subsection.7.33}
+\contentsline {subsection}{\numberline {7.34}GVD\_\discretionary {-}{}{}c\discretionary {-}{}{}T\_\discretionary {-}{}{}Gate}{46}{subsection.7.34}
+\contentsline {subsection}{\numberline {7.35}GVD\_\discretionary {-}{}{}Gate}{46}{subsection.7.35}
+\contentsline {subsection}{\numberline {7.36}HChannel\_\discretionary {-}{}{}Stuart98}{46}{subsection.7.36}
+\contentsline {subsection}{\numberline {7.37}HH\_\discretionary {-}{}{}K\_\discretionary {-}{}{}Channel}{47}{subsection.7.37}
+\contentsline {subsection}{\numberline {7.38}HH\_\discretionary {-}{}{}Na\_\discretionary {-}{}{}Channel}{47}{subsection.7.38}
+\contentsline {subsection}{\numberline {7.39}HHNeuron}{47}{subsection.7.39}
+\contentsline {subsection}{\numberline {7.40}HVACAChannel\_\discretionary {-}{}{}Brown93}{48}{subsection.7.40}
+\contentsline {subsection}{\numberline {7.41}Ifb\discretionary {-}{}{}Neuron}{49}{subsection.7.41}
+\contentsline {subsection}{\numberline {7.42}Izhi\_\discretionary {-}{}{}Neuron}{50}{subsection.7.42}
+\contentsline {subsection}{\numberline {7.43}KCAChannel\_\discretionary {-}{}{}Mainen96}{51}{subsection.7.43}
+\contentsline {subsection}{\numberline {7.44}KChannel\_\discretionary {-}{}{}Korngreen02}{51}{subsection.7.44}
+\contentsline {subsection}{\numberline {7.45}Lif\discretionary {-}{}{}Burst\discretionary {-}{}{}Neuron}{52}{subsection.7.45}
+\contentsline {subsection}{\numberline {7.46}Lif\discretionary {-}{}{}Neuron}{53}{subsection.7.46}
+\contentsline {subsection}{\numberline {7.47}linear\_\discretionary {-}{}{}classification}{53}{subsection.7.47}
+\contentsline {subsection}{\numberline {7.48}Linear\discretionary {-}{}{}Neuron}{54}{subsection.7.48}
+\contentsline {subsection}{\numberline {7.49}Linear\discretionary {-}{}{}Preprocessor}{54}{subsection.7.49}
+\contentsline {subsection}{\numberline {7.50}linear\_\discretionary {-}{}{}regression}{54}{subsection.7.50}
+\contentsline {subsection}{\numberline {7.51}MChannel\_\discretionary {-}{}{}Mainen96}{54}{subsection.7.51}
+\contentsline {subsection}{\numberline {7.52}MChannel\_\discretionary {-}{}{}Wang98}{55}{subsection.7.52}
+\contentsline {subsection}{\numberline {7.53}Mean\_\discretionary {-}{}{}Std\_\discretionary {-}{}{}Preprocessor}{55}{subsection.7.53}
+\contentsline {subsection}{\numberline {7.54}Mex\discretionary {-}{}{}Recorder}{55}{subsection.7.54}
+\contentsline {subsection}{\numberline {7.55}NPChannel\_\discretionary {-}{}{}Mc\discretionary {-}{}{}Cormick02}{56}{subsection.7.55}
+\contentsline {subsection}{\numberline {7.56}PCAPreprocessor}{56}{subsection.7.56}
+\contentsline {subsection}{\numberline {7.57}Readout}{56}{subsection.7.57}
+\contentsline {subsection}{\numberline {7.58}Recorder}{57}{subsection.7.58}
+\contentsline {subsection}{\numberline {7.59}SICChannel\_\discretionary {-}{}{}Maciokas02}{58}{subsection.7.59}
+\contentsline {subsection}{\numberline {7.60}Sigmoidal\discretionary {-}{}{}Neuron}{58}{subsection.7.60}
+\contentsline {subsection}{\numberline {7.61}Spiking\discretionary {-}{}{}Input\discretionary {-}{}{}Neuron}{58}{subsection.7.61}
+\contentsline {subsection}{\numberline {7.62}Spiking\discretionary {-}{}{}Teacher}{59}{subsection.7.62}
+\contentsline {subsection}{\numberline {7.63}Static\discretionary {-}{}{}Analog\discretionary {-}{}{}Cb\discretionary {-}{}{}Synapse}{59}{subsection.7.63}
+\contentsline {subsection}{\numberline {7.64}Static\discretionary {-}{}{}Analog\discretionary {-}{}{}Synapse}{59}{subsection.7.64}
+\contentsline {subsection}{\numberline {7.65}Static\discretionary {-}{}{}Spiking\discretionary {-}{}{}Cb\discretionary {-}{}{}Synapse}{59}{subsection.7.65}
+\contentsline {subsection}{\numberline {7.66}Static\discretionary {-}{}{}Spiking\discretionary {-}{}{}Synapse}{60}{subsection.7.66}
+\contentsline {subsection}{\numberline {7.67}Static\discretionary {-}{}{}Stdp\discretionary {-}{}{}Synapse}{60}{subsection.7.67}
+\contentsline {subsection}{\numberline {7.68}Traubs\_\discretionary {-}{}{}HH\_\discretionary {-}{}{}K\_\discretionary {-}{}{}Channel}{61}{subsection.7.68}
+\contentsline {subsection}{\numberline {7.69}Traubs\_\discretionary {-}{}{}HH\_\discretionary {-}{}{}Na\_\discretionary {-}{}{}Channel}{61}{subsection.7.69}
+\contentsline {subsection}{\numberline {7.70}Traubs\discretionary {-}{}{}HHNeuron}{61}{subsection.7.70}
+\contentsline {subsection}{\numberline {7.71}Triangular\discretionary {-}{}{}Analog\discretionary {-}{}{}Filter}{63}{subsection.7.71}
+\contentsline {subsection}{\numberline {7.72}User\discretionary {-}{}{}Analog\discretionary {-}{}{}Filter}{63}{subsection.7.72}

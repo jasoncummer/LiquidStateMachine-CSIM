@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Setting Fields or Parameters</TITLE>
+<META NAME="description" CONTENT="Setting Fields or Parameters">
+<META NAME="keywords" CONTENT="usermanual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="usermanual.css">
+
+<LINK REL="next" HREF="node12.html">
+<LINK REL="previous" HREF="node10.html">
+<LINK REL="up" HREF="node8.html">
+<LINK REL="next" HREF="node12.html">
+</HEAD>
+
+<BODY  bgcolor="#ffffff">
+
+<DIV CLASS="navigation"><table border=0 cellspacing=0 callpadding=0 width=100% class="csim_top_navigation">
+<tr valign=middle class="csim_top_navigation">
+<td valign=middle align=left  class="csim_top_navigation"><i><b>&nbsp;CSIM User Manual</b></i></td><td valign=middle align=right class="csim_top_navigation">&nbsp;
+<A NAME="tex2html347"
+  HREF="node10.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="previous" SRC="prev.gif"></A>&nbsp;
+<A NAME="tex2html355"
+  HREF="node1.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="contents" SRC="contents.gif"></A>&nbsp;
+<A NAME="tex2html357"
+  HREF="node12.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="next" SRC="next.gif"></A></dt></tr></table>
+</DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00033000000000000000">
+Setting Fields or Parameters</A>
+</H2>
+
+<P>
+Each of the created objects has several <SPAN  CLASS="textit">fields</SPAN> which usually
+correspond to a parameter of the model which is implemented by the
+class of the object. To display for example all
+<A HREF="node81.html#classLifNeuron">fields of the <TT>LifNeuron</TT></A> object we
+can use the command
+<PRE><TT>
+&nbsp;&nbsp;&nbsp;&nbsp;<TT>&#187; csim('<A HREF="node34.html#cmd:get">get</A>',n);
+</TT></PRE></TT>
+This will yield the following output
+<PRE>
+  0 : LifNeuron
+          Cm = 3e-08 (F)
+          Rm = 1e+06 (Ohm)
+    Vresting = -0.06 (V)
+      Vreset = -0.06 (V)
+       Vinit = -0.06 (V)
+    Trefract = 0.003 (sec)
+      Inoise = 0 (A)
+     Iinject = 0 (A)
+     Vthresh = -0.045 (V)
+          Vm : 0 (V)
+        type = 0
+     nSpikes : 0
+   nIncoming : 0
+   nOutgoing : 0
+</PRE>
+Some of the fields are parameters of the model (<TT>Cm</TT>,
+<TT>Rm</TT>, ...) which can be modified (denoted by the <TT>'='</TT>)
+others are internal state variables (<TT>Vm</TT> in this case) which
+can not be changed (denoted by the <TT>':'</TT>) and yet other provide
+auxiliary information (<TT>nSpikes</TT>, <TT>nIncoming</TT>, ...). See
+the <A HREF="node35.html#sec:clref">Class Reference</A> for details about fields
+of a particular object.
+
+<P>
+Suppose we want to change the absolut refractory period of the LIF
+neuron <TT>n</TT> to be of length 2ms and add a noisy current of
+50nA. This can be done with the command
+<PRE><TT>
+&nbsp;&nbsp;&nbsp;&nbsp;<TT>&#187; csim('<A HREF="node31.html#cmd:set">set</A>',n,'Trefract',0.002,'Inoise',50e-9);
+</TT></PRE></TT>
+For the dynamic synapse <TT>s</TT> we choose parameters such that it
+will show a depressing behaviour:
+<PRE><TT>
+&nbsp;&nbsp;&nbsp;&nbsp;<TT>&#187; csim('<A HREF="node31.html#cmd:set">set</A>',s,'W',10,'U',0.1,'D',1,'F',0.05); 
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;<TT>&#187; csim('<A HREF="node31.html#cmd:set">set</A>',s,'u0',0.1,'r0',1);
+</TT></PRE></TT></TT>
+
+<P>
+
+<DIV CLASS="navigation"><table border=0 cellspacing=0 callpadding=0 width=100% class="csim_bot_navigation">
+<tr valign=middle class="csim_bot_navigation">
+<td valign=middle align=left width=1% class="csim_bot_navigation">
+<A NAME="tex2html347"
+  HREF="node10.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="previous" SRC="prev.gif"></A></td><td valign=middle align=left class="csim_bot_navigation">&nbsp;<A NAME="tex2html348"
+  HREF="node10.html">Object Handles</A></td>
+<td align=right valign=middle class="csim_bot_navigation"><A NAME="tex2html358"
+  HREF="node12.html">Making connections</A>&nbsp;
+<A NAME="tex2html357"
+  HREF="node12.html">
+<IMG  ALIGN="absmiddle" BORDER="0" ALT="next" SRC="next.gif"></A></td>
+</tr></table>
+</DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

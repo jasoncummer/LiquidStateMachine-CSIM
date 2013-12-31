@@ -1,0 +1,121 @@
+\BOOKMARK [1][-]{section.1}{Preliminaries}{}
+\BOOKMARK [2][-]{subsection.1.1}{What is CSIM ?}{section.1}
+\BOOKMARK [2][-]{subsection.1.2}{About this Manual}{section.1}
+\BOOKMARK [2][-]{subsection.1.3}{Features of the current version}{section.1}
+\BOOKMARK [2][-]{subsection.1.4}{Getting and Installing CSIM }{section.1}
+\BOOKMARK [2][-]{subsection.1.5}{Compiling CSIM from the sources}{section.1}
+\BOOKMARK [1][-]{section.2}{A short Tutorial}{}
+\BOOKMARK [2][-]{subsection.2.1}{Creating Objects}{section.2}
+\BOOKMARK [2][-]{subsection.2.2}{Object Handles}{section.2}
+\BOOKMARK [2][-]{subsection.2.3}{Setting Fields or Parameters}{section.2}
+\BOOKMARK [2][-]{subsection.2.4}{Making connections}{section.2}
+\BOOKMARK [2][-]{subsection.2.5}{Recording}{section.2}
+\BOOKMARK [2][-]{subsection.2.6}{Setting up the input}{section.2}
+\BOOKMARK [2][-]{subsection.2.7}{Running the simulation}{section.2}
+\BOOKMARK [2][-]{subsection.2.8}{Plotting the recorded traces}{section.2}
+\BOOKMARK [1][-]{section.3}{Input and Output}{}
+\BOOKMARK [2][-]{subsection.3.1}{Input Signals}{section.3}
+\BOOKMARK [2][-]{subsection.3.2}{Output}{section.3}
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Getting results of the last simulation}{subsection.3.2}
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Getting the results of a multi-stimulus simulation}{subsection.3.2}
+\BOOKMARK [1][-]{section.4}{Additional Topics}{}
+\BOOKMARK [2][-]{subsection.4.1}{How the network is simulated}{section.4}
+\BOOKMARK [2][-]{subsection.4.2}{Global fields}{section.4}
+\BOOKMARK [2][-]{subsection.4.3}{Event driven simulation}{section.4}
+\BOOKMARK [1][-]{section.5}{Adding your own C++ model classes to CSIM }{}
+\BOOKMARK [2][-]{subsection.5.1}{Recipe}{section.5}
+\BOOKMARK [2][-]{subsection.5.2}{Details}{section.5}
+\BOOKMARK [2][-]{subsection.5.3}{Hints for adding user defined models}{section.5}
+\BOOKMARK [2][-]{subsection.5.4}{Setting and getting field values of objects}{section.5}
+\BOOKMARK [2][-]{subsection.5.5}{Implementaion}{section.5}
+\BOOKMARK [3][-]{subsubsection.5.5.1}{Registering classes and fields}{subsection.5.5}
+\BOOKMARK [3][-]{subsubsection.5.5.2}{reggen}{subsection.5.5}
+\BOOKMARK [1][-]{section.6}{CSIM command reference}{}
+\BOOKMARK [2][-]{subsection.6.1}{Setting up a network simulation}{section.6}
+\BOOKMARK [3][-]{subsubsection.6.1.1}{create}{subsection.6.1}
+\BOOKMARK [3][-]{subsubsection.6.1.2}{set}{subsection.6.1}
+\BOOKMARK [3][-]{subsubsection.6.1.3}{connect}{subsection.6.1}
+\BOOKMARK [2][-]{subsection.6.2}{Running the network simulation}{section.6}
+\BOOKMARK [3][-]{subsubsection.6.2.1}{reset}{subsection.6.2}
+\BOOKMARK [3][-]{subsubsection.6.2.2}{simulate}{subsection.6.2}
+\BOOKMARK [2][-]{subsection.6.3}{Saving, loading and deleting networks }{section.6}
+\BOOKMARK [3][-]{subsubsection.6.3.1}{export}{subsection.6.3}
+\BOOKMARK [3][-]{subsubsection.6.3.2}{import}{subsection.6.3}
+\BOOKMARK [3][-]{subsubsection.6.3.3}{destroy}{subsection.6.3}
+\BOOKMARK [2][-]{subsection.6.4}{Displaying/Getting information}{section.6}
+\BOOKMARK [3][-]{subsubsection.6.4.1}{get}{subsection.6.4}
+\BOOKMARK [3][-]{subsubsection.6.4.2}{list}{subsection.6.4}
+\BOOKMARK [3][-]{subsubsection.6.4.3}{version}{subsection.6.4}
+\BOOKMARK [1][-]{section.7}{CSIM model classe reference}{}
+\BOOKMARK [2][-]{subsection.7.1}{AChannel\137Hoffman97}{section.7}
+\BOOKMARK [2][-]{subsection.7.2}{AChannel\137Korngreen02}{section.7}
+\BOOKMARK [2][-]{subsection.7.3}{ActiveCaChannel}{section.7}
+\BOOKMARK [2][-]{subsection.7.4}{ActiveChannel}{section.7}
+\BOOKMARK [2][-]{subsection.7.5}{AHP\137Channel}{section.7}
+\BOOKMARK [2][-]{subsection.7.6}{AlphaSpikeFilter}{section.7}
+\BOOKMARK [2][-]{subsection.7.7}{AnalogFeedbackNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.8}{AnalogInputNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.9}{AnalogTeacher}{section.7}
+\BOOKMARK [2][-]{subsection.7.10}{ArmModel}{section.7}
+\BOOKMARK [2][-]{subsection.7.11}{bNACNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.12}{bNACOUNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.13}{CaChannel\137Yamada98}{section.7}
+\BOOKMARK [2][-]{subsection.7.14}{cACNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.15}{cACOUNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.16}{CaGate\137Yamada98}{section.7}
+\BOOKMARK [2][-]{subsection.7.17}{CALChannel\137Destexhe98}{section.7}
+\BOOKMARK [2][-]{subsection.7.18}{CbNeuronSt}{section.7}
+\BOOKMARK [2][-]{subsection.7.19}{CbNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.20}{CbStOuNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.21}{CountSpikeFilter}{section.7}
+\BOOKMARK [2][-]{subsection.7.22}{DiscretizationPreprocessor}{section.7}
+\BOOKMARK [2][-]{subsection.7.23}{dNACNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.24}{dNACOUNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.25}{DynamicSpikingCbSynapse}{section.7}
+\BOOKMARK [2][-]{subsection.7.26}{DynamicSpikingSynapse}{section.7}
+\BOOKMARK [2][-]{subsection.7.27}{DynamicStdpSynapse}{section.7}
+\BOOKMARK [2][-]{subsection.7.28}{ExpSpikeFilter}{section.7}
+\BOOKMARK [2][-]{subsection.7.29}{ExtInputNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.30}{ExtOutLifNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.31}{ExtOutLinearNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.32}{ExtOutSigmoidalNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.33}{GaussianAnalogFilter}{section.7}
+\BOOKMARK [2][-]{subsection.7.34}{GVD\137cT\137Gate}{section.7}
+\BOOKMARK [2][-]{subsection.7.35}{GVD\137Gate}{section.7}
+\BOOKMARK [2][-]{subsection.7.36}{HChannel\137Stuart98}{section.7}
+\BOOKMARK [2][-]{subsection.7.37}{HH\137K\137Channel}{section.7}
+\BOOKMARK [2][-]{subsection.7.38}{HH\137Na\137Channel}{section.7}
+\BOOKMARK [2][-]{subsection.7.39}{HHNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.40}{HVACAChannel\137Brown93}{section.7}
+\BOOKMARK [2][-]{subsection.7.41}{IfbNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.42}{Izhi\137Neuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.43}{KCAChannel\137Mainen96}{section.7}
+\BOOKMARK [2][-]{subsection.7.44}{KChannel\137Korngreen02}{section.7}
+\BOOKMARK [2][-]{subsection.7.45}{LifBurstNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.46}{LifNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.47}{linear\137classification}{section.7}
+\BOOKMARK [2][-]{subsection.7.48}{LinearNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.49}{LinearPreprocessor}{section.7}
+\BOOKMARK [2][-]{subsection.7.50}{linear\137regression}{section.7}
+\BOOKMARK [2][-]{subsection.7.51}{MChannel\137Mainen96}{section.7}
+\BOOKMARK [2][-]{subsection.7.52}{MChannel\137Wang98}{section.7}
+\BOOKMARK [2][-]{subsection.7.53}{Mean\137Std\137Preprocessor}{section.7}
+\BOOKMARK [2][-]{subsection.7.54}{MexRecorder}{section.7}
+\BOOKMARK [2][-]{subsection.7.55}{NPChannel\137McCormick02}{section.7}
+\BOOKMARK [2][-]{subsection.7.56}{PCAPreprocessor}{section.7}
+\BOOKMARK [2][-]{subsection.7.57}{Readout}{section.7}
+\BOOKMARK [2][-]{subsection.7.58}{Recorder}{section.7}
+\BOOKMARK [2][-]{subsection.7.59}{SICChannel\137Maciokas02}{section.7}
+\BOOKMARK [2][-]{subsection.7.60}{SigmoidalNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.61}{SpikingInputNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.62}{SpikingTeacher}{section.7}
+\BOOKMARK [2][-]{subsection.7.63}{StaticAnalogCbSynapse}{section.7}
+\BOOKMARK [2][-]{subsection.7.64}{StaticAnalogSynapse}{section.7}
+\BOOKMARK [2][-]{subsection.7.65}{StaticSpikingCbSynapse}{section.7}
+\BOOKMARK [2][-]{subsection.7.66}{StaticSpikingSynapse}{section.7}
+\BOOKMARK [2][-]{subsection.7.67}{StaticStdpSynapse}{section.7}
+\BOOKMARK [2][-]{subsection.7.68}{Traubs\137HH\137K\137Channel}{section.7}
+\BOOKMARK [2][-]{subsection.7.69}{Traubs\137HH\137Na\137Channel}{section.7}
+\BOOKMARK [2][-]{subsection.7.70}{TraubsHHNeuron}{section.7}
+\BOOKMARK [2][-]{subsection.7.71}{TriangularAnalogFilter}{section.7}
+\BOOKMARK [2][-]{subsection.7.72}{UserAnalogFilter}{section.7}
