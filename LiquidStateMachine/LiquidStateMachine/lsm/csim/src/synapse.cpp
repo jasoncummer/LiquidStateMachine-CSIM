@@ -2,6 +2,8 @@
 **  \brief Implementation of Synapse
 */
 
+#include <stdAfx.h>
+
 #include "synapse.h"
 #include "csimerror.h"
 #include "neuron.h"

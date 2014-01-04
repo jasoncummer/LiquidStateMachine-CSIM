@@ -2,6 +2,8 @@
 **  \brief Implementation of Neuron
 */
 
+#include <stdAfx.h>
+
 #include <stdlib.h>
 #include "neuron.h"
 #include "synapse.h"

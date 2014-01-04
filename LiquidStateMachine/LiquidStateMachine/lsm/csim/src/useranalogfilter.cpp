@@ -2,6 +2,8 @@
 **  \brief Analog low-pass filter with a user defined kernel.
 */
 
+#include <stdAfx.h>
+
 #include "useranalogfilter.h"
 
 

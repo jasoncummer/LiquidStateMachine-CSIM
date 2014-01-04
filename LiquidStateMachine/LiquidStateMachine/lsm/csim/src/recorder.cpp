@@ -2,6 +2,8 @@
 **  \brief Implementation of Recorder
 */
 
+#include <stdAfx.h>
+
 #include "csimclass.h"
 #include "recorder.h"
 #include "csimerror.h"

@@ -2,6 +2,8 @@
 **  \brief Implementation of IonChannel
 */
 
+#include <stdAfx.h>
+
 #include "ionchannel.h"
 #include "cbneuron.h"
 #include "analoginputneuron.h"

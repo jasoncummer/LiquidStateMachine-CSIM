@@ -1,3 +1,5 @@
+#include <stdAfx.h>
+
 #include "viongate.h"
 #include "ionchannel.h"
 #include "csimerror.h"

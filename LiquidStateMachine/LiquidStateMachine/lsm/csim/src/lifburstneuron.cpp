@@ -2,6 +2,7 @@
 **  \brief Implementation of LifNeuron
 */
 
+#include <stdAfx.h>
 
 #include <string.h>
 #include <stdio.h>

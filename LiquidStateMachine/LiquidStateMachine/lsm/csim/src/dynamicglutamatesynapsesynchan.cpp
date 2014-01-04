@@ -2,6 +2,8 @@
 **  \brief Implementation of DynamicGlutamateSynapseSynchan
 */
 
+#include <stdAfx.h>
+
 #include <math.h>
 #include "dynamicglutamatesynapsesynchan.h"
 #include "stdpsynapse.h"

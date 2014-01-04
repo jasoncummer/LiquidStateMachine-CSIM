@@ -6,6 +6,8 @@
 **  distributed generator normrnd().
 */
 
+#include <stdAfx.h>
+
 #include "randgen.h"
 
 

@@ -2,6 +2,8 @@
 **  \brief Implementation of DynamicSpikingCbSynapse
 */
 
+#include <stdAfx.h>
+
 #include "dynamicspikingcbsynapse.h"
 #include "cbneuron.h"
 #include "csimerror.h"

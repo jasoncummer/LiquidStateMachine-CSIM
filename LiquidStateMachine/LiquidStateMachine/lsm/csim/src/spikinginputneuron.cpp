@@ -2,6 +2,8 @@
 **  \brief Implementation of SpikingInputNeuron
 */
 
+#include <stdAfx.h>
+
 #include "spikinginputneuron.h"
 #include "csimerror.h"
 

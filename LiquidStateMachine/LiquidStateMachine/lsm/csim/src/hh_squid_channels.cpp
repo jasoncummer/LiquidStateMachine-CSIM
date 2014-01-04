@@ -1,3 +1,5 @@
+#include <stdAfx.h>
+
 #include "hh_squid_channels.h"
 
 double *HH_h_Gate::C1=0;

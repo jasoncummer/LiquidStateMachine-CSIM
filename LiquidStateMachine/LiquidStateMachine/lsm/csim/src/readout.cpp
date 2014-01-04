@@ -2,6 +2,8 @@
 **  \brief Implementation of Readout
 */
 
+#include <stdAfx.h>
+
 #include "readout.h"
 #include "csimerror.h"
 #include "spikingneuron.h"

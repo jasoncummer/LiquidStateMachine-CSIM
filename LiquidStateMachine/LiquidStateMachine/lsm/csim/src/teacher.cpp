@@ -2,6 +2,8 @@
 **  \brief Implementation of Teacher
 */
 
+#include <stdAfx.h>
+
 #include "teacher.h"
 #include "forceable.h"
 #include "csimerror.h"

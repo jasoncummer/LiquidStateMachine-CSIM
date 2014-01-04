@@ -2,6 +2,8 @@
 **  \brief Implementation of a discretization of the input.
 */
 
+#include <stdAfx.h>
+
 #include "discretizationpreprocessor.h"
 #include <math.h>
 

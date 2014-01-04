@@ -2,6 +2,8 @@
 **  \brief Filter which simulates spikes with alpha functions.
 */
 
+#include <stdAfx.h>
+
 #include "alphaspikefilter.h"
 #include <math.h>
 

@@ -2,6 +2,8 @@
 **  \brief Implementation of ExtInputNeuron
 */
 
+#include <stdAfx.h>
+
 #ifndef _WIN32
 #include <unistd.h>
 #include <fcntl.h>

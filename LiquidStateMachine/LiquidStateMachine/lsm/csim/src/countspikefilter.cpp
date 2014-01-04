@@ -2,6 +2,8 @@
 **  \brief Filter which counts the spikes in a given time window.
 */
 
+#include <stdAfx.h>
+
 #include "countspikefilter.h"
 
 

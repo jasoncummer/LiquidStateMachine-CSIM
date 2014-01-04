@@ -2,6 +2,7 @@
 **  \brief Implementation of a linear regression.
 */
 
+#include <stdAfx.h>
 
 #include "linear_regression.h"
 

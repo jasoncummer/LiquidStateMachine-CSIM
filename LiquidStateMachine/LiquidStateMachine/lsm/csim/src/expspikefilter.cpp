@@ -2,6 +2,8 @@
 **  \brief Filter which simulates exponential decay of spikes.
 */
 
+#include <stdAfx.h>
+
 #include "expspikefilter.h"
 #include <math.h>
 

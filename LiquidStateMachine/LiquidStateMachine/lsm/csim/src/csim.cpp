@@ -27,6 +27,8 @@ Here you can find information related to the C++ implementation of CSIM.
 
 */
 
+#include <stdAfx.h>
+
 #include "csimmex.h"
 #include "csimerror.h"
 #include "string.h"

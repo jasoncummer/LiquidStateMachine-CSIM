@@ -2,6 +2,8 @@
 **  \brief Implementation of a PCA (Principal Component Analysis) of the input.
 */
 
+#include <stdAfx.h>
+
 #include "pcapreprocessor.h"
 
 /** Constructs a PCA transformation. Initially the transformation is an identical transformation x'=x. 

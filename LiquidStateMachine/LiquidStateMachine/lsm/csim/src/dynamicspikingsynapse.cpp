@@ -2,6 +2,8 @@
 **  \brief Implementation of DynamicSpikingSynapse
 */
 
+#include <stdAfx.h>
+
 #include "dynamicspikingsynapse.h"
 #include "spikingneuron.h"
 

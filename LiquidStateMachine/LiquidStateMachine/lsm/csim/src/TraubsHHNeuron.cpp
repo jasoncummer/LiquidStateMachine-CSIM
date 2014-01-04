@@ -1,3 +1,5 @@
+#include <stdAfx.h>
+
 #include "TraubsHHNeuron.h"
 
 // For each gate we need this static members

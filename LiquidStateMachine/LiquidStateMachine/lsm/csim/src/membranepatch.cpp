@@ -2,6 +2,8 @@
 **  \brief Implementation of MembranePatch
 */
 
+#include <stdAfx.h>
+
 #include "randgen.h"
 #include "membranepatch.h"
 #include "synapse.h"

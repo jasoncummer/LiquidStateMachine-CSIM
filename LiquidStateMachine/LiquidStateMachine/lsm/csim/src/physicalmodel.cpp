@@ -2,6 +2,8 @@
 **  \brief Base class of all phyiscal models for CSIM simulations.
 */
 
+#include <stdAfx.h>
+
 #include "physicalmodel.h"
 
 #include <iostream>

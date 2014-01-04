@@ -3,6 +3,9 @@
 */
 
 #ifdef _GNU_SOURCE
+
+#include <stdAfx.h>
+
 #include <unistd.h>
 #include <fcntl.h>
 #include <sys/mman.h>

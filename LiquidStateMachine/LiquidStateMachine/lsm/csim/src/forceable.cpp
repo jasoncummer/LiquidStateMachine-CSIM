@@ -2,6 +2,8 @@
 **  \brief Implementation of class Force (is empty).
 */
 
+#include <stdAfx.h>
+
 #include "forceable.h"
 #include "csimerror.h"
 #include "teacher.h"

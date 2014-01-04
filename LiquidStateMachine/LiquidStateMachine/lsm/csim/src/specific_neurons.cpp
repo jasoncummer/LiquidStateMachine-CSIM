@@ -2,6 +2,7 @@
 **  \brief Implementation of several specific conductance based neuron models
 */
 
+#include <stdAfx.h>
 
 #include <string.h>
 #include <stdio.h>

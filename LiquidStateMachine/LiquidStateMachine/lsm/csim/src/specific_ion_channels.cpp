@@ -1,3 +1,4 @@
+#include <stdAfx.h>
 
 #include "specific_ion_channels.h"
 #include "csimerror.h"

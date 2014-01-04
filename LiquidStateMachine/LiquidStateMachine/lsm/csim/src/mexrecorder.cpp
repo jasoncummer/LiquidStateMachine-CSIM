@@ -1,4 +1,6 @@
 
+#include <stdAfx.h>
+
 #include "mexrecorder.h"
 #include "spikingneuron.h"
 

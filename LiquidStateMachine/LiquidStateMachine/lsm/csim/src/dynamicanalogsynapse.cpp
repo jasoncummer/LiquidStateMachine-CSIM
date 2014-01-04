@@ -2,6 +2,8 @@
 **  \brief Implementation of DynamicAnalogSynapse
 */
 
+#include <stdAfx.h>
+
 #include "randgen.h"
 #include "dynamicanalogsynapse.h"
 

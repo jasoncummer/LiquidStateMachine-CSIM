@@ -2,6 +2,8 @@
 **  \brief Implementation of ExtOutLifNeuron
 */
 
+#include <stdAfx.h>
+
 #ifdef _GNU_SOURCE
 #include <unistd.h>
 #include <fcntl.h>

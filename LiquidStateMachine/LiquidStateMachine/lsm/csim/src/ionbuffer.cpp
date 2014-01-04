@@ -2,6 +2,8 @@
 **  \brief Implementation of an ion buffer
 */
 
+#include <stdAfx.h>
+
 #include <math.h>
 #include "ionbuffer.h"
 

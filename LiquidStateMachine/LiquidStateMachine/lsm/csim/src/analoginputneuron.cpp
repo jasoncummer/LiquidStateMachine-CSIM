@@ -2,6 +2,8 @@
 **  \brief Implementation of AnalogInputNeuron
 */
 
+#include <stdAfx.h>
+
 #include <stdio.h>
 #include "analoginputneuron.h"
 #include "csimerror.h"

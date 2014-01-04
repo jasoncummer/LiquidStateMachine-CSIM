@@ -2,6 +2,8 @@
 **  \brief Implementation of SpikingNeuron
 */
 
+#include <stdAfx.h>
+
 #include "spikingneuron.h"
 #include "spikingsynapse.h"
 #include "stdpsynapse.h"

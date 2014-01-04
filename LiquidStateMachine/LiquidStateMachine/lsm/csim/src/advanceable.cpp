@@ -3,4 +3,5 @@
 **
 */
 
+#include <stdAfx.h>
 #include "advanceable.h"

@@ -1,3 +1,4 @@
+#include <stdAfx.h>
 #include <stdlib.h>
 #include "activechannel.h"
 #include  "iongate.h"

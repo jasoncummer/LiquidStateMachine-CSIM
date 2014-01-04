@@ -2,6 +2,8 @@
 **  \brief Analog low-pass filter.
 */
 
+#include <stdAfx.h>
+
 #include "analogfilter.h"
 
 

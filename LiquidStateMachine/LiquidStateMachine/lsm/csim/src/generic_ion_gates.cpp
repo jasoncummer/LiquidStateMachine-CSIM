@@ -1,3 +1,6 @@
+
+#include <stdAfx.h>
+
 #include <math.h>
 #include "generic_ion_gates.h"
 #include "ionchannel.h"

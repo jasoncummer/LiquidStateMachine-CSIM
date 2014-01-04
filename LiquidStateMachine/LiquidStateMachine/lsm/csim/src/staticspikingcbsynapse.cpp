@@ -41,6 +41,7 @@ int StaticSpikingCbSynapse::addOutgoing(Advancable *a)
     return -1;
   }
 
+  #include <stdAfx.h>
 
   // connect post pointer to the postsynatpic object
   return StaticSpikingSynapse::addOutgoing(a);

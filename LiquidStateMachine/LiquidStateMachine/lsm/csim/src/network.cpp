@@ -2,6 +2,8 @@
 **  \brief Implementation of Network
 */
 
+#include <stdAfx.h>
+
 // #define DEBUG_RT
 
 #include "globaldefinitions.h"

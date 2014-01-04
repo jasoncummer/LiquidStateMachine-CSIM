@@ -2,6 +2,8 @@
 **  \brief Base class of all learning algorithms that calculate the readout's output.
 */
 
+#include <stdAfx.h>
+
 #include "algorithm.h"
 
 /** Constructs a new learning algorithm.

@@ -1,4 +1,4 @@
-﻿Build started 30/12/2013 5:57:47 PM.
+﻿Build started 03/01/2014 9:56:25 PM.
      1>Project "C:\Users\Jason\Documents\GitHub\LiquidStateMachine-CSIM\LiquidStateMachine\LiquidStateMachine\LiquidStateMachine.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Touching "Debug\LiquidStateMachine.unsuccessfulbuild".
@@ -6,767 +6,275 @@
        Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
        ClCompile:
          All outputs are up-to-date.
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\LiquidStateMachine.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt lsm\csim\src\activecachannel.cpp lsm\csim\src\activechannel.cpp lsm\csim\src\advanceable.cpp lsm\csim\src\ahp_channel.cpp lsm\csim\src\algorithm.cpp lsm\csim\src\alphaspikefilter.cpp lsm\csim\src\analogfeedbackneuron.cpp lsm\csim\src\analogfilter.cpp lsm\csim\src\analoginputneuron.cpp lsm\csim\src\analogneuron.cpp lsm\csim\src\analogsynapse.cpp lsm\csim\src\analogteacher.cpp lsm\csim\src\armmodel.cpp lsm\csim\src\cbhhouineuron.cpp lsm\csim\src\cbhhouneuron.cpp lsm\csim\src\cbneuron.cpp lsm\csim\src\cbneuronst.cpp lsm\csim\src\cbstouneuron.cpp lsm\csim\src\conciongate.cpp lsm\csim\src\countspikefilter.cpp lsm\csim\src\csim.cpp lsm\csim\src\csimclass.cpp lsm\csim\src\csimerror.cpp lsm\csim\src\csiminputclass.cpp lsm\csim\src\csimlist.cpp lsm\csim\src\csimmex.cpp lsm\csim\src\discretizationpreprocessor.cpp lsm\csim\src\dynamicanalogsynapse.cpp lsm\csim\src\dynamicglutamatesynapse.cpp lsm\csim\src\dynamicglutamatesynapsesynchan.cpp lsm\csim\src\dynamicspikingcbsynapse.cpp lsm\csim\src\dynamicspikingsynapse.cpp lsm\csim\src\dynamicstdpsynapse.cpp lsm\csim\src\expspikefilter.cpp lsm\csim\src\extinputneuron.cpp lsm\csim\src\extoutlifneuron.cpp lsm\csim\src\extoutlinearneuron.cpp lsm\csim\src\extoutsigmoidalneuron.cpp lsm\csim\src\filterfunction.cpp lsm\csim\src\forceable.cpp lsm\csim\src\gaussiananalogfilter.cpp lsm\csim\src\generic_ion_gates.cpp lsm\csim\src\glutamatesynapse.cpp lsm\csim\src\glutamatesynapsesynchan.cpp lsm\csim\src\hh_neuron.cpp lsm\csim\src\hh_squid_channels.cpp lsm\csim\src\ifbneuron.cpp lsm\csim\src\ionbuffer.cpp lsm\csim\src\ionchannel.cpp lsm\csim\src\iongate.cpp lsm\csim\src\izhi_neuron.cpp lsm\csim\src\lifburstneuron.cpp lsm\csim\src\lifneuron.cpp lsm\csim\src\lifneuronsynchan.cpp lsm\csim\src\linearneuron.cpp lsm\csim\src\linearpreprocessor.cpp lsm\csim\src\linear_classification.cpp lsm\csim\src\linear_regression.cpp lsm\csim\src\mean_std_preprocessor.cpp lsm\csim\src\membranepatch.cpp lsm\csim\src\membranepatchsimple.cpp lsm\csim\src\mexnetwork.cpp lsm\csim\src\mexrecorder.cpp lsm\csim\src\network.cpp lsm\csim\src\neuron.cpp lsm\csim\src\pcapreprocessor.cpp lsm\csim\src\physicalmodel.cpp lsm\csim\src\preprocessor.cpp lsm\csim\src\randgen.cpp lsm\csim\src\readout.cpp lsm\csim\src\recorder.cpp lsm\csim\src\sigmoidalneuron.cpp lsm\csim\src\specificouneurons.cpp lsm\csim\src\specific_ion_channels.cpp lsm\csim\src\specific_neurons.cpp lsm\csim\src\spikefilter.cpp lsm\csim\src\spikinginputneuron.cpp lsm\csim\src\spikingneuron.cpp lsm\csim\src\spikingsynapse.cpp lsm\csim\src\spikingteacher.cpp lsm\csim\src\staticanalogcbsynapse.cpp lsm\csim\src\staticanalogsynapse.cpp lsm\csim\src\staticglutamatesynapse.cpp lsm\csim\src\staticglutamatesynapsesynchan.cpp lsm\csim\src\staticspikingcbsynapse.cpp lsm\csim\src\staticspikingsynapse.cpp lsm\csim\src\staticstdpsynapse.cpp lsm\csim\src\stdpsynapse.cpp lsm\csim\src\synapse.cpp lsm\csim\src\synapticchannel.cpp lsm\csim\src\teacher.cpp lsm\csim\src\TraubsHHNeuron.cpp lsm\csim\src\triangularanalogfilter.cpp lsm\csim\src\useranalogfilter.cpp lsm\csim\src\viongate.cpp /clr:nostdlib 
-         activecachannel.cpp
-     1>lsm\csim\src\activecachannel.cpp(1): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         activechannel.cpp
-     1>lsm\csim\src\activechannel.cpp(1): warning C4627: '#include <stdlib.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\activechannel.cpp(2): warning C4627: '#include "activechannel.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\activechannel.cpp(3): warning C4627: '#include <iongate.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\activechannel.cpp(4): warning C4627: '#include "cbneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\activechannel.cpp(5): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\activechannel.cpp(6): warning C4627: '#include "analoginputneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\activechannel.cpp(7): warning C4627: '#include "membranepatchsimple.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\activechannel.cpp(9): warning C4627: '#include "hh_squid_channels.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\activechannel.cpp(114): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         advanceable.cpp
-     1>lsm\csim\src\advanceable.cpp(6): warning C4627: '#include "advanceable.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\advanceable.cpp(7): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         ahp_channel.cpp
-     1>lsm\csim\src\ahp_channel.cpp(1): warning C4627: '#include <stdlib.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ahp_channel.cpp(2): warning C4627: '#include <math.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ahp_channel.cpp(3): warning C4627: '#include "ahp_channel.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ahp_channel.cpp(4): warning C4627: '#include "cbneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ahp_channel.cpp(5): warning C4627: '#include "analogneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ahp_channel.cpp(6): warning C4627: '#include "membranepatchsimple.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ahp_channel.cpp(7): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ahp_channel.cpp(71): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         algorithm.cpp
-     1>lsm\csim\src\algorithm.cpp(5): warning C4627: '#include "algorithm.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\algorithm.cpp(128): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         alphaspikefilter.cpp
-     1>lsm\csim\src\alphaspikefilter.cpp(5): warning C4627: '#include "alphaspikefilter.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\alphaspikefilter.cpp(6): warning C4627: '#include <math.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\alphaspikefilter.cpp(100): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         analogfeedbackneuron.cpp
-     1>lsm\csim\src\analogfeedbackneuron.cpp(5): warning C4627: '#include "analogfeedbackneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\analogfeedbackneuron.cpp(6): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\analogfeedbackneuron.cpp(62): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         analogfilter.cpp
-     1>lsm\csim\src\analogfilter.cpp(5): warning C4627: '#include "analogfilter.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\analogfilter.cpp(195): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         analoginputneuron.cpp
-     1>lsm\csim\src\analoginputneuron.cpp(5): warning C4627: '#include <stdio.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\analoginputneuron.cpp(6): warning C4627: '#include "analoginputneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\analoginputneuron.cpp(7): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\analoginputneuron.cpp(39): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         analogneuron.cpp
-     1>lsm\csim\src\analogneuron.cpp(5): warning C4627: '#include "analogneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\analogneuron.cpp(6): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\analogneuron.cpp(135): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         analogsynapse.cpp
-     1>lsm\csim\src\analogsynapse.cpp(5): warning C4627: '#include "analogsynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\analogsynapse.cpp(16): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         analogteacher.cpp
-     1>lsm\csim\src\analogteacher.cpp(6): warning C4627: '#include <stdlib.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\analogteacher.cpp(7): warning C4627: '#include "analogteacher.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\analogteacher.cpp(8): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\analogteacher.cpp(42): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\LiquidStateMachine.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt lsm\csim\src\armmodel.cpp lsm\csim\src\csim.cpp lsm\csim\src\csimclass.cpp lsm\csim\src\csimmex.cpp lsm\csim\src\extoutlinearneuron.cpp lsm\csim\src\extoutsigmoidalneuron.cpp lsm\csim\src\generic_ion_gates.cpp lsm\csim\src\glutamatesynapse.cpp lsm\csim\src\glutamatesynapsesynchan.cpp lsm\csim\src\hh_neuron.cpp lsm\csim\src\hh_squid_channels.cpp lsm\csim\src\ifbneuron.cpp lsm\csim\src\ionbuffer.cpp lsm\csim\src\ionchannel.cpp lsm\csim\src\iongate.cpp lsm\csim\src\izhi_neuron.cpp lsm\csim\src\lifburstneuron.cpp lsm\csim\src\lifneuron.cpp lsm\csim\src\lifneuronsynchan.cpp lsm\csim\src\linearneuron.cpp lsm\csim\src\linearpreprocessor.cpp lsm\csim\src\linear_classification.cpp lsm\csim\src\linear_regression.cpp lsm\csim\src\mean_std_preprocessor.cpp lsm\csim\src\membranepatch.cpp lsm\csim\src\membranepatchsimple.cpp lsm\csim\src\mexnetwork.cpp lsm\csim\src\mexrecorder.cpp lsm\csim\src\network.cpp lsm\csim\src\neuron.cpp lsm\csim\src\pcapreprocessor.cpp lsm\csim\src\physicalmodel.cpp lsm\csim\src\preprocessor.cpp lsm\csim\src\randgen.cpp lsm\csim\src\readout.cpp lsm\csim\src\recorder.cpp lsm\csim\src\sigmoidalneuron.cpp lsm\csim\src\specificouneurons.cpp lsm\csim\src\specific_ion_channels.cpp lsm\csim\src\specific_neurons.cpp lsm\csim\src\spikefilter.cpp lsm\csim\src\spikinginputneuron.cpp lsm\csim\src\spikingneuron.cpp lsm\csim\src\staticspikingcbsynapse.cpp /clr:nostdlib 
          armmodel.cpp
-     1>lsm\csim\src\armmodel.cpp(5): warning C4627: '#include "armmodel.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\armmodel.cpp(6): warning C4627: '#include <math.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\armmodel.cpp(7): warning C4627: '#include <mat.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\armmodel.cpp(704): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         cbhhouineuron.cpp
-     1>lsm\csim\src\cbhhouineuron.cpp(5): warning C4627: '#include <string.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbhhouineuron.cpp(6): warning C4627: '#include <stdio.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbhhouineuron.cpp(7): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbhhouineuron.cpp(8): warning C4627: '#include "cbhhouineuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbhhouineuron.cpp(9): warning C4627: '#include "specific_ion_channels.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbhhouineuron.cpp(10): warning C4627: '#include <time.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbhhouineuron.cpp(172): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         cbhhouneuron.cpp
-     1>lsm\csim\src\cbhhouneuron.cpp(5): warning C4627: '#include <string.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbhhouneuron.cpp(6): warning C4627: '#include <stdio.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbhhouneuron.cpp(7): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbhhouneuron.cpp(8): warning C4627: '#include "cbhhouneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbhhouneuron.cpp(9): warning C4627: '#include "specific_ion_channels.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbhhouneuron.cpp(10): warning C4627: '#include <time.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbhhouneuron.cpp(193): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         cbneuron.cpp
-     1>lsm\csim\src\cbneuron.cpp(5): warning C4627: '#include <string.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbneuron.cpp(6): warning C4627: '#include <stdio.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbneuron.cpp(7): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbneuron.cpp(8): warning C4627: '#include "cbneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbneuron.cpp(9): warning C4627: '#include "synapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbneuron.cpp(145): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         cbneuronst.cpp
-     1>lsm\csim\src\cbneuronst.cpp(5): warning C4627: '#include <string.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbneuronst.cpp(6): warning C4627: '#include <stdio.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbneuronst.cpp(7): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbneuronst.cpp(8): warning C4627: '#include "cbneuronst.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbneuronst.cpp(97): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         cbstouneuron.cpp
-     1>lsm\csim\src\cbstouneuron.cpp(5): warning C4627: '#include <string.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbstouneuron.cpp(6): warning C4627: '#include <stdio.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbstouneuron.cpp(7): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbstouneuron.cpp(8): warning C4627: '#include "cbstouneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbstouneuron.cpp(9): warning C4627: '#include <time.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\cbstouneuron.cpp(105): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         conciongate.cpp
-     1>lsm\csim\src\conciongate.cpp(1): warning C4627: '#include <stdlib.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\conciongate.cpp(2): warning C4627: '#include <math.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\conciongate.cpp(3): warning C4627: '#include "conciongate.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\conciongate.cpp(4): warning C4627: '#include "ionchannel.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\conciongate.cpp(5): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\conciongate.cpp(130): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         countspikefilter.cpp
-     1>lsm\csim\src\countspikefilter.cpp(5): warning C4627: '#include "countspikefilter.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\countspikefilter.cpp(135): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         Generating Code...
-         Compiling...
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>lsm\csim\src\armmodel.cpp(9): fatal error C1083: Cannot open include file: 'mat.h': No such file or directory
          csim.cpp
-     1>lsm\csim\src\csim.cpp(30): warning C4627: '#include "csimmex.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csim.cpp(31): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csim.cpp(32): warning C4627: '#include "string.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csim.cpp(34): warning C4627: '#include "version.i"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csim.cpp(112): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\csimmex.h(7): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
          csimclass.cpp
-     1>lsm\csim\src\csimclass.cpp(2): warning C4627: '#include <stdlib.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csimclass.cpp(3): warning C4627: '#include <stdio.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csimclass.cpp(4): warning C4627: '#include <string.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csimclass.cpp(5): warning C4627: '#include <math.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csimclass.cpp(6): warning C4627: '#include "csimclass.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csimclass.cpp(7): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csimclass.cpp(185): warning C4627: '#include "classlist.i"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csimclass.cpp(186): warning C4627: '#include "registerclasses.i"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csimclass.cpp(433): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         csimerror.cpp
-     1>lsm\csim\src\csimerror.cpp(1): warning C4627: '#include <stdio.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csimerror.cpp(2): warning C4627: '#include <stdlib.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csimerror.cpp(3): warning C4627: '#include <stdarg.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csimerror.cpp(4): warning C4627: '#include <string.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csimerror.cpp(6): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csimerror.cpp(34): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         csiminputclass.cpp
-     1>lsm\csim\src\csiminputclass.cpp(1): warning C4627: '#include "csiminputclass.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csiminputclass.cpp(2): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csiminputclass.cpp(108): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         csimlist.cpp
-     1>lsm\csim\src\csimlist.cpp(2): warning C4627: '#include "csimlist.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csimlist.cpp(3): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>lsm\csim\src\csimclass.cpp(117): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>lsm\csim\src\csimclass.cpp(118): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(107): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(108): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(109): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(111): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(164): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(242): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(298): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(360): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(363): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(425): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(429): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(485): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(489): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(535): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(539): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(589): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(593): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(665): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(669): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(734): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(738): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(788): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(792): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(861): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(863): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(907): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(908): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(949): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(950): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\cbneuronst.h(70): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\lifneuron.h(61): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\hh_squid_channels.h(38): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\hh_squid_channels.h(39): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\hh_squid_channels.h(90): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\hh_squid_channels.h(91): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\lifneuronsynchan.h(66): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\mexrecorder.h(4): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
          csimmex.cpp
-     1>lsm\csim\src\csimmex.cpp(2): warning C4627: '#include "csimmex.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csimmex.cpp(3): warning C4627: '#include "classlist.i"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csimmex.cpp(4): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csimmex.cpp(5): warning C4627: '#include "mexnetwork.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csimmex.cpp(193): warning C4627: '#include "switch.i"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\csimmex.cpp(1124): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         discretizationpreprocessor.cpp
-     1>lsm\csim\src\discretizationpreprocessor.cpp(5): warning C4627: '#include "discretizationpreprocessor.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\discretizationpreprocessor.cpp(6): warning C4627: '#include <math.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\discretizationpreprocessor.cpp(121): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         dynamicanalogsynapse.cpp
-     1>lsm\csim\src\dynamicanalogsynapse.cpp(5): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\dynamicanalogsynapse.cpp(6): warning C4627: '#include "dynamicanalogsynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\dynamicanalogsynapse.cpp(51): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         dynamicglutamatesynapse.cpp
-     1>lsm\csim\src\dynamicglutamatesynapse.cpp(5): warning C4627: '#include <math.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\dynamicglutamatesynapse.cpp(6): warning C4627: '#include "dynamicglutamatesynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\dynamicglutamatesynapse.cpp(7): warning C4627: '#include "spikingneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\dynamicglutamatesynapse.cpp(32): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         dynamicglutamatesynapsesynchan.cpp
-     1>lsm\csim\src\dynamicglutamatesynapsesynchan.cpp(5): warning C4627: '#include <math.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\dynamicglutamatesynapsesynchan.cpp(6): warning C4627: '#include "dynamicglutamatesynapsesynchan.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\dynamicglutamatesynapsesynchan.cpp(7): warning C4627: '#include "stdpsynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\dynamicglutamatesynapsesynchan.cpp(8): warning C4627: '#include "spikingneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\dynamicglutamatesynapsesynchan.cpp(9): warning C4627: '#include "lifneuronsynchan.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\dynamicglutamatesynapsesynchan.cpp(51): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         dynamicspikingcbsynapse.cpp
-     1>lsm\csim\src\dynamicspikingcbsynapse.cpp(5): warning C4627: '#include "dynamicspikingcbsynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\dynamicspikingcbsynapse.cpp(6): warning C4627: '#include "cbneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\dynamicspikingcbsynapse.cpp(7): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\dynamicspikingcbsynapse.cpp(48): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         dynamicspikingsynapse.cpp
-     1>lsm\csim\src\dynamicspikingsynapse.cpp(5): warning C4627: '#include "dynamicspikingsynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\dynamicspikingsynapse.cpp(6): warning C4627: '#include "spikingneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\dynamicspikingsynapse.cpp(33): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         dynamicstdpsynapse.cpp
-     1>lsm\csim\src\dynamicstdpsynapse.cpp(5): warning C4627: '#include <math.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\dynamicstdpsynapse.cpp(6): warning C4627: '#include "dynamicstdpsynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\dynamicstdpsynapse.cpp(7): warning C4627: '#include "spikingneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\dynamicstdpsynapse.cpp(33): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         expspikefilter.cpp
-     1>lsm\csim\src\expspikefilter.cpp(5): warning C4627: '#include "expspikefilter.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\expspikefilter.cpp(6): warning C4627: '#include <math.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\expspikefilter.cpp(86): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         extinputneuron.cpp
-     1>lsm\csim\src\extinputneuron.cpp(6): warning C4627: '#include <unistd.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extinputneuron.cpp(7): warning C4627: '#include <fcntl.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extinputneuron.cpp(8): warning C4627: '#include <sys/mman.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extinputneuron.cpp(10): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extinputneuron.cpp(11): warning C4627: '#include "extinputneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extinputneuron.cpp(88): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         extoutlifneuron.cpp
-     1>lsm\csim\src\extoutlifneuron.cpp(6): warning C4627: '#include <unistd.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extoutlifneuron.cpp(7): warning C4627: '#include <fcntl.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extoutlifneuron.cpp(8): warning C4627: '#include <sys/mman.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extoutlifneuron.cpp(10): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extoutlifneuron.cpp(11): warning C4627: '#include "extoutlifneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extoutlifneuron.cpp(80): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\csimmex.h(7): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
          extoutlinearneuron.cpp
-     1>lsm\csim\src\extoutlinearneuron.cpp(6): warning C4627: '#include <unistd.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extoutlinearneuron.cpp(7): warning C4627: '#include <fcntl.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extoutlinearneuron.cpp(8): warning C4627: '#include <sys/mman.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extoutlinearneuron.cpp(10): warning C4627: '#include "extoutlinearneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extoutlinearneuron.cpp(11): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extoutlinearneuron.cpp(81): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>lsm\csim\src\extoutlinearneuron.cpp(5): error C2014: preprocessor command must start as first nonwhite space
          extoutsigmoidalneuron.cpp
-     1>lsm\csim\src\extoutsigmoidalneuron.cpp(6): warning C4627: '#include <unistd.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extoutsigmoidalneuron.cpp(7): warning C4627: '#include <fcntl.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extoutsigmoidalneuron.cpp(8): warning C4627: '#include <sys/mman.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extoutsigmoidalneuron.cpp(10): warning C4627: '#include "extoutsigmoidalneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extoutsigmoidalneuron.cpp(11): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\extoutsigmoidalneuron.cpp(81): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         filterfunction.cpp
-     1>lsm\csim\src\filterfunction.cpp(5): warning C4627: '#include "filterfunction.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\filterfunction.cpp(83): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         forceable.cpp
-     1>lsm\csim\src\forceable.cpp(5): warning C4627: '#include "forceable.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\forceable.cpp(6): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\forceable.cpp(7): warning C4627: '#include "teacher.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\forceable.cpp(27): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         Generating Code...
-         Compiling...
-         gaussiananalogfilter.cpp
-     1>lsm\csim\src\gaussiananalogfilter.cpp(5): warning C4627: '#include "gaussiananalogfilter.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\gaussiananalogfilter.cpp(6): warning C4627: '#include <math.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\gaussiananalogfilter.cpp(63): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>lsm\csim\src\extoutsigmoidalneuron.cpp(9): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
          generic_ion_gates.cpp
-     1>lsm\csim\src\generic_ion_gates.cpp(1): warning C4627: '#include <math.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\generic_ion_gates.cpp(2): warning C4627: '#include "generic_ion_gates.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\generic_ion_gates.cpp(3): warning C4627: '#include "ionchannel.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\generic_ion_gates.cpp(4): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\generic_ion_gates.cpp(73): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
          glutamatesynapse.cpp
-     1>lsm\csim\src\glutamatesynapse.cpp(5): warning C4627: '#include <math.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\glutamatesynapse.cpp(6): warning C4627: '#include "glutamatesynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\glutamatesynapse.cpp(7): warning C4627: '#include "spikingneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\glutamatesynapse.cpp(8): warning C4627: '#include "lifneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\glutamatesynapse.cpp(9): warning C4627: '#include "internalvoltageneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\glutamatesynapse.cpp(10): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\glutamatesynapse.cpp(89): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\lifneuron.h(61): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>lsm\csim\src\glutamatesynapse.cpp(21): warning C4305: '=' : truncation from 'double' to 'float'
          glutamatesynapsesynchan.cpp
-     1>lsm\csim\src\glutamatesynapsesynchan.cpp(5): warning C4627: '#include <math.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\glutamatesynapsesynchan.cpp(6): warning C4627: '#include "glutamatesynapsesynchan.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\glutamatesynapsesynchan.cpp(7): warning C4627: '#include "spikingneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\glutamatesynapsesynchan.cpp(8): warning C4627: '#include "lifneuronsynchan.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\glutamatesynapsesynchan.cpp(9): warning C4627: '#include "internalvoltageneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\glutamatesynapsesynchan.cpp(10): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\glutamatesynapsesynchan.cpp(52): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\lifneuron.h(61): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\lifneuronsynchan.h(66): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
          hh_neuron.cpp
-     1>lsm\csim\src\hh_neuron.cpp(5): warning C4627: '#include "hh_neuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\hh_neuron.cpp(6): warning C4627: '#include "hh_squid_channels.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\hh_neuron.cpp(64): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\hh_squid_channels.h(38): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\hh_squid_channels.h(39): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\hh_squid_channels.h(90): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\hh_squid_channels.h(91): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>lsm\csim\src\hh_neuron.cpp(12): warning C4305: '=' : truncation from 'double' to 'float'
+     1>lsm\csim\src\hh_neuron.cpp(13): warning C4305: '=' : truncation from 'double' to 'float'
+     1>lsm\csim\src\hh_neuron.cpp(14): warning C4305: '=' : truncation from 'double' to 'float'
+     1>lsm\csim\src\hh_neuron.cpp(19): warning C4305: '=' : truncation from 'double' to 'float'
          hh_squid_channels.cpp
-     1>lsm\csim\src\hh_squid_channels.cpp(1): warning C4627: '#include "hh_squid_channels.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\hh_squid_channels.cpp(11): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\hh_squid_channels.h(38): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\hh_squid_channels.h(39): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\hh_squid_channels.h(90): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\hh_squid_channels.h(91): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
          ifbneuron.cpp
-     1>lsm\csim\src\ifbneuron.cpp(6): warning C4627: '#include <string.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ifbneuron.cpp(7): warning C4627: '#include <stdio.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ifbneuron.cpp(8): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ifbneuron.cpp(9): warning C4627: '#include "ifbneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ifbneuron.cpp(10): warning C4627: '#include "mexnetwork.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ifbneuron.cpp(11): warning C4627: '#include "synapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ifbneuron.cpp(12): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ifbneuron.cpp(113): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\mexnetwork.h(8): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
          ionbuffer.cpp
-     1>lsm\csim\src\ionbuffer.cpp(5): warning C4627: '#include <math.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ionbuffer.cpp(6): warning C4627: '#include "ionbuffer.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ionbuffer.cpp(128): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>lsm\csim\src\ionbuffer.cpp(33): error C3861: 'free': identifier not found
+     1>lsm\csim\src\ionbuffer.cpp(125): error C3861: 'realloc': identifier not found
          ionchannel.cpp
-     1>lsm\csim\src\ionchannel.cpp(5): warning C4627: '#include "ionchannel.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ionchannel.cpp(6): warning C4627: '#include "cbneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ionchannel.cpp(7): warning C4627: '#include "analoginputneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ionchannel.cpp(8): warning C4627: '#include "membranepatch.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ionchannel.cpp(9): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\ionchannel.cpp(37): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
          iongate.cpp
-     1>lsm\csim\src\iongate.cpp(1): warning C4627: '#include <stdlib.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\iongate.cpp(2): warning C4627: '#include <math.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\iongate.cpp(3): warning C4627: '#include "iongate.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\iongate.cpp(4): warning C4627: '#include "ionchannel.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\iongate.cpp(5): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\iongate.cpp(28): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
          izhi_neuron.cpp
-     1>lsm\csim\src\izhi_neuron.cpp(6): warning C4627: '#include <string.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\izhi_neuron.cpp(7): warning C4627: '#include <stdio.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\izhi_neuron.cpp(8): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\izhi_neuron.cpp(9): warning C4627: '#include "lifneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\izhi_neuron.cpp(10): warning C4627: '#include "mexnetwork.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\izhi_neuron.cpp(11): warning C4627: '#include "synapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\izhi_neuron.cpp(12): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\izhi_neuron.cpp(13): warning C4627: '#include "izhi_neuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\izhi_neuron.cpp(111): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\lifneuron.h(61): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\mexnetwork.h(8): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
          lifburstneuron.cpp
-     1>lsm\csim\src\lifburstneuron.cpp(6): warning C4627: '#include <string.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\lifburstneuron.cpp(7): warning C4627: '#include <stdio.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\lifburstneuron.cpp(8): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\lifburstneuron.cpp(9): warning C4627: '#include "lifburstneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\lifburstneuron.cpp(10): warning C4627: '#include "mexnetwork.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\lifburstneuron.cpp(11): warning C4627: '#include "synapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\lifburstneuron.cpp(12): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\lifburstneuron.cpp(136): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\mexnetwork.h(8): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
          lifneuron.cpp
-     1>lsm\csim\src\lifneuron.cpp(5): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\lifneuron.cpp(6): warning C4627: '#include "lifneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\lifneuron.cpp(7): warning C4627: '#include "synapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\lifneuron.cpp(8): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\lifneuron.cpp(88): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\lifneuron.h(61): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>lsm\csim\src\lifneuron.cpp(55): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
          lifneuronsynchan.cpp
-     1>lsm\csim\src\lifneuronsynchan.cpp(5): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\lifneuronsynchan.cpp(6): warning C4627: '#include "lifneuronsynchan.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\lifneuronsynchan.cpp(7): warning C4627: '#include "synapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\lifneuronsynchan.cpp(8): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\lifneuronsynchan.cpp(67): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\lifneuron.h(61): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\lifneuronsynchan.h(66): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
          linearneuron.cpp
-     1>lsm\csim\src\linearneuron.cpp(5): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\linearneuron.cpp(6): warning C4627: '#include "linearneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\linearneuron.cpp(47): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+         Generating Code...
+         Compiling...
          linearpreprocessor.cpp
-     1>lsm\csim\src\linearpreprocessor.cpp(5): warning C4627: '#include "linearpreprocessor.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\linearpreprocessor.cpp(131): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>lsm\csim\src\linearpreprocessor.cpp(15): warning C4018: '<' : signed/unsigned mismatch
          linear_classification.cpp
-     1>lsm\csim\src\linear_classification.cpp(6): warning C4627: '#include "linear_classification.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\linear_classification.cpp(272): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>lsm\csim\src\linear_classification.cpp(18): warning C4018: '<' : signed/unsigned mismatch
+     1>lsm\csim\src\linear_classification.cpp(25): warning C4018: '<' : signed/unsigned mismatch
+     1>lsm\csim\src\linear_classification.cpp(27): warning C4018: '<' : signed/unsigned mismatch
          linear_regression.cpp
-     1>lsm\csim\src\linear_regression.cpp(6): warning C4627: '#include "linear_regression.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\linear_regression.cpp(156): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>lsm\csim\src\linear_regression.cpp(15): warning C4018: '<' : signed/unsigned mismatch
          mean_std_preprocessor.cpp
-     1>lsm\csim\src\mean_std_preprocessor.cpp(5): warning C4627: '#include "mean_std_preprocessor.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\mean_std_preprocessor.cpp(134): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>lsm\csim\src\mean_std_preprocessor.cpp(16): warning C4018: '<' : signed/unsigned mismatch
          membranepatch.cpp
-     1>lsm\csim\src\membranepatch.cpp(5): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\membranepatch.cpp(6): warning C4627: '#include "membranepatch.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\membranepatch.cpp(7): warning C4627: '#include "synapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\membranepatch.cpp(8): warning C4627: '#include "activecachannel.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\membranepatch.cpp(100): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         Generating Code...
-         Compiling...
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>lsm\csim\src\membranepatch.cpp(16): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>lsm\csim\src\membranepatch.cpp(16): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>lsm\csim\src\membranepatch.cpp(16): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>lsm\csim\src\membranepatch.cpp(16): warning C4305: 'argument' : truncation from 'double' to 'float'
          membranepatchsimple.cpp
-     1>lsm\csim\src\membranepatchsimple.cpp(4): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\membranepatchsimple.cpp(5): warning C4627: '#include "membranepatchsimple.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\membranepatchsimple.cpp(6): warning C4627: '#include "synapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\membranepatchsimple.cpp(119): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
          mexnetwork.cpp
-     1>lsm\csim\src\mexnetwork.cpp(5): warning C4627: '#include "mexnetwork.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\mexnetwork.cpp(6): warning C4627: '#include "mexrecorder.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\mexnetwork.cpp(7): warning C4627: '#include "csimlist.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\mexnetwork.cpp(8): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\mexnetwork.cpp(9): warning C4627: '#include "csimmex.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\mexnetwork.cpp(11): warning C4627: '#include "readout.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\mexnetwork.cpp(12): warning C4627: '#include "physicalmodel.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\mexnetwork.cpp(247): warning C4627: '#include "classlist.i"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\mexnetwork.cpp(351): warning C4627: '#include "switch.i"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\mexnetwork.cpp(524): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\mexnetwork.h(8): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
          mexrecorder.cpp
-     1>lsm\csim\src\mexrecorder.cpp(2): warning C4627: '#include "mexrecorder.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\mexrecorder.cpp(3): warning C4627: '#include "spikingneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\mexrecorder.cpp(113): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\mexrecorder.h(4): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
          network.cpp
-     1>lsm\csim\src\network.cpp(7): warning C4627: '#include "globaldefinitions.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\network.cpp(8): warning C4627: '#include "network.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\network.cpp(9): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\network.cpp(10): warning C4627: '#include "spikingneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\network.cpp(11): warning C4627: '#include "synapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\network.cpp(12): warning C4627: '#include "analogsynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\network.cpp(13): warning C4627: '#include "spikingsynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\network.cpp(14): warning C4627: '#include "teacher.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\network.cpp(15): warning C4627: '#include "recorder.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\network.cpp(17): warning C4627: '#include "readout.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\network.cpp(18): warning C4627: '#include "physicalmodel.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\network.cpp(20): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\network.cpp(21): warning C4627: '#include "csiminputclass.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\network.cpp(23): warning C4627: '#include <sys/time.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\network.cpp(1027): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
          neuron.cpp
-     1>lsm\csim\src\neuron.cpp(5): warning C4627: '#include <stdlib.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\neuron.cpp(6): warning C4627: '#include "neuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\neuron.cpp(7): warning C4627: '#include "synapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\neuron.cpp(8): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\neuron.cpp(88): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
          pcapreprocessor.cpp
-     1>lsm\csim\src\pcapreprocessor.cpp(5): warning C4627: '#include "pcapreprocessor.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\pcapreprocessor.cpp(151): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>lsm\csim\src\pcapreprocessor.cpp(19): warning C4018: '<' : signed/unsigned mismatch
+     1>lsm\csim\src\pcapreprocessor.cpp(20): warning C4018: '<' : signed/unsigned mismatch
          physicalmodel.cpp
-     1>lsm\csim\src\physicalmodel.cpp(5): warning C4627: '#include "physicalmodel.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\physicalmodel.cpp(7): warning C4627: '#include <iostream>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\physicalmodel.cpp(240): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>lsm\csim\src\physicalmodel.cpp(164): error C3861: 'mxMalloc': identifier not found
+     1>lsm\csim\src\physicalmodel.cpp(175): error C3861: 'mxCalloc': identifier not found
+     1>lsm\csim\src\physicalmodel.cpp(206): warning C4018: '>=' : signed/unsigned mismatch
+     1>lsm\csim\src\physicalmodel.cpp(223): warning C4018: '>=' : signed/unsigned mismatch
          preprocessor.cpp
-     1>lsm\csim\src\preprocessor.cpp(5): warning C4627: '#include "preprocessor.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\preprocessor.cpp(85): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
          randgen.cpp
-     1>lsm\csim\src\randgen.cpp(9): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\randgen.cpp(138): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
          readout.cpp
-     1>lsm\csim\src\readout.cpp(5): warning C4627: '#include "readout.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\readout.cpp(6): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\readout.cpp(7): warning C4627: '#include "spikingneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\readout.cpp(669): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>lsm\csim\src\readout.cpp(56): warning C4390: ';' : empty controlled statement found; is this the intent?
+     1>lsm\csim\src\readout.cpp(290): warning C4101: 'spike_i' : unreferenced local variable
+     1>lsm\csim\src\readout.cpp(492): warning C4018: '>' : signed/unsigned mismatch
+     1>lsm\csim\src\readout.cpp(524): warning C4018: '>=' : signed/unsigned mismatch
+     1>lsm\csim\src\readout.cpp(550): warning C4018: '>=' : signed/unsigned mismatch
+     1>lsm\csim\src\readout.cpp(575): warning C4018: '>=' : signed/unsigned mismatch
          recorder.cpp
-     1>lsm\csim\src\recorder.cpp(5): warning C4627: '#include "csimclass.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\recorder.cpp(6): warning C4627: '#include "recorder.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\recorder.cpp(7): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\recorder.cpp(8): warning C4627: '#include "spikingneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\recorder.cpp(144): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
          sigmoidalneuron.cpp
-     1>lsm\csim\src\sigmoidalneuron.cpp(5): warning C4627: '#include "sigmoidalneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\sigmoidalneuron.cpp(6): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\sigmoidalneuron.cpp(57): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
          specificouneurons.cpp
-     1>lsm\csim\src\specificouneurons.cpp(6): warning C4627: '#include <string.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\specificouneurons.cpp(7): warning C4627: '#include <stdio.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\specificouneurons.cpp(8): warning C4627: '#include "specificouneurons.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\specificouneurons.cpp(9): warning C4627: '#include "mexnetwork.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\specificouneurons.cpp(190): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\cbneuronst.h(70): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(107): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(108): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(109): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(111): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(164): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(242): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(298): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(360): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(363): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(425): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(429): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(485): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(489): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(535): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(539): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(589): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(593): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(665): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(669): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(734): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(738): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(788): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(792): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(861): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(863): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(907): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(908): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(949): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(950): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\mexnetwork.h(8): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
          specific_ion_channels.cpp
-     1>lsm\csim\src\specific_ion_channels.cpp(2): warning C4627: '#include "specific_ion_channels.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\specific_ion_channels.cpp(3): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\specific_ion_channels.cpp(4): warning C4627: '#include "cbneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\specific_ion_channels.cpp(5): warning C4627: '#include "analoginputneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\specific_ion_channels.cpp(308): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(107): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(108): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(109): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(111): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(164): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(242): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(298): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(360): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(363): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(425): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(429): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(485): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(489): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(535): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(539): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(589): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(593): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(665): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(669): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(734): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(738): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(788): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(792): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(861): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(863): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(907): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(908): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(949): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(950): warning C4305: '=' : truncation from 'double' to 'float'
+     1>lsm\csim\src\specific_ion_channels.cpp(197): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
          specific_neurons.cpp
-     1>lsm\csim\src\specific_neurons.cpp(6): warning C4627: '#include <string.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\specific_neurons.cpp(7): warning C4627: '#include <stdio.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\specific_neurons.cpp(8): warning C4627: '#include "specific_neurons.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\specific_neurons.cpp(9): warning C4627: '#include "mexnetwork.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\specific_neurons.cpp(182): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         spikefilter.cpp
-     1>lsm\csim\src\spikefilter.cpp(5): warning C4627: '#include "spikefilter.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\spikefilter.cpp(143): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         spikinginputneuron.cpp
-     1>lsm\csim\src\spikinginputneuron.cpp(5): warning C4627: '#include "spikinginputneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\spikinginputneuron.cpp(6): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\spikinginputneuron.cpp(23): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         spikingneuron.cpp
-     1>lsm\csim\src\spikingneuron.cpp(5): warning C4627: '#include "spikingneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\spikingneuron.cpp(6): warning C4627: '#include "spikingsynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\spikingneuron.cpp(7): warning C4627: '#include "stdpsynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\spikingneuron.cpp(8): warning C4627: '#include "network.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\spikingneuron.cpp(74): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         spikingsynapse.cpp
-     1>lsm\csim\src\spikingsynapse.cpp(5): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\spikingsynapse.cpp(6): warning C4627: '#include "spikingneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\spikingsynapse.cpp(7): warning C4627: '#include "spikingsynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\spikingsynapse.cpp(8): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\spikingsynapse.cpp(9): warning C4627: '#include "lifneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\spikingsynapse.cpp(79): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         spikingteacher.cpp
-     1>lsm\csim\src\spikingteacher.cpp(5): warning C4627: '#include "spikingteacher.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\spikingteacher.cpp(6): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\spikingteacher.cpp(40): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\cbneuronst.h(70): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(107): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(108): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(109): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(111): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(164): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(242): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(298): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(360): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(363): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(425): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(429): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(485): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(489): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(535): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(539): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(589): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(593): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(665): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(669): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(734): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(738): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(788): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(792): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(861): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(863): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(907): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(908): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(949): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(950): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\mexnetwork.h(8): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
          Generating Code...
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\readout.cpp(600): warning C4715: 'Readout::setLearningAlgorithm' : not all control paths return a value
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\preprocessor.cpp(69): warning C4715: 'Preprocessor::getParameter' : not all control paths return a value
          Compiling...
-         staticanalogcbsynapse.cpp
-     1>lsm\csim\src\staticanalogcbsynapse.cpp(5): warning C4627: '#include "staticanalogcbsynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\staticanalogcbsynapse.cpp(6): warning C4627: '#include "cbneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\staticanalogcbsynapse.cpp(7): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\staticanalogcbsynapse.cpp(8): warning C4627: '#include "stdio.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\staticanalogcbsynapse.cpp(9): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\staticanalogcbsynapse.cpp(57): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         staticanalogsynapse.cpp
-     1>lsm\csim\src\staticanalogsynapse.cpp(5): warning C4627: '#include "staticanalogsynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\staticanalogsynapse.cpp(6): warning C4627: '#include "randgen.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\staticanalogsynapse.cpp(7): warning C4627: '#include "stdio.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\staticanalogsynapse.cpp(49): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         staticglutamatesynapse.cpp
-     1>lsm\csim\src\staticglutamatesynapse.cpp(5): warning C4627: '#include "staticglutamatesynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\staticglutamatesynapse.cpp(6): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         staticglutamatesynapsesynchan.cpp
-     1>lsm\csim\src\staticglutamatesynapsesynchan.cpp(5): warning C4627: '#include "staticglutamatesynapsesynchan.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\staticglutamatesynapsesynchan.cpp(6): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+         spikefilter.cpp
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+         spikinginputneuron.cpp
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>lsm\csim\src\spikinginputneuron.cpp(18): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+         spikingneuron.cpp
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>lsm\csim\src\spikingneuron.cpp(20): error C3861: 'malloc': identifier not found
+     1>lsm\csim\src\spikingneuron.cpp(25): error C3861: 'free': identifier not found
+     1>lsm\csim\src\spikingneuron.cpp(64): error C3861: 'realloc': identifier not found
          staticspikingcbsynapse.cpp
      1>lsm\csim\src\staticspikingcbsynapse.cpp(5): warning C4627: '#include "staticspikingcbsynapse.h"': skipped when looking for precompiled header use
                  Add directive to 'StdAfx.h' or rebuild precompiled header
@@ -774,74 +282,14 @@
                  Add directive to 'StdAfx.h' or rebuild precompiled header
      1>lsm\csim\src\staticspikingcbsynapse.cpp(7): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
                  Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\staticspikingcbsynapse.cpp(49): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         staticspikingsynapse.cpp
-     1>lsm\csim\src\staticspikingsynapse.cpp(7): warning C4627: '#include "staticspikingsynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\staticspikingsynapse.cpp(8): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         staticstdpsynapse.cpp
-     1>lsm\csim\src\staticstdpsynapse.cpp(5): warning C4627: '#include "staticstdpsynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\staticstdpsynapse.cpp(6): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         stdpsynapse.cpp
-     1>lsm\csim\src\stdpsynapse.cpp(5): warning C4627: '#include <math.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\stdpsynapse.cpp(6): warning C4627: '#include "stdpsynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\stdpsynapse.cpp(7): warning C4627: '#include "spikingneuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\stdpsynapse.cpp(8): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\stdpsynapse.cpp(163): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         synapse.cpp
-     1>lsm\csim\src\synapse.cpp(5): warning C4627: '#include "synapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\synapse.cpp(6): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\synapse.cpp(7): warning C4627: '#include "neuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\synapse.cpp(34): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         synapticchannel.cpp
-     1>lsm\csim\src\synapticchannel.cpp(1): warning C4627: '#include <stdlib.h>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\synapticchannel.cpp(2): warning C4627: '#include "synapticchannel.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\synapticchannel.cpp(3): warning C4627: '#include "synapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\synapticchannel.cpp(55): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         teacher.cpp
-     1>lsm\csim\src\teacher.cpp(5): warning C4627: '#include "teacher.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\teacher.cpp(6): warning C4627: '#include "forceable.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\teacher.cpp(7): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\teacher.cpp(8): warning C4627: '#include "network.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\teacher.cpp(39): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         TraubsHHNeuron.cpp
-     1>lsm\csim\src\TraubsHHNeuron.cpp(1): warning C4627: '#include "TraubsHHNeuron.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\TraubsHHNeuron.cpp(86): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         triangularanalogfilter.cpp
-     1>lsm\csim\src\triangularanalogfilter.cpp(5): warning C4627: '#include "triangularanalogfilter.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\triangularanalogfilter.cpp(32): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         useranalogfilter.cpp
-     1>lsm\csim\src\useranalogfilter.cpp(5): warning C4627: '#include "useranalogfilter.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\useranalogfilter.cpp(112): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
-         viongate.cpp
-     1>lsm\csim\src\viongate.cpp(1): warning C4627: '#include "viongate.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\viongate.cpp(2): warning C4627: '#include "ionchannel.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\viongate.cpp(3): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\viongate.cpp(135): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "StdAfx.h"' to your source?
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(47): error C2059: syntax error : 'return'
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(47): error C2653: 'StaticSpikingSynapse' : is not a class or namespace name
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(48): error C2059: syntax error : '}'
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(48): error C2143: syntax error : missing ';' before '}'
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(48): error C2059: syntax error : '}'
          Generating Code...
      1>Done Building Project "C:\Users\Jason\Documents\GitHub\LiquidStateMachine-CSIM\LiquidStateMachine\LiquidStateMachine\LiquidStateMachine.vcxproj" (build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:00.96
+Time Elapsed 00:00:09.83

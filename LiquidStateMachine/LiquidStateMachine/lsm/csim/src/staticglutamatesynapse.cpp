@@ -2,4 +2,6 @@
 **  \brief Implementation of StaticGlutamateSynapse
 */
 
+#include <stdAfx.h>
+
 #include "staticglutamatesynapse.h"

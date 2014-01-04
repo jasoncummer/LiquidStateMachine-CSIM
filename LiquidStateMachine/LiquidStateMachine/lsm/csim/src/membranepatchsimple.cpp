@@ -1,6 +1,9 @@
 /*! \file membranepatchsimple.cpp
 **  \brief Implementation of MembranePatchSimple
 */
+
+#include <stdAfx.h>
+
 #include "randgen.h"
 #include "membranepatchsimple.h"
 #include "synapse.h"

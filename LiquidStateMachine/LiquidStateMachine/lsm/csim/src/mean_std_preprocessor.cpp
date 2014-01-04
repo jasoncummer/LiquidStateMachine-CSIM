@@ -2,6 +2,8 @@
 **  \brief Implementation of a Mean / Standard-Deviation Normalizer.
 */
 
+#include <stdAfx.h>
+
 #include "mean_std_preprocessor.h" 
 
 /** Constructs a new normalization transformation. Initially the transformation is an identical transformation x'=x. 

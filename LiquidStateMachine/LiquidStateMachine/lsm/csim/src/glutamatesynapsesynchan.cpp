@@ -2,6 +2,8 @@
 **  \brief Implementation of GlutamateSynapseSynchan
 */
 
+#include <stdAfx.h>
+
 #include <math.h>
 #include "glutamatesynapsesynchan.h"
 #include "spikingneuron.h"

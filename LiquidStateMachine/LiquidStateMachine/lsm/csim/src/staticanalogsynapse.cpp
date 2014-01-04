@@ -2,6 +2,8 @@
 **  \brief Implementation of StaticAnalogSynapse
 */
 
+#include <stdAfx.h>
+
 #include "staticanalogsynapse.h"
 #include "randgen.h"
 #include "stdio.h"

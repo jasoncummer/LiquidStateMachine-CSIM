@@ -2,6 +2,8 @@
 **  \brief Implementation of conductance based neurons with Ornstein Uhlenbeck process noise
 */
 
+#include <stdAfx.h>
+
 #include <string.h>
 #include <stdio.h>
 #include "randgen.h"

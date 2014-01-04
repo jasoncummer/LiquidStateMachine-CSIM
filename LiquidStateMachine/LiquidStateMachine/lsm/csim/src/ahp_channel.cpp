@@ -1,3 +1,4 @@
+#include <stdAfx.h>
 #include <stdlib.h>
 #include <math.h>
 #include "ahp_channel.h"

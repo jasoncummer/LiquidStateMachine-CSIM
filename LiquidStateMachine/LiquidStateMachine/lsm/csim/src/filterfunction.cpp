@@ -2,6 +2,8 @@
 **  \brief Base class of all filter objects
 */
 
+#include <stdAfx.h>
+
 #include "filterfunction.h"
 
 

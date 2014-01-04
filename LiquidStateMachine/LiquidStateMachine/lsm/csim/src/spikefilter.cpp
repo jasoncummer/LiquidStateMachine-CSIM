@@ -2,6 +2,8 @@
 **  \brief Base class for all spike-filtering functions.
 */
 
+#include <stdAfx.h>
+
 #include "spikefilter.h"
 
 

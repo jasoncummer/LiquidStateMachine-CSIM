@@ -2,6 +2,8 @@
 **  \brief Arm model (for Prashant Joshi).
 */
 
+#include <stdAfx.h>
+
 #include "armmodel.h"
 #include <math.h>
 #include <mat.h>

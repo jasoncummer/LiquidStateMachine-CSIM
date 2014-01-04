@@ -2,6 +2,7 @@
 **  \brief Implementation of Izhi_Neuron
 */
 
+#include <stdAfx.h>
 
 #include <string.h>
 #include <stdio.h>

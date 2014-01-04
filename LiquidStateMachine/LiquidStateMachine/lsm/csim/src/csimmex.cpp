@@ -1,3 +1,4 @@
+#include <stdAfx.h>
 
 #include "csimmex.h"
 #include "classlist.i"

@@ -2,6 +2,8 @@
 **  \brief Implementation of LinearNeuron
 */
 
+#include <stdAfx.h>
+
 #include "randgen.h"
 #include "linearneuron.h"
 

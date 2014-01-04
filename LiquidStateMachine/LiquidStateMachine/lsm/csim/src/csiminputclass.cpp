@@ -1,3 +1,5 @@
+#include <stdAfx.h>
+
 #include "csiminputclass.h"
 #include "csimerror.h"
 

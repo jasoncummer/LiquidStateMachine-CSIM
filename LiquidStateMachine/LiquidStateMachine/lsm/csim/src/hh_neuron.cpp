@@ -2,6 +2,8 @@
 **  \brief Implementation of HHNeuron
 */
 
+#include <stdAfx.h>
+
 #include "hh_neuron.h"
 #include "hh_squid_channels.h"
 

@@ -2,6 +2,7 @@
 **  \brief Implementation of AnalogTeacher
 */
 
+#include <stdAfx.h>
 
 #include <stdlib.h>
 #include "analogteacher.h"

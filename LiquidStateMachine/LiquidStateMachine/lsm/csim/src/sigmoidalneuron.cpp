@@ -2,6 +2,8 @@
 **  \brief Implementation of SigmoidalNeuron
 */
 
+#include <stdAfx.h>
+
 #include "sigmoidalneuron.h"
 #include "randgen.h"
 

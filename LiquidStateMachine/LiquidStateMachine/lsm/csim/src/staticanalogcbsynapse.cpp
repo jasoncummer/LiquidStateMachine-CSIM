@@ -2,6 +2,8 @@
 **  \brief Implementation of conductance based StaticAnalogSynapse
 */
 
+#include <stdAfx.h>
+
 #include "staticanalogcbsynapse.h"
 #include "cbneuron.h"
 #include "randgen.h"

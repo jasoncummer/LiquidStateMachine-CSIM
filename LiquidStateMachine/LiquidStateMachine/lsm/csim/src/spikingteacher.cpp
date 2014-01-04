@@ -2,6 +2,8 @@
 **  \brief Implementation of SpikingTeacher
 */
 
+#include <stdAfx.h>
+
 #include "spikingteacher.h"
 #include "csimerror.h"
 

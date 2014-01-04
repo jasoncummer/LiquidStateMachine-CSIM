@@ -2,6 +2,8 @@
 **  \brief Analog triangular low-pass filter.
 */
 
+#include <stdAfx.h>
+
 #include "triangularanalogfilter.h"
 
 

@@ -2,6 +2,7 @@
 **  \brief Implementation of a linear classification.
 */
 
+#include <stdAfx.h>
 
 #include "linear_classification.h"
 

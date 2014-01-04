@@ -2,6 +2,8 @@
 **  \brief Implementation of CbNeuron
 */
 
+#include <stdAfx.h>
+
 #include <string.h>
 #include <stdio.h>
 #include "randgen.h"

@@ -2,6 +2,8 @@
 **  \brief Implementation of AnalogSynapse
 */
 
+#include <stdAfx.h>
+
 #include "analogsynapse.h"
 
 AnalogSynapse::AnalogSynapse(void)

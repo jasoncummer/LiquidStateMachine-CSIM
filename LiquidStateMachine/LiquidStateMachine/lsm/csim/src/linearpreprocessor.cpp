@@ -2,6 +2,8 @@
 **  \brief Implementation of a linear transformation of the input.
 */
 
+#include <stdAfx.h>
+
 #include "linearpreprocessor.h"
 
 /** Constructs a new linear transformation. Initially the transformation is an identical transformation x'=x. 

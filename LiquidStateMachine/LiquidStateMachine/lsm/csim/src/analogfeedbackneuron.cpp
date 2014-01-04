@@ -2,6 +2,8 @@
 **  \brief Implementation of AnalogFeedbackNeuron
 */
 
+#include <stdAfx.h>
+
 #include "analogfeedbackneuron.h"
 #include "csimerror.h"
 

@@ -1,3 +1,5 @@
+#include <stdAfx.h>
+
 #include <stdlib.h>
 #include <math.h>
 #include "iongate.h"

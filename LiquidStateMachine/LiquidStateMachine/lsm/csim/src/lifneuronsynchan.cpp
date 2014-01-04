@@ -2,6 +2,8 @@
 **  \brief Implementation of LifNeuronSynchan
 */
 
+#include <stdAfx.h>
+
 #include "randgen.h"
 #include "lifneuronsynchan.h"
 #include "synapse.h"

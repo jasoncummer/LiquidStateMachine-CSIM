@@ -2,6 +2,8 @@
 **  \brief Implementation of Network
 */
 
+#include <stdAfx.h>
+
 #include "mexnetwork.h"
 #include "mexrecorder.h"
 #include "csimlist.h"

@@ -2,6 +2,8 @@
 **  \brief Analog gaussian low-pass filter.
 */
 
+#include <stdAfx.h>
+
 #include "gaussiananalogfilter.h"
 #include <math.h>
 

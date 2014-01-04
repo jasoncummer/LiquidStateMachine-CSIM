@@ -2,6 +2,8 @@
 **  \brief Implementation of DynamicStdpSynapse
 */
 
+#include <stdAfx.h>
+
 #include <math.h>
 #include "dynamicglutamatesynapse.h"
 #include "spikingneuron.h"
