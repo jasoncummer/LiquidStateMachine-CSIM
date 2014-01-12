@@ -141,7 +141,7 @@ public:
 
 private:
   friend class Teacher;
-  friend class MexNetwork;
+  friend class MexNetwork;//<matStuff>
 
   //! This function will be called by a Teacher an object is added to this teacher.
   int moveToTeached(Forceable *f);

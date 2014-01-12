@@ -2,7 +2,7 @@
 **  \brief Implementation of ExtOutLinearNeuron
 */
 
-#include <stdAfx.h>#include <stdAfx.h>
+#include <stdAfx.h>
 
 #ifdef _GNU_SOURCE
 #include <unistd.h>

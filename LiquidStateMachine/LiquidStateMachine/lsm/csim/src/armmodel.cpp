@@ -8,6 +8,8 @@
 #include <math.h>
 #include <mat.h>
 
+//using namespace std;
+
 // constant PI
 const double PI = acos(-1.0);
 

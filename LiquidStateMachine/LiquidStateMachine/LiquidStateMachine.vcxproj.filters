@@ -60,6 +60,8 @@
     <None Include="lsm\condmex.m" />
     <None Include="lsm\install.m" />
     <None Include="lsm\lsm_path.m" />
+    <None Include="dependancy.cd" />
+    <None Include="Network_Dependencies.cd" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LiquidStateMachine.cpp">
@@ -674,6 +676,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="lsm\utilities\mutual_information\mi_and_bayes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mex.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
