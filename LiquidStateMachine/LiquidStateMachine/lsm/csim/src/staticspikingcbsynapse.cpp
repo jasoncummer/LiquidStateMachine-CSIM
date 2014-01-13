@@ -2,10 +2,10 @@
 **  \brief Implementation of StaticSpikingCbSynapse
 */
 
-#include "staticspikingcbsynapse.h"
+//#include "staticspikingcbsynapse.h"
 #include "cbneuron.h"
 #include "csimerror.h"
-
+#include <stdAfx.h>
 
 StaticSpikingCbSynapse::StaticSpikingCbSynapse(void)
 {
@@ -41,7 +41,7 @@ int StaticSpikingCbSynapse::addOutgoing(Advancable *a)
     return -1;
   }
 
-  #include <stdAfx.h>
+  
 
   // connect post pointer to the postsynatpic object
   return StaticSpikingSynapse::addOutgoing(a);

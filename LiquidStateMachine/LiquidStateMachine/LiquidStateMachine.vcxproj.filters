@@ -109,9 +109,6 @@
     <ClCompile Include="lsm\csim\src\analogteacher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="lsm\csim\src\armmodel.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="lsm\csim\src\cbhhouineuron.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -133,9 +130,6 @@
     <ClCompile Include="lsm\csim\src\countspikefilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="lsm\csim\src\csim.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="lsm\csim\src\csimclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -146,9 +140,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="lsm\csim\src\csimlist.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="lsm\csim\src\csimmex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="lsm\csim\src\discretizationpreprocessor.cpp">
@@ -211,9 +202,6 @@
     <ClCompile Include="lsm\csim\src\hh_squid_channels.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="lsm\csim\src\ifbneuron.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="lsm\csim\src\ionbuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -221,9 +209,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="lsm\csim\src\iongate.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="lsm\csim\src\izhi_neuron.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="lsm\csim\src\lifburstneuron.cpp">
@@ -256,12 +241,6 @@
     <ClCompile Include="lsm\csim\src\membranepatchsimple.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="lsm\csim\src\mexnetwork.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="lsm\csim\src\mexrecorder.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="lsm\csim\src\network.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -290,9 +269,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="lsm\csim\src\specific_ion_channels.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="lsm\csim\src\specific_neurons.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="lsm\csim\src\specificouneurons.cpp">
@@ -411,9 +387,6 @@
     <ClInclude Include="lsm\csim\src\analogteacher.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="lsm\csim\src\armmodel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="lsm\csim\src\cbhhouineuron.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -445,9 +418,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="lsm\csim\src\csimlist.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lsm\csim\src\csimmex.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="lsm\csim\src\discretizationpreprocessor.h">
@@ -516,9 +486,6 @@
     <ClInclude Include="lsm\csim\src\hh_squid_channels.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="lsm\csim\src\ifbneuron.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="lsm\csim\src\internalvoltageneuron.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -529,9 +496,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="lsm\csim\src\iongate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lsm\csim\src\izhi_neuron.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="lsm\csim\src\lifburstneuron.h">
@@ -562,12 +526,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="lsm\csim\src\membranepatchsimple.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lsm\csim\src\mexnetwork.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lsm\csim\src\mexrecorder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="lsm\csim\src\modelinput.h">
@@ -604,9 +562,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="lsm\csim\src\specific_ion_channels.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lsm\csim\src\specific_neurons.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="lsm\csim\src\specificouneurons.h">

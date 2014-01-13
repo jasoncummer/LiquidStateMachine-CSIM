@@ -8,12 +8,12 @@
 #include <stdio.h>
 #include "randgen.h"
 #include "lifburstneuron.h"
-#include "mexnetwork.h"
+//#include "mexnetwork.h"
 #include "synapse.h"
 #include "csimerror.h"
 
 
-extern MexNetwork *TheNetwork;
+//extern MexNetwork *TheNetwork;
 
 LifBurstNeuron::LifBurstNeuron(void) :
   Cm((float)3e-8), Rm((float)1e6), Vresting ((float)-0.06), Vreset(Vresting),

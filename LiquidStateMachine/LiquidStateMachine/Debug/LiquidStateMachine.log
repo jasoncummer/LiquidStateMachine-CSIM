@@ -1,4 +1,4 @@
-﻿Build started 12/01/2014 12:08:32 AM.
+﻿Build started 12/01/2014 11:00:23 PM.
      1>Project "C:\Users\Jason\Documents\GitHub\LiquidStateMachine-CSIM\LiquidStateMachine\LiquidStateMachine\LiquidStateMachine.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Touching "Debug\LiquidStateMachine.unsuccessfulbuild".
@@ -6,12 +6,7 @@
        Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
        ClCompile:
          All outputs are up-to-date.
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\LiquidStateMachine.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt lsm\csim\src\armmodel.cpp lsm\csim\src\csim.cpp lsm\csim\src\csimclass.cpp lsm\csim\src\csimmex.cpp lsm\csim\src\extoutsigmoidalneuron.cpp lsm\csim\src\ifbneuron.cpp lsm\csim\src\ionbuffer.cpp lsm\csim\src\izhi_neuron.cpp lsm\csim\src\lifburstneuron.cpp lsm\csim\src\mexnetwork.cpp lsm\csim\src\mexrecorder.cpp lsm\csim\src\physicalmodel.cpp lsm\csim\src\specificouneurons.cpp lsm\csim\src\specific_neurons.cpp lsm\csim\src\spikingneuron.cpp lsm\csim\src\staticspikingcbsynapse.cpp /clr:nostdlib 
-         armmodel.cpp
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
-     1>lsm\csim\src\armmodel.cpp(9): fatal error C1083: Cannot open include file: 'mat.h': No such file or directory
-         csim.cpp
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\csimmex.h(7): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\LiquidStateMachine.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt lsm\csim\src\csimclass.cpp lsm\csim\src\extoutsigmoidalneuron.cpp lsm\csim\src\ionbuffer.cpp lsm\csim\src\spikingneuron.cpp lsm\csim\src\staticspikingcbsynapse.cpp /clr:nostdlib 
          csimclass.cpp
      1>lsm\csim\src\csimclass.cpp(117): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
@@ -54,121 +49,175 @@
      1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\hh_squid_channels.h(90): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
      1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\hh_squid_channels.h(91): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
      1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\lifneuronsynchan.h(66): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\mexrecorder.h(4): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
-         csimmex.cpp
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\csimmex.h(7): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\TraubsHHNeuron.h(147): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\TraubsHHNeuron.h(148): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\TraubsHHNeuron.h(237): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\TraubsHHNeuron.h(238): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(11): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(14): error C2653: 'cACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(14): error C2374: 'classInfo' : redefinition; multiple initialization
+                 c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(11) : see declaration of 'classInfo'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(25): error C2653: 'dNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(25): error C2374: 'classInfo' : redefinition; multiple initialization
+                 c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(11) : see declaration of 'classInfo'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(47): error C2653: 'IfbNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(47): error C2374: 'classInfo' : redefinition; multiple initialization
+                 c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(11) : see declaration of 'classInfo'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(235): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(236): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(237): error C2065: 'bNACNeuron' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(237): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(237): error C2061: syntax error : identifier 'bNACNeuron'
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(239): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(239): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(239): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(239): error C2227: left of '->STempHeight' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(240): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(240): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(240): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(240): error C2227: left of '->Vthresh' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(241): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(241): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(241): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(241): error C2227: left of '->Vreset' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(242): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(242): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(242): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(242): error C2227: left of '->doReset' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(243): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(243): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(243): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(243): error C2227: left of '->Trefract' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(244): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(244): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(244): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(244): error C2227: left of '->nummethod' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(245): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(245): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(245): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(245): error C2227: left of '->type' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(246): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(246): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(246): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(246): error C2227: left of '->Cm' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(247): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(247): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(247): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(247): error C2227: left of '->Rm' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(248): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(248): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(248): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(248): error C2227: left of '->Em' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(249): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(249): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(249): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(249): error C2227: left of '->Vresting' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(250): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(250): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(250): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(250): error C2227: left of '->Vinit' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(251): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(251): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(251): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(251): error C2227: left of '->VmScale' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(252): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(252): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(252): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(252): error C2227: left of '->Vm' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(253): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(253): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(253): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(253): error C2227: left of '->Inoise' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(254): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(254): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(254): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(254): error C2227: left of '->Iinject' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(255): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(255): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(255): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(255): error C2227: left of '->Isyn' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(256): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(256): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(256): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(256): error C2227: left of '->Gsyn' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(257): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(257): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(257): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(257): error C2227: left of '->nIncoming' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(258): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(258): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(258): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(258): error C2227: left of '->nOutgoing' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(259): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(259): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(259): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(259): error C2227: left of '->nBuffers' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(260): error C2653: 'bNACNeuron' : is not a class or namespace name
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(260): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(260): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(260): error C2227: left of '->nChannels' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(262): error C2065: 'TmpObj' : undeclared identifier
+     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\registerclasses.i(262): fatal error C1003: error count exceeds 100; stopping compilation
          extoutsigmoidalneuron.cpp
-     1>lsm\csim\src\extoutsigmoidalneuron.cpp(9): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
-         ifbneuron.cpp
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\mexnetwork.h(8): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
+     1>lsm\csim\src\extoutsigmoidalneuron.cpp(13): fatal error C1020: unexpected #endif
          ionbuffer.cpp
      1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
      1>lsm\csim\src\ionbuffer.cpp(33): error C3861: 'free': identifier not found
      1>lsm\csim\src\ionbuffer.cpp(125): error C3861: 'realloc': identifier not found
-         izhi_neuron.cpp
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\lifneuron.h(61): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\mexnetwork.h(8): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
-         lifburstneuron.cpp
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\mexnetwork.h(8): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
-         mexnetwork.cpp
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\mexnetwork.h(8): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
-         mexrecorder.cpp
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\mexrecorder.h(4): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
-         physicalmodel.cpp
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
-     1>lsm\csim\src\physicalmodel.cpp(164): error C3861: 'mxMalloc': identifier not found
-     1>lsm\csim\src\physicalmodel.cpp(175): error C3861: 'mxCalloc': identifier not found
-     1>lsm\csim\src\physicalmodel.cpp(206): warning C4018: '>=' : signed/unsigned mismatch
-     1>lsm\csim\src\physicalmodel.cpp(223): warning C4018: '>=' : signed/unsigned mismatch
-         specificouneurons.cpp
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\cbneuronst.h(70): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(107): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(108): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(109): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(111): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(164): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(242): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(298): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(360): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(363): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(425): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(429): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(485): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(489): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(535): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(539): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(589): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(593): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(665): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(669): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(734): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(738): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(788): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(792): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(861): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(863): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(907): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(908): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(949): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(950): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\mexnetwork.h(8): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
-         specific_neurons.cpp
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\cbneuronst.h(70): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(107): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(108): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(109): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(111): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(164): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(242): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(298): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(360): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(363): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(425): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(429): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(485): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(489): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(535): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(539): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(589): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(593): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(665): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(669): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(734): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(738): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(788): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(792): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(861): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(863): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(907): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(908): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(949): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\specific_ion_channels.h(950): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\mexnetwork.h(8): fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
          spikingneuron.cpp
      1>c:\users\jason\documents\github\liquidstatemachine-csim\liquidstatemachine\liquidstatemachine\lsm\csim\src\spikingneuron.h(41): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
      1>lsm\csim\src\spikingneuron.cpp(20): error C3861: 'malloc': identifier not found
      1>lsm\csim\src\spikingneuron.cpp(25): error C3861: 'free': identifier not found
      1>lsm\csim\src\spikingneuron.cpp(64): error C3861: 'realloc': identifier not found
          staticspikingcbsynapse.cpp
-     1>lsm\csim\src\staticspikingcbsynapse.cpp(5): warning C4627: '#include "staticspikingcbsynapse.h"': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
      1>lsm\csim\src\staticspikingcbsynapse.cpp(6): warning C4627: '#include "cbneuron.h"': skipped when looking for precompiled header use
                  Add directive to 'StdAfx.h' or rebuild precompiled header
      1>lsm\csim\src\staticspikingcbsynapse.cpp(7): warning C4627: '#include "csimerror.h"': skipped when looking for precompiled header use
                  Add directive to 'StdAfx.h' or rebuild precompiled header
-     1>lsm\csim\src\staticspikingcbsynapse.cpp(47): error C2059: syntax error : 'return'
-     1>lsm\csim\src\staticspikingcbsynapse.cpp(47): error C2653: 'StaticSpikingSynapse' : is not a class or namespace name
-     1>lsm\csim\src\staticspikingcbsynapse.cpp(48): error C2059: syntax error : '}'
-     1>lsm\csim\src\staticspikingcbsynapse.cpp(48): error C2143: syntax error : missing ';' before '}'
-     1>lsm\csim\src\staticspikingcbsynapse.cpp(48): error C2059: syntax error : '}'
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(10): error C2653: 'StaticSpikingCbSynapse' : is not a class or namespace name
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(12): error C2065: 'E' : undeclared identifier
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(13): error C2065: 'GSummationPoint' : undeclared identifier
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(14): warning C4508: 'StaticSpikingCbSynapse' : function should return a value; 'void' return type assumed
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(18): error C2653: 'StaticSpikingCbSynapse' : is not a class or namespace name
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(20): error C2065: 'psr' : undeclared identifier
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(20): error C2065: 'decay' : undeclared identifier
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(21): error C2065: 'summationPoint' : undeclared identifier
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(21): error C2065: 'psr' : undeclared identifier
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(21): error C2065: 'E' : undeclared identifier
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(22): error C2065: 'GSummationPoint' : undeclared identifier
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(22): error C2065: 'psr' : undeclared identifier
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(24): error C2065: 'steps2cutoff' : undeclared identifier
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(27): error C2065: 'psr' : undeclared identifier
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(33): error C2653: 'StaticSpikingCbSynapse' : is not a class or namespace name
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(33): error C2065: 'Advancable' : undeclared identifier
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(33): error C2065: 'a' : undeclared identifier
+     1>lsm\csim\src\staticspikingcbsynapse.cpp(34): error C2448: 'addOutgoing' : function-style initializer appears to be a function definition
          Generating Code...
      1>Done Building Project "C:\Users\Jason\Documents\GitHub\LiquidStateMachine-CSIM\LiquidStateMachine\LiquidStateMachine\LiquidStateMachine.vcxproj" (build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:02.84
+Time Elapsed 00:00:01.16

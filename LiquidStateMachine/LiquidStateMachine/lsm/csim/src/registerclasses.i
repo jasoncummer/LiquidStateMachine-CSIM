@@ -45,7 +45,7 @@ csimClassInfo *HH_Na_Channel::classInfo=0;
 csimClassInfo *HHNeuron::classInfo=0;
 csimClassInfo *HVACAChannel_Brown93::classInfo=0;
 csimClassInfo *IfbNeuron::classInfo=0;
-csimClassInfo *Izhi_Neuron::classInfo=0;
+//csimClassInfo *Izhi_Neuron::classInfo=0;
 csimClassInfo *KCAChannel_Mainen96::classInfo=0;
 csimClassInfo *KChannel_Korngreen02::classInfo=0;
 csimClassInfo *KDChannel_Traub91::classInfo=0;
@@ -60,12 +60,12 @@ csimClassInfo *MChannel_Mainen96::classInfo=0;
 csimClassInfo *MChannel_Mainen96orig::classInfo=0;
 csimClassInfo *MChannel_Wang98::classInfo=0;
 csimClassInfo *Mean_Std_Preprocessor::classInfo=0;
-csimClassInfo *MexRecorder::classInfo=0;
+//csimClassInfo *MexRecorder::classInfo=0;
 csimClassInfo *NAChannel_Traub91::classInfo=0;
 csimClassInfo *NPChannel_McCormick02::classInfo=0;
 csimClassInfo *PCAPreprocessor::classInfo=0;
 csimClassInfo *Readout::classInfo=0;
-csimClassInfo *Recorder::classInfo=0;
+//csimClassInfo *Recorder::classInfo=0;
 csimClassInfo *SICChannel_Maciokas02::classInfo=0;
 csimClassInfo *SigmoidalNeuron::classInfo=0;
 csimClassInfo *SpikingInputNeuron::classInfo=0;
@@ -1146,35 +1146,7 @@ void csimClassInfoDB::registerClasses(void)
     delete TmpObj;
   }
 
-  if (!Izhi_Neuron::classInfo ) {
-    Izhi_Neuron::classInfo =registerCsimClass("Izhi_Neuron","A canonical bursting and spiking neuron.");
-    Izhi_Neuron*TmpObj = new Izhi_Neuron;
-    #define REGFIELD(_n,_f,_a,_t,_s,_l,_u,_un,_d) Izhi_Neuron::classInfo->registerField((char *)(TmpObj),_n,&(TmpObj->_f),_a,_s,_l,_u,_un,_d);
-    REGFIELD("Cm",Cm,READWRITE,float,1,0,1,"F","The membrane capacity $C_m$");
-    REGFIELD("Rm",Rm,READWRITE,float,1,0,1e30,"Ohm","The membrane resistance $R_m$");
-    REGFIELD("Vthresh",Vthresh,READWRITE,float,1,-10,100,"V","If $V_m$ exceeds $V_{thresh}$ a spike is emmited.");
-    REGFIELD("Vresting",Vresting,READWRITE,float,1,-1,1,"V","The resting membrane voltage.");
-    REGFIELD("Vreset",Vreset,READWRITE,float,1,-1,1,"V","The voltage to reset $V_m$ to after a spike.");
-    REGFIELD("Vinit",Vinit,READWRITE,float,1,-1,1,"V","The initial condition for $V_m$ at time $t=0$.");
-    REGFIELD("Trefract",Trefract,READWRITE,float,1,0,1,"sec","The length of the absolute refractory period.");
-    REGFIELD("Inoise",Inoise,READWRITE,float,1,0,1,"A","The standard deviation of the noise to be added each integration time constant.");
-    REGFIELD("Iinject",Iinject,READWRITE,float,1,-1,1,"A","A constant current to be injected into the LIF neuron.");
-    REGFIELD("a",a,READWRITE,float,1,-1e30,1e30,"","A constant (0.02, 01) describing the coupling of variable u to Vm;.");
-    REGFIELD("b",b,READWRITE,float,1,-1e30,1e30,"","A constant controlling sensitivity og u.");
-    REGFIELD("c",c,READWRITE,float,1,-1e30,1e30,"","A constant controlling reset of Vm (1000*Vreset).");
-    REGFIELD("d",d,READWRITE,float,1,-1e30,1e30,"","A constant controlling reset of u.");
-    REGFIELD("type",type,READWRITE,int,1,-1e30,1e30,"","Type (e.g. inhibitory or excitatory) of the neuron");
-    REGFIELD("Vm",Vm,READONLY,double,1,-1e30,1e30,"V","The membrane voltage $V_m$");
-    REGFIELD("Vb",Vb,READONLY,double,1,-1e30,1e30,"","The membrane voltage in millivolt.");
-    REGFIELD("Vint",Vint,READONLY,double,1,-1e30,1e30,"","The membrane voltage in millivolt.");
-    REGFIELD("u",u,READONLY,double,1,-1e30,1e30,"","internal variable");
-    REGFIELD("ub",ub,READONLY,double,1,-1e30,1e30,"","The internal variable u adapted to millivolt and millisecond.");
-    REGFIELD("Isyn",Isyn,READONLY,float,1,-1e30,1e30,"","synaptic input current");
-    REGFIELD("nIncoming",nIncoming,READONLY,int,1,-1e30,1e30,"","Number of incoming synapses");
-    REGFIELD("nOutgoing",nOutgoing,READONLY,int,1,-1e30,1e30,"","Number of outgoing synapses");
-    #undef REGFIELD
-    delete TmpObj;
-  }
+  
 
   if (!KCAChannel_Mainen96::classInfo ) {
     KCAChannel_Mainen96::classInfo =registerCsimClass("KCAChannel_Mainen96","Voltage dependent ion gate from Mainen and Sejnowski (1996).");
@@ -1392,17 +1364,7 @@ void csimClassInfoDB::registerClasses(void)
     delete TmpObj;
   }
 
-  if (!MexRecorder::classInfo ) {
-    MexRecorder::classInfo =registerCsimClass("MexRecorder","Alias for Recorder for backwards compatibility.");
-    MexRecorder*TmpObj = new MexRecorder;
-    #define REGFIELD(_n,_f,_a,_t,_s,_l,_u,_un,_d) MexRecorder::classInfo->registerField((char *)(TmpObj),_n,&(TmpObj->_f),_a,_s,_l,_u,_un,_d);
-    REGFIELD("commonChannels",commonChannels,READWRITE,int,1,0,1,"","Flag: 1 ... output all channels in one matrix (WARNING: no spikes are returned yet), 0 ... output each recorded field as seperate channel");
-    REGFIELD("dt",dt,READWRITE,double,1,0,100,"sec","The timestep at which an recording should be done (no meaning if recording spikes).");
-    REGFIELD("Tprealloc",Tprealloc,READWRITE,double,1,0,100,"sec","Provide your best guess how long the network will be simulated (in simulation time).");
-    REGFIELD("enabled",enabled,READWRITE,int,1,0,1,"","Flag: 0 ... recorder disabled, 1 ... recoder enabled");
-    #undef REGFIELD
-    delete TmpObj;
-  }
+ 
 
   if (!NAChannel_Traub91::classInfo ) {
     NAChannel_Traub91::classInfo =registerCsimClass("NAChannel_Traub91","");
@@ -1450,17 +1412,7 @@ void csimClassInfoDB::registerClasses(void)
     delete TmpObj;
   }
 
-  if (!Recorder::classInfo ) {
-    Recorder::classInfo =registerCsimClass("Recorder","Records fields from arbitrary objects during simulation.");
-    Recorder*TmpObj = new Recorder;
-    #define REGFIELD(_n,_f,_a,_t,_s,_l,_u,_un,_d) Recorder::classInfo->registerField((char *)(TmpObj),_n,&(TmpObj->_f),_a,_s,_l,_u,_un,_d);
-    REGFIELD("commonChannels",commonChannels,READWRITE,int,1,0,1,"","Flag: 1 ... output all channels in one matrix (WARNING: no spikes are returned yet), 0 ... output each recorded field as seperate channel");
-    REGFIELD("dt",dt,READWRITE,double,1,0,100,"sec","The timestep at which an recording should be done (no meaning if recording spikes).");
-    REGFIELD("Tprealloc",Tprealloc,READWRITE,double,1,0,100,"sec","Provide your best guess how long the network will be simulated (in simulation time).");
-    REGFIELD("enabled",enabled,READWRITE,int,1,0,1,"","Flag: 0 ... recorder disabled, 1 ... recoder enabled");
-    #undef REGFIELD
-    delete TmpObj;
-  }
+
 
   if (!SICChannel_Maciokas02::classInfo ) {
     SICChannel_Maciokas02::classInfo =registerCsimClass("SICChannel_Maciokas02","Voltage dependent ion channel from Maciokas et al. 2002.");

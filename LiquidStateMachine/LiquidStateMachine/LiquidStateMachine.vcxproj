@@ -141,7 +141,6 @@
     <ClCompile Include="lsm\csim\src\analogneuron.cpp" />
     <ClCompile Include="lsm\csim\src\analogsynapse.cpp" />
     <ClCompile Include="lsm\csim\src\analogteacher.cpp" />
-    <ClCompile Include="lsm\csim\src\armmodel.cpp" />
     <ClCompile Include="lsm\csim\src\cbhhouineuron.cpp" />
     <ClCompile Include="lsm\csim\src\cbhhouneuron.cpp" />
     <ClCompile Include="lsm\csim\src\cbneuron.cpp" />
@@ -149,12 +148,10 @@
     <ClCompile Include="lsm\csim\src\cbstouneuron.cpp" />
     <ClCompile Include="lsm\csim\src\conciongate.cpp" />
     <ClCompile Include="lsm\csim\src\countspikefilter.cpp" />
-    <ClCompile Include="lsm\csim\src\csim.cpp" />
     <ClCompile Include="lsm\csim\src\csimclass.cpp" />
     <ClCompile Include="lsm\csim\src\csimerror.cpp" />
     <ClCompile Include="lsm\csim\src\csiminputclass.cpp" />
     <ClCompile Include="lsm\csim\src\csimlist.cpp" />
-    <ClCompile Include="lsm\csim\src\csimmex.cpp" />
     <ClCompile Include="lsm\csim\src\discretizationpreprocessor.cpp" />
     <ClCompile Include="lsm\csim\src\dynamicanalogsynapse.cpp" />
     <ClCompile Include="lsm\csim\src\dynamicglutamatesynapse.cpp" />
@@ -175,11 +172,9 @@
     <ClCompile Include="lsm\csim\src\glutamatesynapsesynchan.cpp" />
     <ClCompile Include="lsm\csim\src\hh_neuron.cpp" />
     <ClCompile Include="lsm\csim\src\hh_squid_channels.cpp" />
-    <ClCompile Include="lsm\csim\src\ifbneuron.cpp" />
     <ClCompile Include="lsm\csim\src\ionbuffer.cpp" />
     <ClCompile Include="lsm\csim\src\ionchannel.cpp" />
     <ClCompile Include="lsm\csim\src\iongate.cpp" />
-    <ClCompile Include="lsm\csim\src\izhi_neuron.cpp" />
     <ClCompile Include="lsm\csim\src\lifburstneuron.cpp" />
     <ClCompile Include="lsm\csim\src\lifneuron.cpp" />
     <ClCompile Include="lsm\csim\src\lifneuronsynchan.cpp" />
@@ -190,8 +185,6 @@
     <ClCompile Include="lsm\csim\src\mean_std_preprocessor.cpp" />
     <ClCompile Include="lsm\csim\src\membranepatch.cpp" />
     <ClCompile Include="lsm\csim\src\membranepatchsimple.cpp" />
-    <ClCompile Include="lsm\csim\src\mexnetwork.cpp" />
-    <ClCompile Include="lsm\csim\src\mexrecorder.cpp" />
     <ClCompile Include="lsm\csim\src\network.cpp" />
     <ClCompile Include="lsm\csim\src\neuron.cpp" />
     <ClCompile Include="lsm\csim\src\pcapreprocessor.cpp" />
@@ -203,7 +196,6 @@
     <ClCompile Include="lsm\csim\src\sigmoidalneuron.cpp" />
     <ClCompile Include="lsm\csim\src\specificouneurons.cpp" />
     <ClCompile Include="lsm\csim\src\specific_ion_channels.cpp" />
-    <ClCompile Include="lsm\csim\src\specific_neurons.cpp" />
     <ClCompile Include="lsm\csim\src\spikefilter.cpp" />
     <ClCompile Include="lsm\csim\src\spikinginputneuron.cpp" />
     <ClCompile Include="lsm\csim\src\spikingneuron.cpp" />
@@ -247,7 +239,6 @@
     <ClInclude Include="lsm\csim\src\analogneuron.h" />
     <ClInclude Include="lsm\csim\src\analogsynapse.h" />
     <ClInclude Include="lsm\csim\src\analogteacher.h" />
-    <ClInclude Include="lsm\csim\src\armmodel.h" />
     <ClInclude Include="lsm\csim\src\cbhhouineuron.h" />
     <ClInclude Include="lsm\csim\src\cbhhouneuron.h" />
     <ClInclude Include="lsm\csim\src\cbneuron.h" />
@@ -259,7 +250,6 @@
     <ClInclude Include="lsm\csim\src\csimerror.h" />
     <ClInclude Include="lsm\csim\src\csiminputclass.h" />
     <ClInclude Include="lsm\csim\src\csimlist.h" />
-    <ClInclude Include="lsm\csim\src\csimmex.h" />
     <ClInclude Include="lsm\csim\src\discretizationpreprocessor.h" />
     <ClInclude Include="lsm\csim\src\dynamicanalogsynapse.h" />
     <ClInclude Include="lsm\csim\src\dynamicglutamatesynapse.h" />
@@ -282,12 +272,10 @@
     <ClInclude Include="lsm\csim\src\glutamatesynapsesynchan.h" />
     <ClInclude Include="lsm\csim\src\hh_neuron.h" />
     <ClInclude Include="lsm\csim\src\hh_squid_channels.h" />
-    <ClInclude Include="lsm\csim\src\ifbneuron.h" />
     <ClInclude Include="lsm\csim\src\internalvoltageneuron.h" />
     <ClInclude Include="lsm\csim\src\ionbuffer.h" />
     <ClInclude Include="lsm\csim\src\ionchannel.h" />
     <ClInclude Include="lsm\csim\src\iongate.h" />
-    <ClInclude Include="lsm\csim\src\izhi_neuron.h" />
     <ClInclude Include="lsm\csim\src\lifburstneuron.h" />
     <ClInclude Include="lsm\csim\src\lifneuron.h" />
     <ClInclude Include="lsm\csim\src\lifneuronsynchan.h" />
@@ -298,8 +286,6 @@
     <ClInclude Include="lsm\csim\src\mean_std_preprocessor.h" />
     <ClInclude Include="lsm\csim\src\membranepatch.h" />
     <ClInclude Include="lsm\csim\src\membranepatchsimple.h" />
-    <ClInclude Include="lsm\csim\src\mexnetwork.h" />
-    <ClInclude Include="lsm\csim\src\mexrecorder.h" />
     <ClInclude Include="lsm\csim\src\modelinput.h" />
     <ClInclude Include="lsm\csim\src\needspostspikesynapse.h" />
     <ClInclude Include="lsm\csim\src\network.h" />
@@ -313,7 +299,6 @@
     <ClInclude Include="lsm\csim\src\sigmoidalneuron.h" />
     <ClInclude Include="lsm\csim\src\specificouneurons.h" />
     <ClInclude Include="lsm\csim\src\specific_ion_channels.h" />
-    <ClInclude Include="lsm\csim\src\specific_neurons.h" />
     <ClInclude Include="lsm\csim\src\spikefilter.h" />
     <ClInclude Include="lsm\csim\src\spikinginputneuron.h" />
     <ClInclude Include="lsm\csim\src\spikingneuron.h" />

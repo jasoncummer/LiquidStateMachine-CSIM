@@ -157,22 +157,22 @@ int PhysicalModel::updateInternal() {
   return 0;
 }
 
-uint32* PhysicalModel::getInputs(int index) {
-  uint32 *ci = 0;
-
-  if (incoming[index]) {
-    ci = (uint32 *) mxMalloc(sizeof(uint32));
-    *ci = incoming[index]->getId();
-  }
-
-  return ci;
-}
+//uint32* PhysicalModel::getInputs(int index) {
+//  uint32 *ci = 0;
+//
+//  if (incoming[index]) {
+//    ci = (uint32 *) mxMalloc(sizeof(uint32));
+//    *ci = incoming[index]->getId();
+//  }
+//
+//  return ci;
+//}
 
 uint32* PhysicalModel::getOutputs(int index) {
   uint32 *ci = 0;
 
   if (nOutgoing[index] > 0) {
-    ci = (uint32 *) mxCalloc (nOutgoing[index], sizeof(uint32));
+    ci = (uint32 *) calloc (nOutgoing[index], sizeof(uint32));
     for(int i=0;i<nOutgoing[index];i++)
       ci[i] = outgoing[index][i]->getId();
   }

@@ -4,11 +4,12 @@
 
 #ifdef _GNU_SOURCE
 
-#include <stdAfx.h>
+  #include <stdAfx.h>
 
-#include <unistd.h>
-#include <fcntl.h>
-#include <sys/mman.h>
+  //#include <unistd.h>
+  #include <fcntl.h>
+  //#include <sys/mman.h>
+
 #endif
 #include "extoutsigmoidalneuron.h"
 #include "csimerror.h"

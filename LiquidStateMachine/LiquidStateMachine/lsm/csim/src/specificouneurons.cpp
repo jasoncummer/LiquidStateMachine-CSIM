@@ -7,9 +7,9 @@
 #include <string.h>
 #include <stdio.h>
 #include "specificouneurons.h"
-#include "mexnetwork.h"
+//#include "mexnetwork.h"
 
-extern MexNetwork *TheNetwork;
+//extern MexNetwork *TheNetwork;
 
 bNACOUNeuron::bNACOUNeuron(void)
 {

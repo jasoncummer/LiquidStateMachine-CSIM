@@ -14,6 +14,7 @@
 const double PI = acos(-1.0);
 
 
+
 /** Constructs a new arm model. This model has 2 inputs and 300 outputs. */
 
 ArmModel::ArmModel() : PhysicalModel(2, 300) {
